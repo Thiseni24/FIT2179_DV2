@@ -1,0 +1,179 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Shape of Every Genre",
+    "subtitle": "5-axis genre fingerprints · TMDB: runtime, rating, budget, revenue · IEEE: review count",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "data": {
+    "url": "data/movies_joined.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "runtime_min": "number",
+        "imdb_rating": "number",
+        "budget": "number",
+        "revenue": "number",
+        "num_reviews": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.primary_genre != null && datum.runtime_min > 0 && datum.imdb_rating > 0 && datum.budget > 0 && datum.revenue > 0 && datum.num_reviews > 0"
+    },
+    {
+      "aggregate": [
+        {"op": "mean", "field": "runtime_min", "as": "avg_runtime"},
+        {"op": "mean", "field": "imdb_rating", "as": "avg_rating"},
+        {"op": "mean", "field": "budget", "as": "avg_budget"},
+        {"op": "mean", "field": "revenue", "as": "avg_revenue"},
+        {"op": "mean", "field": "num_reviews", "as": "avg_reviews"},
+        {"op": "count", "as": "film_count"}
+      ],
+      "groupby": ["primary_genre"]
+    },
+    {"filter": "datum.film_count >= 10"},
+    {
+      "joinaggregate": [
+        {"op": "max", "field": "avg_runtime", "as": "max_runtime"},
+        {"op": "max", "field": "avg_rating", "as": "max_rating"},
+        {"op": "max", "field": "avg_budget", "as": "max_budget"},
+        {"op": "max", "field": "avg_revenue", "as": "max_revenue"},
+        {"op": "max", "field": "avg_reviews", "as": "max_reviews"}
+      ]
+    },
+    {"calculate": "datum.avg_runtime / datum.max_runtime", "as": "Runtime"},
+    {"calculate": "datum.avg_rating / datum.max_rating", "as": "Rating"},
+    {"calculate": "datum.avg_budget / datum.max_budget", "as": "Budget"},
+    {"calculate": "datum.avg_revenue / datum.max_revenue", "as": "Revenue"},
+    {"calculate": "datum.avg_reviews / datum.max_reviews", "as": "Reviews"},
+    {
+      "fold": ["Runtime", "Rating", "Budget", "Revenue", "Reviews"],
+      "as": ["axis", "value"]
+    },
+    {
+      "calculate": "datum.axis == 'Runtime' ? 0 : datum.axis == 'Rating' ? 1 : datum.axis == 'Budget' ? 2 : datum.axis == 'Revenue' ? 3 : 4",
+      "as": "axis_order"
+    },
+    {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
+    {"calculate": "datum.value * cos(datum.angle)", "as": "x"},
+    {"calculate": "datum.value * sin(datum.angle)", "as": "y"}
+  ],
+  "facet": {
+    "field": "primary_genre",
+    "type": "nominal",
+    "title": null,
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold",
+      "labelColor": "#1a1a1a"
+    }
+  },
+
+  "columns": 5,
+
+  "spec": {
+    "width": 170,
+    "height": 170,
+    "layer": [
+      {
+        "data": {
+          "values": [
+            {"axis_order": 0, "r": 0.25}, {"axis_order": 1, "r": 0.25}, {"axis_order": 2, "r": 0.25}, {"axis_order": 3, "r": 0.25}, {"axis_order": 4, "r": 0.25},
+            {"axis_order": 0, "r": 0.5}, {"axis_order": 1, "r": 0.5}, {"axis_order": 2, "r": 0.5}, {"axis_order": 3, "r": 0.5}, {"axis_order": 4, "r": 0.5},
+            {"axis_order": 0, "r": 0.75}, {"axis_order": 1, "r": 0.75}, {"axis_order": 2, "r": 0.75}, {"axis_order": 3, "r": 0.75}, {"axis_order": 4, "r": 0.75},
+            {"axis_order": 0, "r": 1}, {"axis_order": 1, "r": 1}, {"axis_order": 2, "r": 1}, {"axis_order": 3, "r": 1}, {"axis_order": 4, "r": 1}
+          ]
+        },
+        "transform": [
+          {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
+          {"calculate": "datum.r * cos(datum.angle)", "as": "grid_x"},
+          {"calculate": "datum.r * sin(datum.angle)", "as": "grid_y"}
+        ],
+        "mark": {
+          "type": "line",
+          "interpolate": "linear-closed",
+          "color": "#d8cbbb",
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "x": {"field": "grid_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "y": {"field": "grid_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "order": {"field": "axis_order"},
+          "detail": {"field": "r"}
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {"axis": "Runtime", "axis_order": 0},
+            {"axis": "Rating", "axis_order": 1},
+            {"axis": "Budget", "axis_order": 2},
+            {"axis": "Revenue", "axis_order": 3},
+            {"axis": "Reviews", "axis_order": 4}
+          ]
+        },
+        "transform": [
+          {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
+          {"calculate": "1.18 * cos(datum.angle)", "as": "label_x"},
+          {"calculate": "1.18 * sin(datum.angle)", "as": "label_y"}
+        ],
+        "mark": {
+          "type": "text",
+          "font": "Inter",
+          "fontSize": 9,
+          "color": "#6b6258"
+        },
+        "encoding": {
+          "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "text": {"field": "axis"}
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "#8C564B",
+          "fill": "#8C564B",
+          "fillOpacity": 0.22,
+          "strokeWidth": 2.5,
+          "interpolate": "linear-closed"
+        },
+        "encoding": {
+          "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "y": {"field": "y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "order": {"field": "axis_order"},
+          "tooltip": [
+            {"field": "primary_genre", "title": "Genre"},
+            {"field": "axis", "title": "Axis"},
+            {"field": "value", "title": "Normalised Score", "format": ".2f"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 35,
+          "color": "#C1272D"
+        },
+        "encoding": {
+          "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+          "y": {"field": "y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null}
+        }
+      }
+    ]
+  },
+  "config": {
+    "background": null,
+    "view": {"stroke": null},
+    "font": "Inter"
+  }
+}

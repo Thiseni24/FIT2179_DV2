@@ -3,31 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The World on Screen</title>
 
-  <!-- CSS file -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Vega-Lite libraries from CDN: Vega → Vega-Lite → Vega-Embed -->
+  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
+
 <body>
 
-  <main>
-    <h1>The World on Screen</h1>
+  <main class="page">
 
-    <!--choropleth will render-->
-    <div id="chart-world-map"></div>
+    <!-- ===================== HERO SECTION ===================== -->
 
-    <!-- Top 10 Film-Producing Nations bar chart-->
-    <div id="chart-top-countries"></div>
+    <section class="hero-card">
 
-    <!-- Genre Tides streamgraph -->
-    <div id="genre-tides"></div>
+      <p class="eyebrow">A Visual Story of Global Cinema</p>
+
+      <h1>The World on Screen</h1>
+
+      <p class="hero-subtitle">
+        Exploring how film production, genres, languages and audience attention
+        have changed across the world from 1970 to 2024.
+      </p>
+
+      <div class="big-number-grid">
+
+        <div>
+          <span>25,230</span>
+          <p>Films Analysed</p>
+        </div>
+
+        <div>
+          <span>1.1M</span>
+          <p>IMDB Reviews</p>
+        </div>
+
+        <div>
+          <span>50+ years</span>
+          <p>of cinema</p>
+        </div>
+
+        <div>
+          <span>85</span>
+          <p>countries</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================== SECTION 1 ===================== -->
+
+    <section class="story-section">
+
+      <p class="section-tag">Act One</p>
+
+      <h2>Where Cinema Comes From</h2>
+
+      <p class="section-intro">
+        Film production is global, but highly uneven. A small number of countries
+        dominate output while many others contribute smaller yet still significant
+        film industries.
+      </p>
+
+      <div class="chart-card full-width">
+
+        <div id="chart-world-map"></div>
+
+        <p class="chart-note">
+          The map shows that cinema production is geographically widespread,
+          but only a few regions emerge as dominant production hubs.
+        </p>
+
+      </div>
+
+      <div class="chart-card full-width">
+
+        <div id="chart-top-countries"></div>
+
+        <p class="chart-note">
+          The United States produces dramatically more films than every other
+          country in the dataset, highlighting the scale difference between Hollywood
+          and other national industries.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ===================== SECTION 2 ===================== -->
+
+    <section class="story-section">
+
+      <p class="section-tag">Act Two</p>
+
+      <h2>How Cinema Changed Over Time</h2>
+
+      <p class="section-intro">
+        Film output and genre popularity have shifted across decades, reflecting
+        changing audience preferences, technological change and global disruptions.
+      </p>
+
+      <div class="two-column">
+
+        <div class="chart-card">
+
+          <div id="chart-films-each-year"></div>
+
+          <p class="chart-note">
+            Film production increased steadily for decades before dropping sharply
+            during the COVID-19 pandemic period.
+          </p>
+
+        </div>
+
+        <div class="chart-card">
+
+          <div id="chart-genre-tides"></div>
+
+          <p class="chart-note">
+            Genres rise and fall in waves rather than growing evenly, suggesting
+            that audience interest shifts over time.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================== SECTION 3 ===================== -->
+
+    <section class="story-section">
+
+      <p class="section-tag">Act Three</p>
+
+      <h2>What Films Look and Sound Like</h2>
+
+      <p class="section-intro">
+        Films differ not only by country, but also by language, structure,
+        audience attention and commercial scale.
+      </p>
+
+      <div class="two-column">
+
+        <div class="chart-card">
+
+          <div id="chart-languages-of-cinema"></div>
+
+          <p class="chart-note">
+            English-language films dominate the dataset, though many other
+            languages continue to maintain visible cinematic presence.
+          </p>
+
+        </div>
+
+        <div class="chart-card">
+
+          <div id="chart-genre-shape"></div>
+
+          <p class="chart-note">
+            Each genre forms a distinct “fingerprint” based on runtime,
+            rating, revenue, budget and audience review activity.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================== ENDING ===================== -->
+
+    <section class="ending-card">
+
+      <h2>So, what does the world on screen look like?</h2>
+
+      <p>
+        Global cinema is shaped by concentration and diversity at the same time:
+        a few countries and languages dominate production, while genres and
+        audience interests continue to evolve across decades.
+      </p>
+
+    </section>
+
   </main>
 
+  <!-- Vega chart loader -->
   <script src="vega_lite_vis.js"></script>
+
 </body>
 </html>

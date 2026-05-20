@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Films Released Each Year",
+    "subtitle": "Annual film count in the TMDB dataset",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 650,
+  "height": 350,
+  "background": null,
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 11,
+      "domain": false,
+      "ticks": false,
+      "grid": false
+    }
+  },
+  "data": {
+    "url": "data/tmdb.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 1970 && datum.year <= 2024"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#8C564B",
+        "strokeWidth": 3,
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "axis": {
+            "title": "Release Year",
+            "format": "d",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Number of Films",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "aggregate": "count",
+            "type": "quantitative",
+            "title": "Number of Films"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "films": 910,
+            "label": "COVID-19 disrupted global film production"
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 120,
+        "color": "#C1272D"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "films",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "films": 910,
+            "label": "COVID-19 disrupted global film production"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "dy": -12,
+        "fontSize": 11,
+        "font": "Inter",
+        "color": "#6b6258"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "films",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}
