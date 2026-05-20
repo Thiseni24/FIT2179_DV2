@@ -1,0 +1,1096 @@
+imdb_id,title,year,imdb_rating,num_raters,num_reviews,runtime_min,mpaa,genres,genres_list,primary_genre,num_genres,release_date_parsed
+tt0468569,The Dark Knight,2008,9.0,2224522,6836,152,PG-13,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2008-07-18
+tt1375666,Inception,2010,8.8,1981675,3820,148,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2010-07-16
+tt0133093,The Matrix,1999,8.7,1619761,4281,136,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,1999-03-31
+tt0120737,The Lord of the Rings: The Fellowship of the Ring,2001,8.8,1609165,5365,178,PG-13,Action; Adventure; Drama; ,"['Action', 'Adventure', 'Drama']",Action,3,2001-12-19
+tt1345836,The Dark Knight Rises,2012,8.4,1470329,2979,164,PG-13,Action; Adventure; ,"['Action', 'Adventure']",Action,2,2012-07-20
+tt0172495,Gladiator,2000,8.5,1297718,2636,155,R,Action; Adventure; Drama; ,"['Action', 'Adventure', 'Drama']",Action,3,2000-05-05
+tt0372784,Batman Begins,2005,8.2,1269027,2885,140,PG-13,Action; Adventure; ,"['Action', 'Adventure']",Action,2,2005-06-15
+tt0848228,The Avengers,2012,8.0,1236048,1929,143,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2012-05-04
+tt0076759,Star Wars: Episode IV - A New Hope,1977,8.6,1197132,1834,121,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,1977-05-25
+tt0080684,Star Wars: Episode V - The Empire Strikes Back,1980,8.7,1124834,1214,124,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,1980-06-20
+tt0499549,Avatar,2009,7.8,1096125,3415,162,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2009-12-18
+tt2015381,Guardians of the Galaxy,2014,8.0,1017405,1390,121,PG-13,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2014-08-01
+tt0434409,V for Vendetta,2005,8.2,1002944,2205,132,R,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2006-03-17
+tt0110413,Léon: The Professional,1994,8.5,999596,1193,110,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,1994-11-18
+tt0325980,Pirates of the Caribbean: The Curse of the Black Pearl,2003,8.0,997264,2186,143,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2003-07-09
+tt0266697,Kill Bill: Vol. 1,2003,8.1,970439,2272,111,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2003-10-10
+tt0103064,Terminator 2: Judgment Day,1991,8.5,968504,1269,137,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,1991-07-03
+tt0086190,Star Wars: Episode VI - Return of the Jedi,1983,8.3,922278,828,131,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,1983-05-25
+tt0371746,Iron Man,2008,7.9,915640,1319,126,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2008-05-02
+tt1431045,Deadpool,2016,8.0,876091,1440,108,R,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2016-02-12
+tt0082971,Raiders of the Lost Ark,1981,8.4,859523,931,115,PG,Action; Adventure; ,"['Action', 'Adventure']",Action,2,1981-06-12
+tt1392190,Mad Max: Fury Road,2015,8.1,848011,1990,120,R,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2015-05-15
+tt2488496,Star Wars: Episode VII - The Force Awakens,2015,7.9,841234,4794,138,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2015-12-18
+tt0107290,Jurassic Park,1993,8.1,836793,1133,127,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1993-06-11
+tt1392170,The Hunger Games,2012,7.2,826505,2037,142,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2012-03-23
+tt4154756,Avengers: Infinity War,2018,8.4,784777,4248,149,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2018-04-27
+tt0088247,The Terminator,1984,8.0,779029,885,107,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,1984-10-26
+tt0095016,Die Hard,1988,8.2,763300,912,132,R,Action; Thriller; ,"['Action', 'Thriller']",Action,2,1988-07-20
+tt4154796,Avengers: Endgame,2019,8.4,736177,8805,181,PG-13,Action; Adventure; Drama; ,"['Action', 'Adventure', 'Drama']",Action,3,2019-04-26
+tt1300854,Iron Man 3,2013,7.2,735568,1314,130,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-05-03
+tt0800369,Thor,2011,7.0,726753,915,115,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2011-05-06
+tt0416449,300,2006,7.6,719421,2176,117,R,Action; Drama; ,"['Action', 'Drama']",Action,2,2007-03-09
+tt0458339,Captain America: The First Avenger,2011,6.9,718921,882,124,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2011-07-22
+tt2395427,Avengers: Age of Ultron,2015,7.3,717521,1303,141,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2015-05-01
+tt1843866,Captain America: The Winter Soldier,2014,7.7,714445,937,136,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-04-04
+tt0120915,Star Wars: Episode I - The Phantom Menace,1999,6.5,708990,3843,136,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,1999-05-19
+tt1228705,Iron Man 2,2010,7.0,701922,881,124,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2010-05-07
+tt0121766,Star Wars: Episode III - Revenge of the Sith,2005,7.5,690205,3553,140,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2005-05-19
+tt1663202,The Revenant,2015,8.0,678829,1594,156,R,Action; Adventure; Drama; ,"['Action', 'Adventure', 'Drama']",Action,3,2016-01-08
+tt0770828,Man of Steel,2013,7.0,675229,2747,143,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-06-14
+tt0083658,Blade Runner,1982,8.1,673121,1541,117,R,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,1982-06-25
+tt0097576,Indiana Jones and the Last Crusade,1989,8.2,672206,567,127,PG-13,Action; Adventure; ,"['Action', 'Adventure']",Action,2,1989-05-24
+tt0145487,Spider-Man,2002,7.3,671751,2124,121,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2002-05-03
+tt0480249,I Am Legend,2007,7.2,670748,1543,101,PG-13,Action; Adventure; Drama; ,"['Action', 'Adventure', 'Drama']",Action,3,2007-12-14
+tt0378194,Kill Bill: Vol. 2,2004,8.0,663568,1022,137,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2004-04-16
+tt1877832,X-Men: Days of Future Past,2014,8.0,647269,821,132,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-05-23
+tt0892769,How to Train Your Dragon,2010,8.1,647266,626,98,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2010-03-26
+tt0383574,Pirates of the Caribbean: Dead Man's Chest,2006,7.3,641045,1889,151,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2006-07-07
+tt0317705,The Incredibles,2004,8.0,638952,946,115,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2004-11-05
+tt3498820,Captain America: Civil War,2016,7.8,638731,1410,147,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2016-05-06
+tt0090605,Aliens,1986,8.3,635164,1280,137,R,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1986-07-18
+tt1270798,X-Men: First Class,2011,7.7,634147,767,131,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2011-06-03
+tt1136608,District 9,2009,7.9,627696,1375,112,R,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,2009-08-14
+tt0121765,Star Wars: Episode II - Attack of the Clones,2002,6.5,621911,3652,142,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2002-05-16
+tt3315342,Logan,2017,8.1,621174,1559,137,R,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2017-03-03
+tt1074638,Skyfall,2012,7.7,617644,1587,143,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2012-11-09
+tt2975590,Batman v Superman: Dawn of Justice,2016,6.4,608225,3696,151,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2016-03-25
+tt1951264,The Hunger Games: Catching Fire,2013,7.5,600099,720,146,PG-13,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2013-11-22
+tt0440963,The Bourne Ultimatum,2007,8.0,595431,882,115,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2007-08-03
+tt1825683,Black Panther,2018,7.3,587388,3190,134,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2018-02-16
+tt0418279,Transformers,2007,7.0,586895,1869,144,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2007-07-03
+tt0816711,World War Z,2013,7.0,586801,1125,116,PG-13,Action; Adventure; Horror; ,"['Action', 'Adventure', 'Horror']",Action,3,2013-06-21
+tt0449088,Pirates of the Caribbean: At World's End,2007,7.1,582275,1290,169,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2007-05-25
+tt1386697,Suicide Squad,2016,6.0,581986,2253,123,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2016-08-05
+tt1631867,Edge of Tomorrow,2014,7.9,581938,967,113,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-06-06
+tt1981115,Thor: The Dark World,2013,6.9,578425,695,112,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2013-11-08
+tt2802144,Kingsman: The Secret Service,2014,7.7,575952,935,129,R,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2015-02-13
+tt1211837,Doctor Strange,2016,7.5,573177,945,115,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2016-11-04
+tt0988045,Sherlock Holmes,2009,7.6,571401,693,128,PG-13,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2009-12-25
+tt0796366,Star Trek,2009,7.9,570077,1650,127,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2009-05-08
+tt0381061,Casino Royale,2006,8.0,566966,2401,144,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2006-11-17
+tt0369610,Jurassic World,2015,7.0,566272,1531,124,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2015-06-12
+tt0120903,X-Men,2000,7.4,559246,1447,104,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2000-07-14
+tt3501632,Thor: Ragnarok,2017,7.9,557591,1576,130,PG-13,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2017-11-03
+tt0936501,Taken,2008,7.8,555820,1056,90,PG-13,Action; Thriller; ,"['Action', 'Thriller']",Action,2,2009-01-30
+tt0478970,Ant-Man,2015,7.3,549076,718,117,PG-13,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2015-07-17
+tt0948470,The Amazing Spider-Man,2012,6.9,547661,1342,136,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2012-07-03
+tt3896198,Guardians of the Galaxy Vol. 2,2017,7.6,544357,1044,136,PG-13,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,2017-05-05
+tt2527336,Star Wars: Episode VIII - The Last Jedi,2017,7.0,543307,6691,152,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2017-12-15
+tt3748528,Rogue One: A Star Wars Story,2016,7.8,534483,1763,133,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2016-12-16
+tt0451279,Wonder Woman,2017,7.4,531221,2179,141,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2017-06-02
+tt0316654,Spider-Man 2,2004,7.3,529344,1450,127,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2004-06-30
+tt1276104,Looper,2012,7.4,523452,761,113,R,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2012-09-28
+tt5013056,Dunkirk,2017,7.9,523089,2359,106,PG-13,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2017-07-21
+tt0120735,"Lock, Stock and Two Smoking Barrels",1998,8.2,521026,582,107,R,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,1998-08-28
+tt0116629,Independence Day,1996,7.0,516789,939,145,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1996-07-03
+tt1250777,Kick-Ass,2010,7.6,515786,844,117,R,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,2010-04-16
+tt2911666,John Wick,2014,7.4,514550,1157,101,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2014-10-24
+tt0119654,Men in Black,1997,7.3,504013,344,98,PG-13,Action; Adventure; Comedy; ,"['Action', 'Adventure', 'Comedy']",Action,3,1997-07-02
+tt0234215,The Matrix Reloaded,2003,7.2,503184,2781,138,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,2003-05-15
+tt0290334,X2: X-Men United,2003,7.4,501725,1105,134,PG-13,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,2003-05-02
+tt1232829,21 Jump Street,2012,7.2,499602,401,109,R,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,2012-03-16
+tt0364569,Oldboy,2003,8.4,496687,1000,101,R,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2003-11-21
+tt0258463,The Bourne Identity,2002,7.9,496180,912,119,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2002-06-14
+tt0181689,Minority Report,2002,7.6,495543,1381,145,PG-13,Action; Crime; Mystery; ,"['Action', 'Crime', 'Mystery']",Action,3,2002-06-21
+tt0373889,Harry Potter and the Order of the Phoenix,2007,7.5,489759,1189,138,PG-13,Action; Adventure; ,"['Action', 'Adventure']",Action,2,2007-07-11
+tt2250912,Spider-Man: Homecoming,2017,7.4,488794,1356,133,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2017-07-07
+tt1318514,Rise of the Planet of the Apes,2011,7.6,488748,706,105,PG-13,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2011-08-05
+tt0343818,"I, Robot",2004,7.1,488324,839,115,PG-13,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2004-07-16
+tt0409459,Watchmen,2009,7.6,487717,1398,162,R,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2009-03-06
+tt0167260,The Lord of the Rings: The Return of the King,2003,8.9,1593859,3681,201,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2003-12-17
+tt0167261,The Lord of the Rings: The Two Towers,2002,8.7,1440188,2559,179,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2002-12-18
+tt0816692,Interstellar,2014,8.6,1430797,3977,169,PG-13,Adventure; Drama; Sci-Fi; ,"['Adventure', 'Drama', 'Sci-Fi']",Adventure,3,2014-11-07
+tt0361748,Inglourious Basterds,2009,8.3,1219372,1856,153,R,Adventure; Drama; War; ,"['Adventure', 'Drama', 'War']",Adventure,3,2009-08-21
+tt0088763,Back to the Future,1985,8.5,1015004,1176,116,PG,Adventure; Comedy; Sci-Fi; ,"['Adventure', 'Comedy', 'Sci-Fi']",Adventure,3,1985-07-03
+tt0910970,WALL·E,2008,8.4,967917,1268,98,G,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,2008-06-27
+tt0266543,Finding Nemo,2003,8.1,922080,968,100,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2003-05-30
+tt0110357,The Lion King,1994,8.5,910179,1009,88,G,Animation; Adventure; Drama; ,"['Animation', 'Adventure', 'Drama']",Animation,3,1994-06-24
+tt1049413,Up,2009,8.2,905044,891,96,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2009-05-29
+tt0114709,Toy Story,1995,8.3,858215,606,81,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1995-11-22
+tt0198781,"Monsters, Inc.",2001,8.0,789773,680,92,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2001-11-02
+tt0903624,The Hobbit: An Unexpected Journey,2012,7.8,743338,1430,169,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2012-12-14
+tt1201607,Harry Potter and the Deathly Hallows: Part 2,2011,8.1,737642,953,130,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2011-07-15
+tt0435761,Toy Story 3,2010,8.3,734948,884,103,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2010-06-18
+tt3659388,The Martian,2015,8.0,734923,1312,144,PG-13,Adventure; Drama; Sci-Fi; ,"['Adventure', 'Drama', 'Sci-Fi']",Adventure,3,2015-10-02
+tt2278388,The Grand Budapest Hotel,2014,8.1,681915,865,99,R,Adventure; Comedy; Crime; ,"['Adventure', 'Comedy', 'Crime']",Adventure,3,2014-03-28
+tt0382932,Ratatouille,2007,8.0,620375,741,111,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2007-06-29
+tt0241527,Harry Potter and the Sorcerer's Stone,2001,7.6,618786,1737,152,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2001-11-16
+tt0245429,Spirited Away,2001,8.6,618550,1287,125,PG,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,2003-03-28
+tt0126029,Shrek,2001,7.8,596499,1062,90,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2001-05-18
+tt1170358,The Hobbit: The Desolation of Smaug,2013,7.8,588294,985,161,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2013-12-13
+tt2096673,Inside Out,2015,8.1,586923,1027,95,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2015-06-19
+tt0454876,Life of Pi,2012,7.9,567025,914,127,PG,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2012-11-21
+tt1446714,Prometheus,2012,7.0,557986,2543,124,R,Adventure; Mystery; Sci-Fi; ,"['Adventure', 'Mystery', 'Sci-Fi']",Adventure,3,2012-06-08
+tt2294629,Frozen,2013,7.4,557241,1109,102,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2013-11-27
+tt0758758,Into the Wild,2007,8.1,556447,939,148,R,Adventure; Biography; Drama; ,"['Adventure', 'Biography', 'Drama']",Adventure,3,2007-10-19
+tt0073195,Jaws,1975,8.0,531977,1203,124,PG,Adventure; Thriller; ,"['Adventure', 'Thriller']",Adventure,2,1975-06-20
+tt0295297,Harry Potter and the Chamber of Secrets,2002,7.4,531256,930,161,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2002-11-15
+tt0304141,Harry Potter and the Prisoner of Azkaban,2004,7.9,528503,1592,142,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2004-06-04
+tt0330373,Harry Potter and the Goblet of Fire,2005,7.7,526115,1980,157,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2005-11-18
+tt0120363,Toy Story 2,1999,7.9,511239,611,92,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1999-11-24
+tt1323594,Despicable Me,2010,7.6,488575,359,95,PG,Animation; Comedy; ,"['Animation', 'Comedy']",Animation,2,2010-07-09
+tt0268380,Ice Age,2002,7.5,428802,491,81,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2002-03-15
+tt2948356,Zootopia,2016,8.0,417226,710,108,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2016-03-04
+tt0101414,Beauty and the Beast,1991,8.0,408618,433,84,G,Animation; Fantasy; ,"['Animation', 'Fantasy']",Animation,2,1991-11-22
+tt0298148,Shrek 2,2004,7.2,407523,542,93,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2004-05-19
+tt0441773,Kung Fu Panda,2008,7.5,406720,425,92,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2008-06-06
+tt2245084,Big Hero 6,2014,7.8,398088,557,102,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2014-11-07
+tt0398286,Tangled,2010,7.7,393285,489,100,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2010-11-24
+tt1772341,Wreck-It Ralph,2012,7.7,369053,443,101,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2012-11-02
+tt1217209,Brave,2012,7.1,361913,515,93,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2012-06-22
+tt1690953,Despicable Me 2,2013,7.3,361388,321,98,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2013-07-03
+tt0103639,Aladdin,1992,8.0,360969,330,90,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1992-11-25
+tt0351283,Madagascar,2005,6.9,355365,420,86,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2005-05-27
+tt0317219,Cars,2006,7.1,354991,663,117,G,Animation; Comedy; ,"['Animation', 'Comedy']",Animation,2,2006-06-09
+tt2380307,Coco,2017,8.4,345200,1087,105,PG,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,2017-11-22
+tt0119698,Princess Mononoke,1997,8.4,326489,702,134,PG-13,Animation; Adventure; Fantasy; ,"['Animation', 'Adventure', 'Fantasy']",Animation,3,1997-12-19
+tt4633694,Spider-Man: Into the Spider-Verse,2018,8.4,326477,1810,117,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2018-12-14
+tt1490017,The Lego Movie,2014,7.7,317860,554,100,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2014-02-07
+tt0347149,Howl's Moving Castle,2004,8.2,313971,435,119,PG,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,2005-06-17
+tt1453405,Monsters University,2013,7.3,311892,331,104,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2013-06-21
+tt0462538,The Simpsons Movie,2007,7.3,303713,849,87,PG-13,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2007-07-27
+tt1646971,How to Train Your Dragon 2,2014,7.8,296544,404,102,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2014-06-13
+tt0107688,The Nightmare Before Christmas,1993,8.0,283685,522,76,PG,Animation; Fantasy; ,"['Animation', 'Fantasy']",Animation,2,1993-10-29
+tt0096283,My Neighbor Totoro,1988,8.2,273795,464,86,G,Animation; Fantasy; ,"['Animation', 'Fantasy']",Animation,2,1990-07-13
+tt0413267,Shrek the Third,2007,6.1,272620,360,93,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2007-05-18
+tt0120623,A Bug's Life,1998,7.2,259956,368,95,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1998-11-25
+tt3521164,Moana,2016,7.6,256243,521,107,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2016-11-23
+tt0438097,Ice Age: The Meltdown,2006,6.8,249504,267,91,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2006-03-31
+tt1302011,Kung Fu Panda 2,2011,7.2,245225,243,90,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2011-05-26
+tt0120762,Mulan,1998,7.6,242128,312,88,G,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,1998-06-19
+tt3606756,Incredibles 2,2018,7.6,236249,1067,118,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2018-06-15
+tt0121164,Corpse Bride,2005,7.3,235900,521,77,PG,Animation; Drama; ,"['Animation', 'Drama']",Animation,2,2005-09-23
+tt2277860,Finding Dory,2016,7.3,231496,427,97,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2016-06-17
+tt0097757,The Little Mermaid,1989,7.6,229928,279,83,G,Animation; Fantasy; ,"['Animation', 'Fantasy']",Animation,2,1989-11-17
+tt1192628,Rango,2011,7.2,229568,400,107,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2011-03-04
+tt0095327,Grave of the Fireflies,1988,8.5,221955,707,89,Not Rated,Animation; Drama; War; ,"['Animation', 'Drama', 'War']",Animation,3,1989-07-26
+tt1001526,Megamind,2010,7.2,221204,255,95,PG,Animation; Action; Comedy; ,"['Animation', 'Action', 'Comedy']",Animation,3,2010-11-05
+tt1080016,Ice Age: Dawn of the Dinosaurs,2009,6.9,217346,148,94,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2009-07-01
+tt0837562,Hotel Transylvania,2012,7.1,217079,225,91,PG,Animation; Comedy; ,"['Animation', 'Comedy']",Animation,2,2012-09-28
+tt0983193,The Adventures of Tintin,2011,7.3,212112,497,107,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2011-12-21
+tt2293640,Minions,2015,6.4,206432,352,91,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2015-07-10
+tt1436562,Rio,2011,6.9,201298,212,96,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2011-04-15
+tt0844471,Cloudy with a Chance of Meatballs,2009,6.9,198668,183,90,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2009-09-18
+tt0119282,Hercules,1997,7.3,198490,218,93,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1997-06-27
+tt0479952,Madagascar: Escape 2 Africa,2008,6.6,198485,144,89,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2008-11-07
+tt0120855,Tarzan,1999,7.3,196820,296,88,G,Animation; Adventure; ,"['Animation', 'Adventure']",Animation,2,1999-06-18
+tt6105098,The Lion King,2019,6.9,195404,2871,118,PG,Animation; Adventure; Drama; ,"['Animation', 'Adventure', 'Drama']",Animation,3,2019-07-19
+tt0432283,Fantastic Mr. Fox,2009,7.9,191094,323,87,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2009-11-25
+tt0327597,Coraline,2009,7.7,189260,375,100,PG,Animation; Drama; ,"['Animation', 'Drama']",Animation,2,2009-02-06
+tt0158983,"South Park: Bigger, Longer & Uncut",1999,7.7,189125,957,81,R,Animation; Comedy; Fantasy; ,"['Animation', 'Comedy', 'Fantasy']",Animation,3,1999-06-30
+tt1667889,Ice Age: Continental Drift,2012,6.6,186465,152,88,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2012-07-13
+tt0481499,The Croods,2013,7.2,185579,234,98,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2013-03-22
+tt0397892,Bolt,2008,6.8,184675,214,96,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2008-11-21
+tt1979376,Toy Story 4,2019,7.8,184363,1271,100,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2019-06-21
+tt0892791,Shrek Forever After,2010,6.3,179074,210,93,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2010-05-21
+tt2709768,The Secret Life of Pets,2016,6.5,178058,333,87,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2016-07-08
+tt0096438,Who Framed Roger Rabbit,1988,7.7,177334,286,104,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1988-06-22
+tt0120917,The Emperor's New Groove,2000,7.3,173677,326,78,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2000-12-15
+tt5311514,Your Name.,2016,8.4,173204,624,106,PG,Animation; Drama; Fantasy; ,"['Animation', 'Drama', 'Fantasy']",Animation,3,2017-04-07
+tt0461770,Enchanted,2007,7.0,172996,419,107,PG,Animation; Comedy; ,"['Animation', 'Comedy']",Animation,2,2007-11-21
+tt0120630,Chicken Run,2000,7.0,172974,388,84,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2000-06-23
+tt1700841,Sausage Party,2016,6.1,170630,544,89,R,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2016-08-12
+tt0129167,The Iron Giant,1999,8.0,167070,577,86,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,1999-08-06
+tt0338348,The Polar Express,2004,6.6,167034,521,100,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2004-11-10
+tt0366548,Happy Feet,2006,6.4,165838,585,108,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2006-11-17
+tt0114148,Pocahontas,1995,6.7,164719,262,81,G,Animation; Adventure; Drama; ,"['Animation', 'Adventure', 'Drama']",Animation,3,1995-06-23
+tt0307453,Shark Tale,2004,6.0,162954,317,90,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2004-10-01
+tt0275847,Lilo & Stitch,2002,7.2,162337,394,85,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2002-06-21
+tt0978762,Mary and Max,2009,8.1,159951,232,92,Not Rated,Animation; Comedy; Drama; ,"['Animation', 'Comedy', 'Drama']",Animation,3,2009-04-09
+tt0442933,Beowulf,2007,6.2,159254,535,115,PG-13,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2007-11-16
+tt1277953,Madagascar 3: Europe's Most Wanted,2012,6.8,157811,187,93,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2012-06-08
+tt0094625,Akira,1988,8.0,157623,526,124,R,Animation; Drama; Sci-Fi; ,"['Animation', 'Drama', 'Sci-Fi']",Animation,3,1988-07-16
+tt0117705,Space Jam,1996,6.4,157470,184,88,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1996-11-15
+tt0327084,Over the Hedge,2006,6.7,155579,292,83,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2006-05-19
+tt1216475,Cars 2,2011,6.1,153400,336,106,G,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2011-06-24
+tt1446192,Rise of the Guardians,2012,7.3,152650,215,97,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2012-11-21
+tt0120587,Antz,1998,6.5,143835,307,83,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,1998-10-02
+tt0092067,Castle in the Sky,1986,8.0,143574,231,125,PG,Animation; Adventure; Drama; ,"['Animation', 'Adventure', 'Drama']",Animation,3,1986-08-02
+tt0892782,Monsters vs. Aliens,2009,6.4,143391,211,94,PG,Animation; Action; Adventure; ,"['Animation', 'Action', 'Adventure']",Animation,3,2009-03-27
+tt0087544,Nausicaä of the Valley of the Wind,1984,8.1,142815,236,117,PG,Animation; Adventure; Fantasy; ,"['Animation', 'Adventure', 'Fantasy']",Animation,3,1987-11-25
+tt0448694,Puss in Boots,2011,6.6,140720,154,90,PG,Animation; Adventure; Comedy; ,"['Animation', 'Adventure', 'Comedy']",Animation,3,2011-10-28
+tt0108052,Schindler's List,1993,8.9,1173324,1814,195,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1994-02-04
+tt0993846,The Wolf of Wall Street,2013,8.2,1128148,1436,180,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2013-12-25
+tt0099685,Goodfellas,1990,8.7,982784,1296,146,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,1990-09-21
+tt0112573,Braveheart,1995,8.3,936728,1271,178,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1995-05-24
+tt0268978,A Beautiful Mind,2001,8.2,821709,1292,135,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2002-01-04
+tt0264464,Catch Me If You Can,2002,8.1,790873,828,141,PG-13,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2002-12-25
+tt1675434,The Intouchables,2011,8.5,731145,622,112,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2012-07-13
+tt0253474,The Pianist,2002,8.5,701576,924,150,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2003-03-28
+tt2084970,The Imitation Game,2014,8.0,662291,825,114,PG-13,Biography; Drama; Thriller; ,"['Biography', 'Drama', 'Thriller']",Biography,3,2014-12-25
+tt1504320,The King's Speech,2010,8.0,624817,754,118,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2010-12-25
+tt2024544,12 Years a Slave,2013,8.1,619715,869,134,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2013-11-08
+tt1285016,The Social Network,2010,7.7,604248,869,120,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2010-10-01
+tt1024648,Argo,2012,7.7,560352,789,120,R,Biography; Drama; Thriller; ,"['Biography', 'Drama', 'Thriller']",Biography,3,2012-10-12
+tt0454921,The Pursuit of Happyness,2006,8.0,433708,769,117,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2006-12-15
+tt1727824,Bohemian Rhapsody,2018,8.0,428335,3356,134,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2018-11-02
+tt0790636,Dallas Buyers Club,2013,8.0,427034,408,117,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2013-11-22
+tt2179136,American Sniper,2014,7.3,426309,1036,133,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2015-01-16
+tt1979320,Rush,2013,8.1,419377,564,123,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2013-09-27
+tt2119532,Hacksaw Ridge,2016,8.1,412911,893,139,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2016-11-04
+tt1535109,Captain Phillips,2013,7.8,409137,623,134,PG-13,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2013-10-11
+tt1895587,Spotlight,2015,8.1,401931,601,129,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2015-11-20
+tt2980516,The Theory of Everything,2014,7.7,387358,500,123,PG-13,Biography; Drama; Romance; ,"['Biography', 'Drama', 'Romance']",Biography,3,2014-11-26
+tt0765429,American Gangster,2007,7.8,381835,495,157,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2007-11-02
+tt0086879,Amadeus,1984,8.3,358503,634,160,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1984-09-19
+tt1210166,Moneyball,2011,7.6,350546,409,133,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2011-09-23
+tt1596363,The Big Short,2015,7.8,344612,535,130,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2015-12-23
+tt1542344,127 Hours,2010,7.6,340395,481,94,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2011-01-28
+tt6966692,Green Book,2018,8.2,332263,1453,130,PG-13,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2018-11-16
+tt0964517,The Fighter,2010,7.8,332120,443,116,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2010-12-17
+tt0395169,Hotel Rwanda,2004,8.1,327493,669,121,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2005-02-04
+tt0338751,The Aviator,2004,7.5,325104,838,170,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2004-12-25
+tt0363163,Downfall,2004,8.2,322655,633,156,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2005-04-08
+tt0081398,Raging Bull,1980,8.2,311225,583,129,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,1980-12-19
+tt1302006,The Irishman,2019,7.9,297140,2676,209,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2019-11-27
+tt0878804,The Blind Side,2009,7.6,283748,507,129,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2009-11-20
+tt1152836,Public Enemies,2009,7.0,275842,639,140,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2009-07-01
+tt0119008,Donnie Brasco,1997,7.7,269135,283,127,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,1997-02-28
+tt1091191,Lone Survivor,2013,7.5,260009,491,121,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2014-01-10
+tt0443272,Lincoln,2012,7.3,239112,794,150,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2012-11-16
+tt0221027,Blow,2001,7.6,235138,454,124,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2001-04-06
+tt0824747,Changeling,2008,7.7,232041,432,141,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2008-10-31
+tt1950186,Ford v Ferrari,2019,8.1,232004,1265,152,PG-13,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2019-11-15
+tt0072890,Dog Day Afternoon,1975,8.0,229265,321,125,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,1975-12-25
+tt0358273,Walk the Line,2005,7.8,227982,897,136,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2005-11-18
+tt3263904,Sully,2016,7.4,226801,477,96,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2016-09-09
+tt1485796,The Greatest Showman,2017,7.6,222573,1796,105,PG,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2017-12-20
+tt0083987,Gandhi,1982,8.0,214287,298,191,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1983-02-25
+tt0080678,The Elephant Man,1980,8.1,212720,416,124,PG,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,1980-10-10
+tt1220719,Ip Man,2008,8.0,206556,210,106,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2008-12-12
+tt3741834,Lion,2016,8.0,204274,546,118,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2017-01-06
+tt7349662,BlacKkKlansman,2018,7.5,199225,841,135,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2018-08-10
+tt0308644,Finding Neverland,2004,7.7,195635,656,106,PG,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2004-12-17
+tt0210945,Remember the Titans,2000,7.8,193009,452,113,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2000-09-29
+tt2719848,Everest,2015,7.1,191623,335,121,PG-13,Action; Adventure; Biography; ,"['Action', 'Adventure', 'Biography']",Action,3,2015-09-25
+tt4846340,Hidden Figures,2016,7.8,191159,500,127,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2017-01-06
+tt1398426,Straight Outta Compton,2015,7.9,174973,385,147,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2015-08-14
+tt0352248,Cinderella Man,2005,8.0,172730,595,144,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2005-06-03
+tt0418763,Jarhead,2005,7.0,172053,695,125,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2005-11-04
+tt0455590,The Last King of Scotland,2006,7.7,172012,371,123,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2007-01-19
+tt5580036,"I, Tonya",2017,7.5,170713,472,119,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2018-01-19
+tt2005151,War Dogs,2016,7.1,170314,215,114,R,Biography; Comedy; Crime; ,"['Biography', 'Comedy', 'Crime']",Biography,3,2016-08-19
+tt0195685,Erin Brockovich,2000,7.3,169430,525,131,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2000-03-17
+tt0443680,The Assassination of Jesse James by the Coward Robert Ford,2007,7.5,164772,466,160,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2007-10-19
+tt1355683,Black Mass,2015,6.9,163703,335,123,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2015-09-18
+tt4555426,Darkest Hour,2017,7.4,163237,629,125,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2017-12-22
+tt0109707,Ed Wood,1994,7.8,162359,460,127,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,1994-10-07
+tt1013753,Milk,2008,7.5,161721,310,128,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2009-01-30
+tt5083738,The Favourite,2018,7.5,160787,1196,119,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2018-12-21
+tt0346491,Alexander,2004,5.6,159847,1430,175,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2004-11-24
+tt0172493,"Girl, Interrupted",1999,7.3,159130,418,127,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2000-01-14
+tt0810819,The Danish Girl,2015,7.1,158324,289,119,R,Biography; Drama; Romance; ,"['Biography', 'Drama', 'Romance']",Biography,3,2016-01-22
+tt0140352,The Insider,1999,7.8,156188,546,157,R,Biography; Drama; Thriller; ,"['Biography', 'Drama', 'Thriller']",Biography,3,1999-11-05
+tt1213641,First Man,2018,7.3,155735,1305,141,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2018-10-12
+tt3569230,Legend,2015,6.9,152203,266,132,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2015-11-20
+tt3532216,American Made,2017,7.2,151699,332,115,R,Action; Biography; Comedy; ,"['Action', 'Biography', 'Comedy']",Action,3,2017-09-29
+tt0107207,In the Name of the Father,1993,8.1,151362,184,133,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,1994-02-25
+tt2080374,Steve Jobs,2015,7.2,149109,409,122,R,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2015-10-23
+tt2140373,Saving Mr. Banks,2013,7.5,148154,354,125,PG-13,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2013-12-20
+tt1057500,Invictus,2009,7.3,146805,277,134,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2009-12-11
+tt5074352,Dangal,2016,8.4,144657,385,161,Not Rated,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,2016-12-21
+tt1809398,Unbroken,2014,7.2,141388,429,137,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2014-12-25
+tt0350258,Ray,2004,7.7,135305,460,152,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2004-10-29
+tt0340855,Monster,2003,7.3,131859,568,109,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2004-01-30
+tt1100089,Foxcatcher,2014,7.0,131687,335,134,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2015-01-16
+tt3521126,The Disaster Artist,2017,7.4,131444,395,104,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,2017-12-08
+tt4209788,Molly's Game,2017,7.4,130955,356,140,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2018-01-05
+tt3774114,Snowden,2016,7.3,130626,240,134,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2016-09-16
+tt2446980,Joy,2015,6.6,124767,328,124,PG-13,Biography; Drama; ,"['Biography', 'Drama']",Biography,2,2015-12-25
+tt0120102,Seven Years in Tibet,1997,7.1,123376,147,136,PG-13,Adventure; Biography; Drama; ,"['Adventure', 'Biography', 'Drama']",Adventure,3,1997-10-10
+tt0093105,"Good Morning, Vietnam",1987,7.3,122643,155,121,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,1988-01-15
+tt0379725,Capote,2005,7.3,122624,448,114,R,Biography; Crime; Drama; ,"['Biography', 'Crime', 'Drama']",Biography,3,2006-02-03
+tt0393162,Coach Carter,2005,7.3,122245,237,136,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2005-01-14
+tt0108358,Tombstone,1993,7.8,122041,502,130,R,Action; Biography; Drama; ,"['Action', 'Biography', 'Drama']",Action,3,1993-12-25
+tt0125664,Man on the Moon,1999,7.4,121652,572,118,R,Biography; Comedy; Drama; ,"['Biography', 'Comedy', 'Drama']",Biography,3,1999-12-22
+tt2066051,Rocketman,2019,7.3,120434,944,121,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2019-05-31
+tt0120382,The Truman Show,1998,8.1,901368,1152,103,PG,Comedy; ,['Comedy'],Comedy,1,1998-06-05
+tt0208092,Snatch,2000,8.3,761777,837,102,R,Comedy; ,['Comedy'],Comedy,1,2001-01-19
+tt0118715,The Big Lebowski,1998,8.1,706193,1225,117,R,Comedy; ,['Comedy'],Comedy,1,1998-03-06
+tt1119646,The Hangover,2009,7.7,702442,718,100,R,Comedy; ,['Comedy'],Comedy,1,2009-06-05
+tt0211915,Amélie,2001,8.3,686825,1481,122,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2002-02-08
+tt1045658,Silver Linings Playbook,2012,7.7,648078,836,122,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2012-12-25
+tt0118799,Life Is Beautiful,1997,8.6,600633,1318,116,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1999-02-12
+tt0107048,Groundhog Day,1993,8.0,566305,769,101,PG,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1993-02-12
+tt2562232,Birdman or (The Unexpected Virtue of Ignorance),2014,7.7,561924,1379,119,R,Comedy; ,['Comedy'],Comedy,1,2014-11-14
+tt1637725,Ted,2012,6.9,559723,658,106,R,Comedy; ,['Comedy'],Comedy,1,2012-06-29
+tt0829482,Superbad,2007,7.6,508483,655,113,R,Comedy; ,['Comedy'],Comedy,1,2007-08-17
+tt1156398,Zombieland,2009,7.6,507445,712,88,R,Comedy; ,['Comedy'],Comedy,1,2009-10-02
+tt0365748,Shaun of the Dead,2004,7.9,499316,971,99,R,Comedy; ,['Comedy'],Comedy,1,2004-09-24
+tt0071853,Monty Python and the Holy Grail,1975,8.2,488567,774,91,PG,Comedy; ,['Comedy'],Comedy,1,1979-12-06
+tt7131622,Once Upon a Time... in Hollywood,2019,7.7,488535,5064,161,R,Comedy; ,['Comedy'],Comedy,1,2019-07-26
+tt3783958,La La Land,2016,8.0,483017,1774,128,PG-13,Comedy; ,['Comedy'],Comedy,1,2016-12-25
+tt0467406,Juno,2007,7.4,481757,925,96,PG-13,Comedy; ,['Comedy'],Comedy,1,2007-12-25
+tt0144084,American Psycho,2000,7.6,468059,1258,101,R,Comedy; ,['Comedy'],Comedy,1,2000-04-14
+tt0096874,Back to the Future Part II,1989,7.8,462540,414,108,PG,Comedy; ,['Comedy'],Comedy,1,1989-11-22
+tt1022603,500 Days of Summer,2009,7.7,461834,601,95,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2009-08-07
+tt1570728,"Crazy, Stupid, Love",2011,7.4,460023,370,118,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-07-29
+tt5463162,Deadpool 2,2018,7.7,455361,1310,119,R,Comedy; ,['Comedy'],Comedy,1,2018-05-18
+tt1411697,The Hangover Part II,2011,6.4,453967,421,102,R,Comedy; ,['Comedy'],Comedy,1,2011-05-26
+tt0425112,Hot Fuzz,2007,7.8,450327,811,121,R,Comedy; ,['Comedy'],Comedy,1,2007-04-20
+tt0099785,Home Alone,1990,7.6,448866,422,103,PG,Comedy; ,['Comedy'],Comedy,1,1990-11-16
+tt6751668,Parasite,2019,8.6,443010,2601,132,R,Comedy; ,['Comedy'],Comedy,1,2019-11-08
+tt0356910,Mr. & Mrs. Smith,2005,6.5,439831,829,120,PG-13,Comedy; ,['Comedy'],Comedy,1,2005-06-10
+tt0449059,Little Miss Sunshine,2006,7.8,429216,950,101,R,Comedy; ,['Comedy'],Comedy,1,2006-08-18
+tt1499658,Horrible Bosses,2011,6.9,413945,439,98,R,Comedy; ,['Comedy'],Comedy,1,2011-07-08
+tt0314331,Love Actually,2003,7.6,413896,1136,135,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2003-11-14
+tt0367594,Charlie and the Chocolate Factory,2005,6.6,413780,1436,115,PG,Comedy; ,['Comedy'],Comedy,1,2005-07-15
+tt0097165,Dead Poets Society,1989,8.1,407018,626,128,PG,Comedy; ,['Comedy'],Comedy,1,1989-06-09
+tt5027774,"Three Billboards Outside Ebbing, Missouri",2017,8.2,404557,1169,115,R,Comedy; ,['Comedy'],Comedy,1,2017-12-01
+tt0335266,Lost in Translation,2003,7.7,399082,1974,102,R,Comedy; ,['Comedy'],Comedy,1,2003-10-03
+tt0362227,The Terminal,2004,7.4,393039,702,128,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2004-06-18
+tt1723121,We're the Millers,2013,7.0,392433,381,110,R,Comedy; ,['Comedy'],Comedy,1,2013-08-07
+tt0099088,Back to the Future Part III,1990,7.4,389841,335,118,PG,Comedy; ,['Comedy'],Comedy,1,1990-05-25
+tt0405422,The 40-Year-Old Virgin,2005,7.1,384072,587,116,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2005-08-19
+tt0780536,In Bruges,2008,7.9,381466,628,107,R,Comedy; ,['Comedy'],Comedy,1,2008-02-29
+tt1605783,Midnight in Paris,2011,7.7,376680,609,94,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-06-10
+tt1245492,This Is the End,2013,6.6,376448,760,107,R,Comedy; ,['Comedy'],Comedy,1,2013-06-12
+tt0942385,Tropic Thunder,2008,7.0,369967,630,107,R,Comedy; ,['Comedy'],Comedy,1,2008-08-13
+tt0163651,American Pie,1999,7.0,368148,807,95,R,Comedy; ,['Comedy'],Comedy,1,1999-07-09
+tt0446029,Scott Pilgrim vs. the World,2010,7.5,364286,663,112,PG-13,Comedy; ,['Comedy'],Comedy,1,2010-08-13
+tt0315327,Bruce Almighty,2003,6.8,363633,640,101,PG-13,Comedy; ,['Comedy'],Comedy,1,2003-05-23
+tt0458352,The Devil Wears Prada,2006,6.9,359709,705,109,PG-13,Comedy; ,['Comedy'],Comedy,1,2006-06-30
+tt0079470,Monty Python's Life of Brian,1979,8.1,356682,392,94,R,Comedy; ,['Comedy'],Comedy,1,1979-08-17
+tt1282140,Easy A,2010,7.0,348230,339,92,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2010-09-17
+tt0109686,Dumb and Dumber,1994,7.3,345454,473,107,PG-13,Comedy; ,['Comedy'],Comedy,1,1994-12-16
+tt0443453,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,2006,7.3,345007,1247,84,R,Comedy; ,['Comedy'],Comedy,1,2006-11-03
+tt0087332,Ghostbusters,1984,7.8,344766,555,105,PG,Comedy; ,['Comedy'],Comedy,1,1984-06-08
+tt0088847,The Breakfast Club,1985,7.9,344566,871,97,R,Comedy; ,['Comedy'],Comedy,1,1985-02-15
+tt0478311,Knocked Up,2007,6.9,343791,584,129,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2007-06-01
+tt8946378,Knives Out,2019,7.9,342300,2175,130,PG-13,Comedy; ,['Comedy'],Comedy,1,2019-11-27
+tt2294449,22 Jump Street,2014,7.0,337286,355,112,R,Comedy; ,['Comedy'],Comedy,1,2014-06-13
+tt0110475,The Mask,1994,6.9,335546,278,101,PG-13,Comedy; ,['Comedy'],Comedy,1,1994-07-29
+tt0120912,Men in Black II,2002,6.2,335021,647,88,PG-13,Comedy; ,['Comedy'],Comedy,1,2002-07-03
+tt1632708,Friends with Benefits,2011,6.5,332366,238,109,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-07-22
+tt1187043,3 Idiots,2009,8.4,328127,622,170,PG-13,Comedy; ,['Comedy'],Comedy,1,2009-12-25
+tt1068680,Yes Man,2008,6.8,327950,302,104,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2008-12-19
+tt1409024,Men in Black 3,2012,6.8,327676,388,106,PG-13,Comedy; ,['Comedy'],Comedy,1,2012-05-25
+tt0396269,Wedding Crashers,2005,6.9,326314,667,119,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2005-07-15
+tt0357413,Anchorman: The Legend of Ron Burgundy,2004,7.2,322831,618,94,PG-13,Comedy; ,['Comedy'],Comedy,1,2004-07-09
+tt0110912,Pulp Fiction,1994,8.9,1767445,3014,154,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1994-10-14
+tt0068646,The Godfather,1972,9.2,1558661,3886,175,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1972-03-24
+tt0114369,Se7en,1995,8.6,1390231,1460,127,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,1995-09-22
+tt0102926,The Silence of the Lambs,1991,8.6,1223451,1298,118,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1991-02-14
+tt0407887,The Departed,2006,8.5,1150788,2313,151,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2006-10-06
+tt0120689,The Green Mile,1999,8.6,1101707,1725,189,R,Crime; Drama; Fantasy; ,"['Crime', 'Drama', 'Fantasy']",Crime,3,1999-12-10
+tt0071562,The Godfather: Part II,1974,9.0,1089268,1007,202,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1974-12-18
+tt0114814,The Usual Suspects,1995,8.5,961807,1355,106,R,Crime; Mystery; Thriller; ,"['Crime', 'Mystery', 'Thriller']",Crime,3,1995-08-16
+tt0105236,Reservoir Dogs,1992,8.3,889962,1145,99,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1992-09-02
+tt0477348,No Country for Old Men,2007,8.1,823136,1824,122,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2007-11-21
+tt7286456,Joker,2019,8.5,822351,10279,122,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2019-10-04
+tt0066921,A Clockwork Orange,1971,8.3,735080,1553,136,R,Crime; Drama; Sci-Fi; ,"['Crime', 'Drama', 'Sci-Fi']",Crime,3,1972-02-02
+tt0401792,Sin City,2005,8.0,731417,1777,124,R,Crime; Thriller; ,"['Crime', 'Thriller']",Crime,2,2005-04-01
+tt0086250,Scarface,1983,8.3,715023,1029,170,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1983-12-09
+tt0075314,Taxi Driver,1976,8.3,696631,1161,114,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1976-02-09
+tt0317248,City of God,2002,8.6,681961,997,130,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,2004-02-13
+tt0116282,Fargo,1996,8.1,596614,947,98,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1996-04-05
+tt1670345,Now You See Me,2013,7.3,581643,760,115,PG-13,Crime; Mystery; Thriller; ,"['Crime', 'Mystery', 'Thriller']",Crime,3,2013-05-31
+tt1392214,Prisoners,2013,8.1,575034,901,153,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2013-09-20
+tt0113277,Heat,1995,8.2,557728,1074,170,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1995-12-15
+tt0780504,Drive,2011,7.8,554576,1521,100,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,2011-09-16
+tt0119488,L.A. Confidential,1997,8.2,518387,710,138,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,1997-09-19
+tt0240772,Ocean's Eleven,2001,7.7,500919,932,116,PG-13,Crime; Thriller; ,"['Crime', 'Thriller']",Crime,2,2001-12-07
+tt3460252,The Hateful Eight,2015,7.8,493749,1430,168,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2015-12-30
+tt0112641,Casino,1995,8.2,448054,623,178,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1995-11-22
+tt2872718,Nightcrawler,2014,7.9,443660,758,117,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2014-10-31
+tt1800241,American Hustle,2013,7.2,438125,817,138,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,2013-12-20
+tt0443706,Zodiac,2007,7.7,436889,768,157,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2007-03-02
+tt3890160,Baby Driver,2017,7.6,416067,1096,113,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2017-06-28
+tt0375679,Crash,2004,7.7,413651,1693,112,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2005-05-06
+tt0327056,Mystic River,2003,7.9,408998,1036,138,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2003-10-15
+tt1568346,The Girl with the Dragon Tattoo,2011,7.8,408988,723,158,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2011-12-21
+tt0217505,Gangs of New York,2002,7.5,394333,1216,167,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,2002-12-20
+tt0139654,Training Day,2001,7.7,378412,711,122,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2001-10-05
+tt3397884,Sicario,2015,7.6,356962,719,121,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2015-10-02
+tt0493464,Wanted,2008,6.7,353620,779,110,R,Action; Crime; Fantasy; ,"['Action', 'Crime', 'Fantasy']",Action,3,2008-06-27
+tt0369339,Collateral,2004,7.5,350028,890,120,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2004-08-06
+tt0349903,Ocean's Twelve,2004,6.5,349317,669,125,PG-13,Crime; Thriller; ,"['Crime', 'Thriller']",Crime,2,2004-12-10
+tt0099674,The Godfather: Part III,1990,7.6,347672,652,162,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1990-12-25
+tt4425200,John Wick: Chapter 2,2017,7.5,347579,860,122,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2017-02-10
+tt1596343,Fast Five,2011,7.3,345450,424,130,PG-13,Action; Adventure; Crime; ,"['Action', 'Adventure', 'Crime']",Action,3,2011-04-29
+tt0119094,Face_Off,1997,7.3,341451,609,138,R,Action; Crime; Sci-Fi; ,"['Action', 'Crime', 'Sci-Fi']",Action,3,1997-06-27
+tt0840361,The Town,2010,7.5,341073,498,125,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,2010-09-17
+tt0232500,The Fast and the Furious,2001,6.8,338840,1059,106,PG-13,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2001-06-22
+tt0317740,The Italian Job,2003,7.0,335566,519,111,PG-13,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2003-05-30
+tt0454848,Inside Man,2006,7.6,329265,718,129,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2006-03-24
+tt0455944,The Equalizer,2014,7.2,322279,613,132,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2014-09-26
+tt0328107,Man on Fire,2004,7.7,322039,762,146,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2004-04-23
+tt0496806,Ocean's Thirteen,2007,6.9,312811,316,122,PG-13,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2007-06-08
+tt0910936,Pineapple Express,2008,6.9,308854,425,111,R,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,2008-08-06
+tt0119396,Jackie Brown,1997,7.5,306877,536,154,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1997-12-25
+tt0887883,Burn After Reading,2008,7.0,301462,622,96,R,Comedy; Crime; Drama; ,"['Comedy', 'Crime', 'Drama']",Comedy,3,2008-09-12
+tt0087843,Once Upon a Time in America,1984,8.4,299388,676,229,R,Crime; Drama; ,"['Crime', 'Drama']",Crime,2,1984-06-01
+tt0425210,Lucky Number Slevin,2006,7.7,295883,548,110,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2006-04-07
+tt0104431,Home Alone 2: Lost in New York,1992,6.8,289368,261,120,PG,Adventure; Comedy; Crime; ,"['Adventure', 'Comedy', 'Crime']",Adventure,3,1992-11-20
+tt0399295,Lord of War,2005,7.6,288544,482,122,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2005-09-16
+tt0453467,Deja Vu,2006,7.0,287330,458,126,PG-13,Action; Crime; Sci-Fi; ,"['Action', 'Crime', 'Sci-Fi']",Action,3,2006-11-22
+tt1951261,The Hangover Part III,2013,5.8,286488,318,100,R,Comedy; Crime; ,"['Comedy', 'Crime']",Comedy,2,2013-05-23
+tt1245526,RED,2010,7.0,282437,362,111,PG-13,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,2010-10-15
+tt0381849,3:10 to Yuma,2007,7.7,281948,625,122,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2007-09-07
+tt0293662,The Transporter,2002,6.8,279981,473,92,PG-13,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,2002-10-11
+tt0116367,From Dusk Till Dawn,1996,7.2,279303,664,108,R,Action; Crime; Horror; ,"['Action', 'Crime', 'Horror']",Action,3,1996-01-19
+tt0190590,"O Brother, Where Art Thou?",2000,7.7,277150,905,107,PG-13,Adventure; Comedy; Crime; ,"['Adventure', 'Comedy', 'Crime']",Adventure,3,2001-02-02
+tt0094226,The Untouchables,1987,7.9,270871,496,119,R,Crime; Drama; Thriller; ,"['Crime', 'Drama', 'Thriller']",Crime,3,1987-06-03
+tt0118880,Con Air,1997,6.9,269643,398,115,R,Action; Crime; Thriller; ,"['Action', 'Crime', 'Thriller']",Action,3,1997-06-06
+tt0103776,Batman Returns,1992,7.0,267156,679,126,PG-13,Action; Crime; Fantasy; ,"['Action', 'Crime', 'Fantasy']",Action,3,1992-06-19
+tt3799694,The Nice Guys,2016,7.4,266631,450,116,R,Action; Comedy; Crime; ,"['Action', 'Comedy', 'Crime']",Action,3,2016-05-20
+tt1197624,Law Abiding Citizen,2009,7.4,265136,548,109,R,Action; Crime; Drama; ,"['Action', 'Crime', 'Drama']",Action,3,2009-10-16
+tt0111161,The Shawshank Redemption,1994,9.3,2258845,8022,142,R,Drama; ,['Drama'],Drama,1,1994-10-14
+tt0137523,Fight Club,1999,8.8,1794454,3719,139,R,Drama; ,['Drama'],Drama,1,1999-10-15
+tt0109830,Forrest Gump,1994,8.8,1741097,2354,142,PG-13,Drama; Romance; ,"['Drama', 'Romance']",Drama,2,1994-07-06
+tt1853728,Django Unchained,2012,8.4,1307059,1525,165,R,Drama; Western; ,"['Drama', 'Western']",Drama,2,2012-12-25
+tt0120815,Saving Private Ryan,1998,8.6,1194194,2588,169,R,Drama; War; ,"['Drama', 'War']",Drama,2,1998-07-24
+tt0482571,The Prestige,2006,8.5,1144513,1394,130,PG-13,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2006-10-20
+tt0169547,American Beauty,1999,8.3,1043085,2891,122,R,Drama; ,['Drama'],Drama,1,1999-10-01
+tt0120338,Titanic,1997,7.8,1017237,2863,194,PG-13,Drama; Romance; ,"['Drama', 'Romance']",Drama,2,1997-12-19
+tt0120586,American History X,1998,8.5,1007450,1577,119,R,Drama; ,['Drama'],Drama,1,1998-11-20
+tt0167404,The Sixth Sense,1999,8.1,888920,2223,107,PG-13,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,1999-08-06
+tt0073486,One Flew Over the Cuckoo's Nest,1975,8.7,884818,967,133,R,Drama; ,['Drama'],Drama,1,1975-11-19
+tt0338013,Eternal Sunshine of the Spotless Mind,2004,8.3,882495,1800,108,R,Drama; Romance; Sci-Fi; ,"['Drama', 'Romance', 'Sci-Fi']",Drama,3,2004-03-19
+tt0081505,The Shining,1980,8.4,860290,1805,146,R,Drama; Horror; ,"['Drama', 'Horror']",Drama,2,1980-06-13
+tt0119217,Good Will Hunting,1997,8.3,830139,887,126,R,Drama; Romance; ,"['Drama', 'Romance']",Drama,2,1998-01-09
+tt2267998,Gone Girl,2014,8.1,825450,1449,149,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2014-10-03
+tt1010048,Slumdog Millionaire,2008,8.0,782675,1126,120,R,Drama; Romance; ,"['Drama', 'Romance']",Drama,2,2008-12-25
+tt1454468,Gravity,2013,7.7,751305,2090,91,PG-13,Drama; Sci-Fi; Thriller; ,"['Drama', 'Sci-Fi', 'Thriller']",Drama,3,2013-10-04
+tt0180093,Requiem for a Dream,2000,8.3,743198,2115,102,R,Drama; ,['Drama'],Drama,1,2000-12-15
+tt0246578,Donnie Darko,2001,8.0,724910,2276,113,R,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2002-01-30
+tt1205489,Gran Torino,2008,8.1,703113,990,116,R,Drama; ,['Drama'],Drama,1,2009-01-09
+tt2582802,Whiplash,2014,8.5,683157,1195,106,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,2015-02-20
+tt0947798,Black Swan,2010,8.0,682523,1273,108,R,Drama; Thriller; ,"['Drama', 'Thriller']",Drama,2,2010-12-17
+tt0093058,Full Metal Jacket,1987,8.3,652861,844,116,R,Drama; War; ,"['Drama', 'War']",Drama,2,1987-07-10
+tt0117951,Trainspotting,1996,8.1,620080,623,93,R,Drama; ,['Drama'],Drama,1,1996-08-09
+tt0405159,Million Dollar Baby,2004,8.1,618903,1219,132,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2005-01-28
+tt0457430,Pan's Labyrinth,2006,8.2,603269,1271,118,R,Drama; Fantasy; War; ,"['Drama', 'Fantasy', 'War']",Drama,3,2007-01-19
+tt0078788,Apocalypse Now,1979,8.4,585989,1183,147,R,Drama; Mystery; War; ,"['Drama', 'Mystery', 'War']",Drama,3,1979-08-15
+tt0421715,The Curious Case of Benjamin Button,2008,7.8,572217,948,166,PG-13,Drama; Fantasy; Romance; ,"['Drama', 'Fantasy', 'Romance']",Drama,3,2008-12-25
+tt2543164,Arrival,2016,7.9,569760,1861,116,PG-13,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2016-11-11
+tt1798709,Her,2013,8.0,518282,1060,126,R,Drama; Romance; Sci-Fi; ,"['Drama', 'Romance', 'Sci-Fi']",Drama,3,2014-01-10
+tt0162222,Cast Away,2000,7.8,506369,1180,143,PG-13,Adventure; Drama; Romance; ,"['Adventure', 'Drama', 'Romance']",Adventure,3,2000-12-22
+tt0332280,The Notebook,2004,7.8,503872,1256,123,PG-13,Drama; Romance; ,"['Drama', 'Romance']",Drama,2,2004-06-25
+tt0075148,Rocky,1976,8.1,502746,694,120,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1976-12-03
+tt0469494,There Will Be Blood,2007,8.2,498312,1318,158,R,Drama; ,['Drama'],Drama,1,2008-01-25
+tt0450259,Blood Diamond,2006,8.0,486637,725,143,R,Adventure; Drama; Thriller; ,"['Adventure', 'Drama', 'Thriller']",Adventure,3,2006-12-08
+tt1298650,Pirates of the Caribbean: On Stranger Tides,2011,6.6,469914,535,136,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2011-05-20
+tt2310332,The Hobbit: The Battle of the Five Armies,2014,7.4,461617,883,144,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2014-12-17
+tt0926084,Harry Potter and the Deathly Hallows: Part 1,2010,7.7,459135,691,146,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2010-11-19
+tt0099487,Edward Scissorhands,1990,7.9,434894,656,105,PG-13,Drama; Fantasy; Romance; ,"['Drama', 'Fantasy', 'Romance']",Drama,3,1990-12-14
+tt0448157,Hancock,2008,6.4,434772,654,92,PG-13,Action; Fantasy; ,"['Action', 'Fantasy']",Action,2,2008-07-02
+tt1099212,Twilight,2008,5.2,413276,1654,122,PG-13,Drama; Fantasy; Romance; ,"['Drama', 'Fantasy', 'Romance']",Drama,3,2008-11-21
+tt0319061,Big Fish,2003,8.0,406042,874,125,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2004-01-09
+tt3183660,Fantastic Beasts and Where to Find Them,2016,7.3,395319,820,132,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2016-11-18
+tt0120616,The Mummy,1999,7.0,382315,1056,124,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,1999-05-07
+tt0093779,The Princess Bride,1987,8.1,382045,844,98,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,1987-10-09
+tt1014759,Alice in Wonderland,2010,6.4,374817,790,108,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2010-03-05
+tt0974015,Justice League,2017,6.4,367091,1997,120,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2017-11-17
+tt0363771,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",2005,6.9,356904,1506,143,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2005-12-09
+tt5580390,The Shape of Water,2017,7.3,353658,1589,123,R,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2017-12-22
+tt0443543,The Illusionist,2006,7.6,349169,687,110,PG-13,Drama; Fantasy; History; ,"['Drama', 'Fantasy', 'History']",Drama,3,2006-09-01
+tt1477834,Aquaman,2018,7.0,341895,3845,143,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2018-12-21
+tt2527338,Star Wars: Episode IX - The Rise of Skywalker,2019,6.7,337831,7460,142,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2019-12-20
+tt0162661,Sleepy Hollow,1999,7.3,320861,1023,105,R,Fantasy; Horror; Mystery; ,"['Fantasy', 'Horror', 'Mystery']",Fantasy,3,1999-11-19
+tt0120667,Fantastic Four,2005,5.7,306644,1024,106,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2005-07-08
+tt0120601,Being John Malkovich,1999,7.7,301714,878,113,R,Comedy; Drama; Fantasy; ,"['Comedy', 'Drama', 'Fantasy']",Comedy,3,1999-12-03
+tt0167190,Hellboy,2004,6.8,301510,649,122,PG-13,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2004-04-02
+tt0389860,Click,2006,6.4,298607,774,107,PG-13,Comedy; Drama; Fantasy; ,"['Comedy', 'Drama', 'Fantasy']",Comedy,3,2006-06-23
+tt0970179,Hugo,2011,7.5,297933,749,126,PG,Drama; Fantasy; ,"['Drama', 'Fantasy']",Drama,2,2011-11-23
+tt0360486,Constantine,2005,7.0,296689,1074,121,R,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2005-02-18
+tt0209163,The Mummy Returns,2001,6.3,295189,924,130,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2001-05-04
+tt2194499,About Time,2013,7.8,287246,640,123,R,Comedy; Drama; Fantasy; ,"['Comedy', 'Drama', 'Fantasy']",Comedy,3,2013-11-08
+tt0359950,The Secret Life of Walter Mitty,2013,7.3,286991,648,114,PG,Comedy; Drama; Fantasy; ,"['Comedy', 'Drama', 'Fantasy']",Comedy,3,2013-12-25
+tt0119528,Liar Liar,1997,6.9,274268,290,86,PG-13,Comedy; Fantasy; ,"['Comedy', 'Fantasy']",Comedy,2,1997-03-21
+tt0473075,Prince of Persia: The Sands of Time,2010,6.6,266583,478,116,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2010-05-28
+tt0800320,Clash of the Titans,2010,5.8,265931,679,106,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2010-04-02
+tt2771200,Beauty and the Beast,2017,7.1,261369,1122,129,PG,Fantasy; ,['Fantasy'],Fantasy,1,2017-03-17
+tt3731562,Kong: Skull Island,2017,6.6,259866,945,118,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2017-03-10
+tt1259571,The Twilight Saga: New Moon,2009,4.7,258910,955,130,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2009-11-20
+tt1790809,Pirates of the Caribbean: Dead Men Tell No Tales,2017,6.6,251787,652,129,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2017-05-26
+tt0411477,Hellboy II: The Golden Army,2008,7.0,251482,375,120,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2008-07-11
+tt0450385,1408,2007,6.8,250909,635,104,PG-13,Fantasy; Horror; Mystery; ,"['Fantasy', 'Horror', 'Mystery']",Fantasy,3,2007-06-22
+tt0094721,Beetlejuice,1988,7.5,249689,372,92,PG,Comedy; Fantasy; ,"['Comedy', 'Fantasy']",Comedy,2,1988-03-30
+tt0190332,"Crouching Tiger, Hidden Dragon",2000,7.8,248473,1670,120,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2001-01-12
+tt0486655,Stardust,2007,7.6,248403,554,127,PG-13,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2007-08-10
+tt0320691,Underworld,2003,7.0,248222,833,121,R,Action; Fantasy; Thriller; ,"['Action', 'Fantasy', 'Thriller']",Action,3,2003-09-19
+tt0486576,Fantastic 4: Rise of the Silver Surfer,2007,5.6,246767,468,92,PG,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2007-06-15
+tt0259711,Vanilla Sky,2001,6.9,243020,1293,136,R,Fantasy; Mystery; Romance; ,"['Fantasy', 'Mystery', 'Romance']",Fantasy,3,2001-12-14
+tt1077368,Dark Shadows,2012,6.2,241602,528,113,PG-13,Comedy; Fantasy; Horror; ,"['Comedy', 'Fantasy', 'Horror']",Comedy,3,2012-05-11
+tt0338526,Van Helsing,2004,6.1,239437,1373,131,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2004-05-07
+tt0803096,Warcraft,2016,6.8,236996,983,123,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2016-06-10
+tt0978764,Sucker Punch,2011,6.0,226057,1022,110,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2011-03-25
+tt1673434,The Twilight Saga: Breaking Dawn - Part 2,2012,5.5,224813,374,115,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2012-11-16
+tt1325004,The Twilight Saga: Eclipse,2010,5.0,221496,529,124,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2010-06-30
+tt1731141,Ender's Game,2013,6.6,219357,626,114,PG-13,Action; Adventure; Fantasy; ,"['Action', 'Adventure', 'Fantasy']",Action,3,2013-11-01
+tt0259324,Ghost Rider,2007,5.2,218901,724,110,PG-13,Action; Fantasy; Thriller; ,"['Action', 'Fantasy', 'Thriller']",Action,3,2007-02-16
+tt1324999,The Twilight Saga: Breaking Dawn - Part 1,2011,4.9,217803,477,117,PG-13,Adventure; Drama; Fantasy; ,"['Adventure', 'Drama', 'Fantasy']",Adventure,3,2011-11-18
+tt0420223,Stranger Than Fiction,2006,7.5,214510,595,113,PG-13,Comedy; Drama; Fantasy; ,"['Comedy', 'Drama', 'Fantasy']",Comedy,3,2006-11-10
+tt0319343,Elf,2003,6.9,210512,501,97,PG,Comedy; Fantasy; ,"['Comedy', 'Fantasy']",Comedy,2,2003-11-07
+tt6139732,Aladdin,2019,7.0,210488,2281,128,PG,Adventure; Fantasy; ,"['Adventure', 'Fantasy']",Adventure,2,2019-05-24
+tt0485947,Mr. Nobody,2009,7.8,210310,391,141,R,Drama; Fantasy; Romance; ,"['Drama', 'Fantasy', 'Romance']",Drama,3,2013-09-26
+tt0332452,Troy,2004,7.2,476975,1789,163,R,Drama; History; ,"['Drama', 'History']",Drama,2,2004-05-14
+tt0265086,Black Hawk Down,2001,7.7,356185,1153,144,R,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2002-01-18
+tt0213149,Pearl Harbor,2001,6.2,305503,2022,183,PG-13,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2001-05-25
+tt1707386,Les Misérables,2012,7.6,300852,968,158,PG-13,Drama; History; ,"['Drama', 'History']",Drama,2,2012-12-25
+tt3682448,Bridge of Spies,2015,7.6,278999,465,142,PG-13,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2015-10-16
+tt1790885,Zero Dark Thirty,2012,7.4,264555,709,157,R,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2013-01-11
+tt0112384,Apollo 13,1995,7.6,260497,385,140,PG,Adventure; Drama; History; ,"['Adventure', 'Drama', 'History']",Adventure,3,1995-06-30
+tt0187393,The Patriot,2000,7.2,249168,1189,165,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2000-06-28
+tt0215750,Enemy at the Gates,2001,7.6,236660,706,131,R,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2001-03-16
+tt0478087,21,2008,6.8,224589,311,123,PG-13,Crime; Drama; History; ,"['Crime', 'Drama', 'History']",Crime,3,2008-03-28
+tt0985699,Valkyrie,2008,7.1,223620,468,121,PG-13,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2008-12-25
+tt0138097,Shakespeare in Love,1998,7.1,209979,780,123,R,Comedy; Drama; History; ,"['Comedy', 'Drama', 'History']",Comedy,3,1999-01-08
+tt0408306,Munich,2005,7.5,207019,856,164,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2006-01-06
+tt1649419,The Impossible,2012,7.6,190768,423,114,PG-13,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2013-01-04
+tt0299977,Hero,2002,7.9,171351,864,120,PG-13,Action; Adventure; History; ,"['Action', 'Adventure', 'History']",Action,3,2004-08-27
+tt1860357,Deepwater Horizon,2016,7.1,145401,281,107,PG-13,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2016-09-30
+tt0072684,Barry Lyndon,1975,8.1,143733,457,185,PG,Adventure; Drama; History; ,"['Adventure', 'Drama', 'History']",Adventure,3,1975-12-18
+tt0102138,JFK,1991,8.0,137425,485,189,R,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,1991-12-20
+tt0159365,Cold Mountain,2003,7.2,137401,696,154,R,Adventure; Drama; History; ,"['Adventure', 'Drama', 'History']",Adventure,3,2003-12-25
+tt1034303,Defiance,2008,7.2,135323,265,137,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2009-01-16
+tt0277434,We Were Soldiers,2002,7.2,127187,770,138,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2002-03-01
+tt2177771,The Monuments Men,2014,6.1,122173,443,118,PG-13,Comedy; Drama; History; ,"['Comedy', 'Drama', 'History']",Comedy,3,2014-02-07
+tt0097441,Glory,1989,7.8,117966,444,122,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1990-02-16
+tt0120657,The 13th Warrior,1999,6.6,114167,581,102,R,Action; Adventure; History; ,"['Action', 'Adventure', 'History']",Action,3,1999-08-27
+tt0092965,Empire of the Sun,1987,7.7,112275,342,153,PG,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,1987-12-25
+tt0405508,Rang De Basanti,2006,8.2,107678,361,167,Not Rated,Comedy; Drama; History; ,"['Comedy', 'Drama', 'History']",Comedy,3,2006-01-26
+tt1023114,The Way Back,2010,7.3,107455,202,133,PG-13,Adventure; Drama; History; ,"['Adventure', 'Drama', 'History']",Adventure,3,2011-01-21
+tt0445922,Across the Universe,2007,7.3,104638,549,133,PG-13,Drama; Fantasy; History; ,"['Drama', 'Fantasy', 'History']",Drama,3,2007-10-12
+tt0436697,The Queen,2006,7.3,101904,456,103,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2006-11-17
+tt0467200,The Other Boleyn Girl,2008,6.7,101416,272,115,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2008-02-29
+tt0870111,Frost_Nixon,2008,7.7,100750,265,122,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2009-01-23
+tt0074119,All the President's Men,1976,8.0,98972,243,138,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1976-04-09
+tt0422720,Marie Antoinette,2006,6.4,97923,666,123,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2006-10-20
+tt0343737,The Good Shepherd,2006,6.7,96881,509,167,R,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2006-12-22
+tt0475276,United 93,2006,7.5,96591,862,111,R,Drama; History; Sci-Fi; ,"['Drama', 'History', 'Sci-Fi']",Drama,3,2006-04-28
+tt0490215,Silence,2016,7.2,96094,431,161,R,Drama; History; ,"['Drama', 'History']",Drama,2,2017-01-13
+tt0433383,"Good Night, and Good Luck.",2005,7.4,92714,542,93,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2005-11-04
+tt0093389,The Last Emperor,1987,7.7,91046,170,163,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1988-04-15
+tt0127536,Elizabeth,1998,7.4,90737,431,124,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1999-02-19
+tt0095647,Mississippi Burning,1988,7.8,84598,209,128,R,Crime; Drama; History; ,"['Crime', 'Drama', 'History']",Crime,3,1989-01-27
+tt1020072,Selma,2014,7.5,83285,264,128,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2015-01-09
+tt0104797,Malcolm X,1992,7.7,82521,183,202,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1992-11-18
+tt0402399,The New World,2005,6.7,81466,721,135,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2006-01-20
+tt4686844,The Death of Stalin,2017,7.2,80253,327,107,R,Comedy; Drama; History; ,"['Comedy', 'Drama', 'History']",Comedy,3,2018-03-09
+tt1020558,Centurion,2010,6.4,76569,234,97,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2010-07-30
+tt0864761,The Duchess,2008,6.9,76558,157,110,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2008-10-10
+tt0469641,World Trade Center,2006,5.9,76405,580,129,PG-13,Drama; Fantasy; History; ,"['Drama', 'Fantasy', 'History']",Drama,3,2006-08-09
+tt7984766,The King,2019,7.2,76205,684,140,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2019-11-01
+tt1212428,The Lost City of Z,2016,6.6,75131,251,141,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2017-04-21
+tt1619029,Jackie,2016,6.7,70888,320,100,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2016-12-02
+tt3007512,The Water Diviner,2014,7.0,69915,223,111,R,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2015-04-17
+tt0118607,Amistad,1997,7.3,69328,240,155,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1997-12-25
+tt1149362,The White Ribbon,2009,7.8,66893,212,144,R,Drama; History; Mystery; ,"['Drama', 'History', 'Mystery']",Drama,3,2010-03-05
+tt0414055,Elizabeth: The Golden Age,2007,6.8,65530,237,114,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2007-10-12
+tt0329575,Seabiscuit,2003,7.3,65166,468,140,PG-13,Drama; History; Sport; ,"['Drama', 'History', 'Sport']",Drama,3,2003-07-25
+tt1014763,Child 44,2015,6.5,63768,267,137,R,Crime; Drama; History; ,"['Crime', 'Drama', 'History']",Crime,3,2016-05-09
+tt1413492,12 Strong,2018,6.6,63442,371,130,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2018-01-19
+tt0110932,Quiz Show,1994,7.5,63232,177,133,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1994-10-07
+tt2025690,The Finest Hours,2016,6.8,59961,199,117,PG-13,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2016-01-29
+tt0267626,K-19: The Widowmaker,2002,6.7,58258,291,138,PG-13,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2002-07-19
+tt0962736,The Young Victoria,2009,7.3,56451,108,105,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2010-01-08
+tt1783232,Conquest 1453,2012,6.7,56021,154,162,Not Rated,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2012-04-25
+tt0091530,The Mission,1986,7.4,54283,214,125,PG,Adventure; Drama; History; ,"['Adventure', 'Drama', 'History']",Adventure,3,1986-10-31
+tt0146309,Thirteen Days,2000,7.3,52807,337,145,PG-13,Drama; History; Thriller; ,"['Drama', 'History', 'Thriller']",Drama,3,2001-01-12
+tt2404425,Woman in Gold,2015,7.3,52175,191,109,PG-13,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2015-04-10
+tt2884018,Macbeth,2015,6.6,51643,219,113,R,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2015-12-11
+tt4387040,Airlift,2016,8.0,51394,208,130,Not Rated,Drama; History; ,"['Drama', 'History']",Drama,2,2016-01-22
+tt6924650,Midway,2019,6.7,50395,854,138,PG-13,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2019-11-08
+tt0075784,A Bridge Too Far,1977,7.4,50195,248,175,PG,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,1977-06-15
+tt0087553,The Killing Fields,1984,7.8,50036,206,141,R,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,1985-02-01
+tt1410063,The Flowers of War,2011,7.6,48360,162,146,R,Drama; History; Romance; ,"['Drama', 'History', 'Romance']",Drama,3,2011-12-16
+tt5461944,Hotel Mumbai,2018,7.6,47726,393,123,R,Action; Drama; History; ,"['Action', 'Drama', 'History']",Action,3,2019-03-29
+tt0349825,Miracle,2004,7.5,46453,315,135,PG,Biography; Drama; History; ,"['Biography', 'Drama', 'History']",Biography,3,2004-02-06
+tt5390504,Detroit,2017,7.3,45804,202,143,R,Crime; Drama; History; ,"['Crime', 'Drama', 'History']",Crime,3,2017-08-04
+tt6543652,Cold War,2018,7.6,44833,195,89,R,Drama; History; Music; ,"['Drama', 'History', 'Music']",Drama,3,2018-06-08
+tt0078748,Alien,1979,8.4,762793,1423,117,R,Horror; Sci-Fi; ,"['Horror', 'Sci-Fi']",Horror,2,1979-06-22
+tt5052448,Get Out,2017,7.7,465577,1566,104,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2017-02-24
+tt1396484,It,2017,7.3,437678,1914,135,R,Horror; ,['Horror'],Horror,1,2017-09-08
+tt1457767,The Conjuring,2013,7.5,427067,1054,112,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2013-07-19
+tt4972582,Split,2016,7.3,404539,986,117,PG-13,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2017-01-20
+tt6644200,A Quiet Place,2018,7.5,385782,2882,90,PG-13,Drama; Horror; Sci-Fi; ,"['Drama', 'Horror', 'Sci-Fi']",Drama,3,2018-04-06
+tt0387564,Saw,2004,7.6,369825,1612,103,R,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,2004-10-29
+tt0289043,28 Days Later...,2002,7.6,367391,1513,113,R,Drama; Horror; Sci-Fi; ,"['Drama', 'Horror', 'Sci-Fi']",Drama,3,2003-06-27
+tt1060277,Cloverfield,2008,7.0,365910,2336,85,PG-13,Action; Adventure; Horror; ,"['Action', 'Adventure', 'Horror']",Action,3,2008-01-18
+tt1259521,The Cabin in the Woods,2011,7.0,363506,1190,95,R,Horror; ,['Horror'],Horror,1,2012-04-13
+tt0084787,The Thing,1982,8.1,356786,1095,109,R,Horror; Mystery; Sci-Fi; ,"['Horror', 'Mystery', 'Sci-Fi']",Horror,3,1982-06-25
+tt0070047,The Exorcist,1973,8.0,352076,1220,122,R,Horror; ,['Horror'],Horror,1,1973-12-26
+tt0408236,Sweeney Todd: The Demon Barber of Fleet Street,2007,7.3,335791,832,116,R,Drama; Horror; ,"['Drama', 'Horror']",Drama,2,2007-12-21
+tt0230600,The Others,2001,7.6,328624,1147,104,PG-13,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2001-08-10
+tt0298130,The Ring,2002,7.1,313252,1666,115,PG-13,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,2002-10-18
+tt0110148,Interview with the Vampire: The Vampire Chronicles,1994,7.6,287602,462,123,R,Drama; Horror; ,"['Drama', 'Horror']",Drama,2,1994-11-11
+tt1179933,10 Cloverfield Lane,2016,7.2,280919,752,103,PG-13,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,2016-03-11
+tt0117571,Scream,1996,7.2,276753,969,111,R,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,1996-12-20
+tt0884328,The Mist,2007,7.1,274365,1184,126,R,Horror; Sci-Fi; ,"['Horror', 'Sci-Fi']",Horror,2,2007-11-21
+tt0103644,Alien 3,1992,6.5,269938,903,114,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,1992-05-22
+tt1591095,Insidious,2010,6.8,269839,885,103,PG-13,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2011-04-01
+tt2798920,Annihilation,2018,6.9,267574,1909,115,R,Adventure; Drama; Horror; ,"['Adventure', 'Drama', 'Horror']",Adventure,3,2018-02-23
+tt2737304,Bird Box,2018,6.6,262311,2765,124,R,Drama; Horror; Sci-Fi; ,"['Drama', 'Horror', 'Sci-Fi']",Drama,3,2018-12-21
+tt0463854,28 Weeks Later,2007,7.0,253591,789,100,R,Horror; Sci-Fi; ,"['Horror', 'Sci-Fi']",Horror,2,2007-05-11
+tt2316204,Alien: Covenant,2017,6.4,245959,2058,122,R,Horror; Sci-Fi; Thriller; ,"['Horror', 'Sci-Fi', 'Thriller']",Horror,3,2017-05-19
+tt0120804,Resident Evil,2002,6.7,242106,1175,100,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,2002-03-15
+tt0120611,Blade,1998,7.1,238439,631,120,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,1998-08-21
+tt0363547,Dawn of the Dead,2004,7.3,229395,1102,101,R,Action; Horror; ,"['Action', 'Horror']",Action,2,2004-03-19
+tt0432348,Saw II,2005,6.6,227842,885,93,R,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,2005-10-28
+tt0185937,The Blair Witch Project,1999,6.5,226133,3515,81,R,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,1999-07-30
+tt0195714,Final Destination,2000,6.7,223423,727,98,R,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2000-03-17
+tt0118583,Alien: Resurrection,1997,6.2,222998,726,109,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,1997-11-26
+tt0134847,Pitch Black,2000,7.1,221434,825,109,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,2000-02-18
+tt0077651,Halloween,1978,7.8,220718,1434,91,R,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,1978-10-27
+tt1179904,Paranormal Activity,2007,6.3,216058,1262,86,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2009-10-16
+tt3065204,The Conjuring 2,2016,7.3,215863,548,134,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2016-06-10
+tt1588173,Warm Bodies,2013,6.9,215658,378,98,PG-13,Comedy; Horror; Romance; ,"['Comedy', 'Horror', 'Romance']",Comedy,3,2013-02-01
+tt7784604,Hereditary,2018,7.3,214947,3086,127,R,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,2018-06-08
+tt1922777,Sinister,2012,6.8,212002,667,110,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2012-10-12
+tt0384537,Silent Hill,2006,6.5,210033,1796,125,R,Horror; ,['Horror'],Horror,1,2006-04-21
+tt4160708,Don't Breathe,2016,7.1,209689,639,88,R,Crime; Horror; Thriller; ,"['Crime', 'Horror', 'Thriller']",Crime,3,2016-08-26
+tt6857112,Us,2019,6.9,204733,3049,116,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2019-03-22
+tt3235888,It Follows,2014,6.8,201008,997,100,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2015-03-13
+tt5442430,Life,2017,6.6,199775,1042,104,R,Horror; Sci-Fi; Thriller; ,"['Horror', 'Sci-Fi', 'Thriller']",Horror,3,2017-03-24
+tt0087800,A Nightmare on Elm Street,1984,7.5,198628,784,91,R,Horror; ,['Horror'],Horror,1,1984-11-16
+tt2184339,The Purge,2013,5.7,197141,736,85,R,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2013-06-07
+tt0435625,The Descent,2005,7.2,195614,1226,99,R,Adventure; Horror; Thriller; ,"['Adventure', 'Horror', 'Thriller']",Adventure,3,2006-08-04
+tt0187738,Blade II,2002,6.7,195387,574,117,R,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2002-03-22
+tt1428538,Hansel & Gretel: Witch Hunters,2013,6.1,191273,345,88,R,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2013-01-25
+tt0087363,Gremlins,1984,7.3,190570,318,106,PG,Comedy; Fantasy; Horror; ,"['Comedy', 'Fantasy', 'Horror']",Comedy,3,1984-06-08
+tt2321549,The Babadook,2014,6.8,188571,847,94,Not Rated,Drama; Horror; ,"['Drama', 'Horror']",Drama,2,2014-11-28
+tt1148204,Orphan,2009,6.9,186072,489,123,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2009-07-24
+tt4263482,The Witch,2015,6.9,185878,982,92,R,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,2016-02-19
+tt0103874,Bram Stoker's Dracula,1992,7.4,185695,744,128,R,Horror; ,['Horror'],Horror,1,1992-11-13
+tt1127180,Drag Me to Hell,2009,6.5,184255,782,99,PG-13,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2009-05-29
+tt7349950,It Chapter Two,2019,6.6,183539,2182,169,R,Drama; Fantasy; Horror; ,"['Drama', 'Fantasy', 'Horror']",Drama,3,2019-09-06
+tt0318627,Resident Evil: Apocalypse,2004,6.2,182625,695,94,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,2004-09-10
+tt5109784,Mother!,2017,6.6,182167,2074,121,R,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,2017-09-15
+tt0370263,Alien vs. Predator,2004,5.6,180961,1345,101,PG-13,Action; Adventure; Horror; ,"['Action', 'Adventure', 'Horror']",Action,3,2004-08-13
+tt0083907,The Evil Dead,1981,7.5,180957,833,85,NC-17,Horror; ,['Horror'],Horror,1,1983-04-15
+tt0432021,Resident Evil: Extinction,2007,6.3,180099,383,94,R,Action; Horror; Sci-Fi; ,"['Action', 'Horror', 'Sci-Fi']",Action,3,2007-09-21
+tt0462322,Grindhouse,2007,7.5,175669,534,191,R,Action; Horror; Thriller; ,"['Action', 'Horror', 'Thriller']",Action,3,2007-04-06
+tt0489270,Saw III,2006,6.2,174387,646,108,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2006-10-27
+tt1596365,The Woman in Black,2012,6.4,171207,568,95,PG-13,Drama; Fantasy; Horror; ,"['Drama', 'Fantasy', 'Horror']",Drama,3,2012-02-03
+tt0138704,Pi,1998,7.4,166806,610,84,R,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,1998-07-10
+tt0450278,Hostel,2005,5.9,165882,1566,94,R,Horror; ,['Horror'],Horror,1,2006-01-06
+tt2023587,Mama,2013,6.2,165839,365,100,PG-13,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2013-01-18
+tt8772262,Midsommar,2019,7.1,165346,2580,148,R,Drama; Horror; Mystery; ,"['Drama', 'Horror', 'Mystery']",Drama,3,2019-07-03
+tt0074285,Carrie,1976,7.4,162668,545,98,R,Horror; ,['Horror'],Horror,1,1976-11-16
+tt1465522,Tucker and Dale vs Evil,2010,7.5,161404,294,89,R,Comedy; Horror; ,"['Comedy', 'Horror']",Comedy,2,2010-12-09
+tt0389722,30 Days of Night,2007,6.6,161126,579,113,R,Action; Horror; Thriller; ,"['Action', 'Horror', 'Thriller']",Action,3,2007-10-19
+tt1220634,Resident Evil: Afterlife,2010,5.8,159189,430,96,R,Action; Adventure; Horror; ,"['Action', 'Adventure', 'Horror']",Action,3,2010-09-10
+tt0106308,Army of Darkness,1992,7.5,158954,658,81,R,Comedy; Horror; ,"['Comedy', 'Horror']",Comedy,2,1993-02-19
+tt0454841,The Hills Have Eyes,2006,6.4,155206,889,107,R,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2006-03-10
+tt0091064,The Fly,1986,7.6,154294,339,96,R,Drama; Horror; Sci-Fi; ,"['Drama', 'Horror', 'Sci-Fi']",Drama,3,1986-08-15
+tt0119081,Event Horizon,1997,6.7,153203,953,96,R,Horror; Sci-Fi; Thriller; ,"['Horror', 'Sci-Fi', 'Thriller']",Horror,3,1997-08-15
+tt1288558,Evil Dead,2013,6.5,153169,899,91,R,Fantasy; Horror; Thriller; ,"['Fantasy', 'Horror', 'Thriller']",Fantasy,3,2013-04-05
+tt0120082,Scream 2,1997,6.2,152554,522,120,R,Horror; Mystery; ,"['Horror', 'Mystery']",Horror,2,1997-12-12
+tt2226417,Insidious: Chapter 2,2013,6.6,150300,313,106,PG-13,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2013-09-13
+tt0309593,Final Destination 2,2003,6.2,148408,495,90,R,Horror; Thriller; ,"['Horror', 'Thriller']",Horror,2,2003-01-31
+tt3416742,What We Do in the Shadows,2014,7.7,148076,338,86,R,Comedy; Horror; ,"['Comedy', 'Horror']",Comedy,2,2015-02-13
+tt1611224,Abraham Lincoln: Vampire Hunter,2012,5.9,147007,394,105,R,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2012-06-22
+tt0257106,Scary Movie 2,2001,5.3,146277,559,83,R,Comedy; Horror; ,"['Comedy', 'Horror']",Comedy,2,2001-07-04
+tt0120681,From Hell,2001,6.8,144083,553,122,R,Horror; Mystery; Thriller; ,"['Horror', 'Mystery', 'Thriller']",Horror,3,2001-10-19
+tt0464141,The Orphanage,2007,7.4,143875,339,105,R,Drama; Fantasy; Horror; ,"['Drama', 'Fantasy', 'Horror']",Drama,3,2008-01-11
+tt5700672,Train to Busan,2016,7.5,143773,668,118,TV-MA,Action; Horror; Thriller; ,"['Action', 'Horror', 'Thriller']",Action,3,2016-10-21
+tt0092991,Evil Dead II,1987,7.8,143769,594,84,R,Comedy; Horror; ,"['Comedy', 'Horror']",Comedy,2,1987-03-13
+tt1496025,Underworld Awakening,2012,6.4,143381,297,88,R,Action; Fantasy; Horror; ,"['Action', 'Fantasy', 'Horror']",Action,3,2012-01-20
+tt1517451,A Star Is Born,2018,7.7,313113,2664,136,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2018-10-05
+tt1981677,Pitch Perfect,2012,7.2,269390,316,112,PG-13,Comedy; Music; Romance; ,"['Comedy', 'Music', 'Romance']",Comedy,3,2012-10-05
+tt0332379,School of Rock,2003,7.1,260266,517,109,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2003-10-03
+tt0298203,8 Mile,2002,7.1,243272,611,110,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,2002-11-08
+tt0092890,Dirty Dancing,1987,7.0,194794,462,100,PG-13,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,1987-08-21
+tt1226229,Get Him to the Greek,2010,6.4,167212,220,109,R,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2010-06-04
+tt0146882,High Fidelity,2000,7.5,164661,627,113,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2000-03-31
+tt0105793,Wayne's World,1992,7.0,140324,199,94,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1992-02-14
+tt1980929,Begin Again,2013,7.4,138458,262,104,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2014-07-11
+tt2848292,Pitch Perfect 2,2015,6.4,138421,221,115,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2015-05-15
+tt2042568,Inside Llewyn Davis,2013,7.5,134564,381,104,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2014-01-10
+tt0120888,The Wedding Singer,1998,6.8,131174,362,97,PG-13,Comedy; Music; Romance; ,"['Comedy', 'Music', 'Romance']",Comedy,3,1998-02-13
+tt0088258,This Is Spinal Tap,1984,7.9,125864,366,82,R,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1984-03-02
+tt0249462,Billy Elliot,2000,7.7,122980,469,110,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,2000-11-10
+tt0475290,"Hail, Caesar!",2016,6.3,120378,445,106,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2016-02-05
+tt0103855,The Bodyguard,1992,6.3,115475,158,129,R,Action; Drama; Music; ,"['Action', 'Drama', 'Music']",Action,3,1992-11-25
+tt1355630,If I Stay,2014,6.7,113203,168,107,PG-13,Drama; Fantasy; Music; ,"['Drama', 'Fantasy', 'Music']",Drama,3,2014-08-22
+tt0907657,Once,2007,7.8,108624,365,86,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2007-06-15
+tt0462590,Step Up,2006,6.5,108504,285,104,PG-13,Crime; Drama; Music; ,"['Crime', 'Drama', 'Music']",Crime,3,2006-08-11
+tt0096928,Bill & Ted's Excellent Adventure,1989,6.9,107579,228,90,PG,Adventure; Comedy; Music; ,"['Adventure', 'Comedy', 'Music']",Adventure,3,1989-02-17
+tt1131729,Pirate Radio,2009,7.4,105802,241,117,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2009-11-13
+tt0200550,Coyote Ugly,2000,5.7,104700,389,100,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2000-08-04
+tt4062536,Green Room,2015,7.0,102334,321,95,R,Horror; Music; Thriller; ,"['Horror', 'Music', 'Thriller']",Horror,3,2016-05-13
+tt0426931,August Rush,2007,7.5,101979,397,114,PG,Drama; Music; ,"['Drama', 'Music']",Drama,2,2007-11-21
+tt8079248,Yesterday,2019,6.8,100978,934,116,PG-13,Comedy; Fantasy; Music; ,"['Comedy', 'Fantasy', 'Music']",Comedy,3,2019-06-28
+tt0365830,Tenacious D in the Pick of Destiny,2006,6.8,99944,208,93,R,Adventure; Comedy; Music; ,"['Adventure', 'Comedy', 'Music']",Adventure,3,2006-11-22
+tt0758766,Music and Lyrics,2007,6.5,94921,300,104,PG-13,Comedy; Music; Romance; ,"['Comedy', 'Music', 'Romance']",Comedy,3,2007-02-14
+tt0981227,Nick and Norah's Infinite Playlist,2008,6.6,87186,157,90,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2008-10-03
+tt0108394,Three Colors: Blue,1993,7.9,85415,197,94,R,Drama; Music; Mystery; ,"['Drama', 'Music', 'Mystery']",Drama,3,1993-09-08
+tt1859650,To Rome With Love,2012,6.3,82764,180,112,R,Comedy; Music; Romance; ,"['Comedy', 'Music', 'Romance']",Comedy,3,2012-07-06
+tt1263670,Crazy Heart,2009,7.2,82500,248,112,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2010-02-05
+tt3544112,Sing Street,2016,7.9,81933,196,106,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2016-03-17
+tt0101761,The Doors,1991,7.2,81792,243,140,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,1991-03-01
+tt0450188,La Vie En Rose,2007,7.6,80970,247,140,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2007-07-20
+tt1294226,The Last Song,2010,6.0,79196,207,107,PG,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2010-03-31
+tt1023481,Step Up 2: The Streets,2008,6.2,78573,114,98,PG-13,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2008-02-14
+tt0107822,The Piano,1993,7.6,76889,269,121,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,1994-02-11
+tt1126591,Burlesque,2010,6.4,76164,252,119,PG-13,Drama; Music; ,"['Drama', 'Music']",Drama,2,2010-11-24
+tt1605717,Frank,2014,7.0,73451,146,95,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2014-09-05
+tt3312830,Youth,2015,7.3,69311,164,124,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2015-12-04
+tt0076666,Saturday Night Fever,1977,6.8,68890,254,118,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,1977-12-16
+tt0087277,Footloose,1984,6.6,67658,141,107,PG,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,1984-02-17
+tt0443489,Dreamgirls,2006,6.5,67216,528,130,PG-13,Drama; Music; ,"['Drama', 'Music']",Drama,2,2006-12-25
+tt0841046,Walk Hard: The Dewey Cox Story,2007,6.8,65673,226,96,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2007-12-21
+tt0117887,That Thing You Do!,1996,6.9,60721,228,108,PG,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,1996-10-04
+tt0421082,Control,2007,7.7,60379,156,122,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2007-09-26
+tt0462200,Black Snake Moan,2006,6.9,60135,224,116,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,2007-03-02
+tt0379217,Coffee and Cigarettes,2003,7.1,58500,178,95,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2004-06-11
+tt0088286,Top Secret!,1984,7.2,58341,180,90,PG,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1984-06-08
+tt0120731,The Legend of 1900,1998,8.1,56898,276,169,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,1998-10-28
+tt0206275,Save the Last Dance,2001,6.2,56061,325,112,PG-13,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2001-01-12
+tt0120770,A Night at the Roxbury,1998,6.3,55885,254,82,PG-13,Comedy; Music; Romance; ,"['Comedy', 'Music', 'Romance']",Comedy,3,1998-10-02
+tt0372824,The Chorus,2004,7.9,55837,124,97,PG-13,Drama; Music; ,"['Drama', 'Music']",Drama,2,2004-03-17
+tt0368794,I'm Not There,2007,6.9,55709,238,135,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2007-12-07
+tt4765284,Pitch Perfect 3,2017,5.8,52949,174,93,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2017-12-22
+tt3960412,Popstar: Never Stop Never Stopping,2016,6.7,52196,140,87,R,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2016-06-03
+tt2268016,Magic Mike XXL,2015,5.6,50888,143,115,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2015-07-01
+tt0821642,The Soloist,2009,6.7,50593,156,117,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2009-04-24
+tt0117631,Shine,1996,7.7,50286,117,105,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,1997-02-14
+tt0112950,Empire Records,1995,6.7,48158,291,90,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,1995-10-20
+tt1069238,Departures,2008,8.1,47355,150,130,PG-13,Drama; Music; ,"['Drama', 'Music']",Drama,2,2009-06-19
+tt0085549,Flashdance,1983,6.2,46132,154,95,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,1983-04-15
+tt1017451,The Runaways,2010,6.5,45492,138,106,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2010-04-08
+tt0109045,"The Adventures of Priscilla, Queen of the Desert",1994,7.4,45319,150,104,R,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1994-08-10
+tt1068242,Footloose,2011,5.9,45304,146,113,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2011-10-14
+tt8359848,Climax,2018,7.1,45193,352,97,R,Drama; Horror; Music; ,"['Drama', 'Horror', 'Music']",Drama,3,2018-09-19
+tt0322589,Honey,2003,5.4,42673,144,94,PG-13,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2003-12-05
+tt0358135,Shall We Dance,2004,6.1,42622,221,106,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2004-10-15
+tt1182937,Rab Ne Bana Di Jodi,2008,7.2,42474,147,167,Not Rated,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2008-12-12
+tt0202470,Rock Star,2001,6.3,40198,197,105,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,2001-09-07
+tt0101765,The Double Life of Véronique,1991,7.8,39948,125,98,R,Drama; Fantasy; Music; ,"['Drama', 'Fantasy', 'Music']",Drama,3,1991-11-22
+tt1291580,Behind The Candelabra,2013,7.0,39655,171,118,TV-MA,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2013-06-07
+tt0410097,Hustle & Flow,2005,7.3,38021,212,116,R,Crime; Drama; Music; ,"['Crime', 'Drama', 'Music']",Crime,3,2005-07-22
+tt1839596,Rockstar,2011,7.7,37740,168,159,Not Rated,Drama; Music; ,"['Drama', 'Music']",Drama,2,2011-11-11
+tt8580274,Eurovision Song Contest: The Story of Fire Saga,2020,6.6,37498,857,123,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2020-06-26
+tt1031969,The Rocker,2008,6.2,36300,112,102,PG-13,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,2008-08-20
+tt0903657,Love & Mercy,2014,7.4,34933,160,121,PG-13,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2015-06-19
+tt0113862,Mr. Holland's Opus,1995,7.3,34755,172,143,PG,Drama; Music; ,"['Drama', 'Music']",Drama,2,1996-01-19
+tt0165710,Detroit Rock City,1999,6.9,34741,197,95,R,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1999-08-13
+tt0120879,Velvet Goldmine,1998,7.0,33100,324,118,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,1998-10-23
+tt2461132,Happy New Year,2014,5.0,33033,227,180,Not Rated,Action; Comedy; Music; ,"['Action', 'Comedy', 'Music']",Action,3,2014-10-24
+tt0120185,Spice World,1997,3.5,32688,266,93,PG,Comedy; Music; ,"['Comedy', 'Music']",Comedy,2,1998-01-23
+tt0238112,Captain Corelli's Mandolin,2001,5.9,32402,218,131,R,Drama; Music; Romance; ,"['Drama', 'Music', 'Romance']",Drama,3,2001-08-17
+tt1742044,Jersey Boys,2014,6.8,32133,221,134,R,Biography; Drama; Music; ,"['Biography', 'Drama', 'Music']",Biography,3,2014-06-20
+tt0158371,Sweet and Lowdown,1999,7.2,31584,144,95,PG-13,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2000-03-10
+tt0101605,The Commitments,1991,7.6,31338,117,118,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,1991-09-13
+tt0248845,Hedwig and the Angry Inch,2001,7.7,31272,236,95,R,Comedy; Drama; Music; ,"['Comedy', 'Drama', 'Music']",Comedy,3,2001-08-31
+tt0120802,The Red Violin,1998,7.6,31107,263,130,R,Drama; Music; Mystery; ,"['Drama', 'Music', 'Mystery']",Drama,3,1999-06-11
+tt0120577,54,1998,5.9,31071,194,93,R,Drama; Music; ,"['Drama', 'Music']",Drama,2,1998-08-28
+tt0209144,Memento,2000,8.4,1090298,2254,113,R,Mystery; Thriller; ,"['Mystery', 'Thriller']",Mystery,2,2001-05-25
+tt1130884,Shutter Island,2010,8.1,1086350,1269,138,R,Mystery; Thriller; ,"['Mystery', 'Thriller']",Mystery,2,2010-02-19
+tt0114746,12 Monkeys,1995,8.0,565403,641,129,R,Mystery; Sci-Fi; Thriller; ,"['Mystery', 'Sci-Fi', 'Thriller']",Mystery,3,1996-01-05
+tt0945513,Source Code,2011,7.5,474236,635,93,PG-13,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2011-04-01
+tt0470752,Ex Machina,2014,7.7,458187,884,108,R,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2015-04-24
+tt1856101,Blade Runner 2049,2017,8.0,434995,2337,164,R,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2017-10-06
+tt0372183,The Bourne Supremacy,2004,7.7,424855,847,108,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2004-07-23
+tt1840309,Divergent,2014,6.7,416400,797,139,PG-13,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2014-03-21
+tt1515091,Sherlock Holmes: A Game of Shadows,2011,7.5,411748,446,129,PG-13,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2011-12-16
+tt1790864,The Maze Runner,2014,6.8,406551,612,113,PG-13,Action; Mystery; Sci-Fi; ,"['Action', 'Mystery', 'Sci-Fi']",Action,3,2014-09-19
+tt0382625,The Da Vinci Code,2006,6.6,390693,2019,149,PG-13,Mystery; Thriller; ,"['Mystery', 'Thriller']",Mystery,2,2006-05-19
+tt0217869,Unbreakable,2000,7.3,377965,1496,106,PG-13,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2000-11-22
+tt0405094,The Lives of Others,2006,8.4,346768,510,137,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2007-03-30
+tt1371111,Cloud Atlas,2012,7.4,338490,984,172,R,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2012-10-26
+tt0119174,The Game,1997,7.8,334123,631,129,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,1997-09-12
+tt1650062,Super 8,2011,7.0,332878,924,112,PG-13,Mystery; Sci-Fi; Thriller; ,"['Mystery', 'Sci-Fi', 'Thriller']",Mystery,3,2011-06-10
+tt0286106,Signs,2002,6.7,330229,2413,106,PG-13,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2002-08-02
+tt1182345,Moon,2009,7.9,327607,620,97,R,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2009-07-10
+tt0118971,The Devil's Advocate,1997,7.5,319323,473,144,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,1997-10-17
+tt0166924,Mulholland Drive,2001,8.0,309859,1922,147,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2001-10-19
+tt0368891,National Treasure,2004,6.9,297865,741,131,PG,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2004-11-19
+tt0120663,Eyes Wide Shut,1999,7.4,291877,1626,159,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,1999-07-16
+tt0944835,Salt,2010,6.4,289816,580,100,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2010-07-23
+tt0071315,Chinatown,1974,8.2,284178,536,130,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,1974-06-20
+tt0278504,Insomnia,2002,7.2,266499,686,118,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2002-05-24
+tt0808151,Angels & Demons,2009,6.7,266342,494,138,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2009-05-15
+tt0118884,Contact,1997,7.4,247426,698,150,PG,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,1997-07-11
+tt2024469,Non-Stop,2014,6.9,245364,449,106,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2014-02-28
+tt0452623,Gone Baby Gone,2007,7.6,244160,563,114,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2007-10-19
+tt1401152,Unknown,2011,6.8,243861,385,113,PG-13,Action; Mystery; Thriller; ,"['Action', 'Mystery', 'Thriller']",Action,3,2011-02-18
+tt0783233,Atonement,2007,7.8,241597,650,123,R,Drama; Mystery; Romance; ,"['Drama', 'Mystery', 'Romance']",Drama,3,2008-01-11
+tt0368447,The Village,2004,6.5,237425,2060,108,PG-13,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2004-07-30
+tt0414993,The Fountain,2006,7.2,224147,985,97,PG-13,Drama; Mystery; Romance; ,"['Drama', 'Mystery', 'Romance']",Drama,3,2006-11-22
+tt0309698,Identity,2003,7.3,221013,772,90,R,Mystery; Thriller; ,"['Mystery', 'Thriller']",Mystery,2,2003-04-25
+tt0448011,Knowing,2009,6.2,216703,885,121,PG-13,Action; Drama; Mystery; ,"['Action', 'Drama', 'Mystery']",Action,3,2009-03-20
+tt0486822,Disturbia,2007,6.8,215909,528,105,PG-13,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2007-04-13
+tt0465234,National Treasure: Book of Secrets,2007,6.5,214171,319,124,PG,Action; Adventure; Mystery; ,"['Action', 'Adventure', 'Mystery']",Action,3,2007-12-21
+tt1132620,The Girl with the Dragon Tattoo,2009,7.8,205262,316,152,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2010-04-30
+tt0123755,Cube,1997,7.2,204760,819,90,R,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,1998-07-11
+tt3402236,Murder on the Orient Express,2017,6.5,200486,877,114,PG-13,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2017-11-10
+tt5362988,Wind River,2017,7.7,193037,609,107,R,Crime; Drama; Mystery; ,"['Crime', 'Drama', 'Mystery']",Crime,3,2017-08-18
+tt0949731,The Happening,2008,5.0,192408,1379,91,R,Drama; Mystery; Sci-Fi; ,"['Drama', 'Mystery', 'Sci-Fi']",Drama,3,2008-06-13
+tt0481369,The Number 23,2007,6.4,190439,414,98,R,Crime; Mystery; Thriller; ,"['Crime', 'Mystery', 'Thriller']",Crime,3,2007-02-23
+tt1305806,The Secret in Their Eyes,2009,8.2,186147,291,129,R,Drama; Mystery; Romance; ,"['Drama', 'Mystery', 'Romance']",Drama,3,2010-05-21
+tt0118929,Dark City,1998,7.6,184177,679,100,R,Mystery; Sci-Fi; Thriller; ,"['Mystery', 'Sci-Fi', 'Thriller']",Mystery,3,1998-02-27
+tt1340800,Tinker Tailor Soldier Spy,2011,7.1,182571,604,122,R,Drama; Mystery; Thriller; ,"['Drama', 'Mystery', 'Thriller']",Drama,3,2012-01-06
+tt1343092,The Great Gatsby,2013,7.2,462941,902,143,PG-13,Romance; ,['Romance'],Romance,1,2013-05-10
+tt1659337,The Perks of Being a Wallflower,2012,8.0,448222,618,103,PG-13,Romance; ,['Romance'],Romance,1,2012-10-12
+tt1355644,Passengers,2016,7.0,337271,1173,116,PG-13,Romance; ,['Romance'],Romance,1,2016-12-21
+tt2582846,The Fault in Our Stars,2014,7.7,334274,679,126,PG-13,Romance; ,['Romance'],Romance,1,2014-06-06
+tt0343660,50 First Dates,2004,6.8,318838,505,99,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2004-02-13
+tt0388795,Brokeback Mountain,2005,7.7,315187,2337,134,R,Romance; ,['Romance'],Romance,1,2006-01-13
+tt1193138,Up in the Air,2009,7.4,312919,522,109,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2009-12-23
+tt1306980,50_50,2011,7.6,310708,428,100,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-09-30
+tt1748122,Moonrise Kingdom,2012,7.8,309368,438,94,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2012-06-29
+tt0212338,Meet the Parents,2000,7.0,304804,517,108,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2000-10-06
+tt2322441,Fifty Shades of Grey,2015,4.1,291846,1543,125,R,Romance; ,['Romance'],Romance,1,2015-02-13
+tt0386588,Hitch,2005,6.6,290474,410,118,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2005-02-11
+tt0147800,10 Things I Hate About You,1999,7.3,287665,616,97,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1999-03-31
+tt1041829,The Proposal,2009,6.7,287564,330,108,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2009-06-19
+tt0129387,There's Something About Mary,1998,7.1,284962,649,119,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1998-07-15
+tt0100405,Pretty Woman,1990,7.0,279357,334,119,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1990-03-23
+tt0119822,As Good as It Gets,1997,7.7,268396,539,139,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1997-12-25
+tt0125439,Notting Hill,1999,7.1,263330,669,124,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1999-05-28
+tt0203009,Moulin Rouge!,2001,7.6,261663,2352,127,PG-13,Romance; ,['Romance'],Romance,1,2001-06-01
+tt1478338,Bridesmaids,2011,6.8,261604,563,125,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-05-13
+tt0112471,Before Sunrise,1995,8.1,259505,491,101,R,Romance; ,['Romance'],Romance,1,1995-01-27
+tt0800039,Forgetting Sarah Marshall,2008,7.1,257218,367,111,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2008-04-18
+tt0290002,Meet the Fockers,2004,6.3,247839,440,115,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2004-12-22
+tt0075686,Annie Hall,1977,8.0,247004,534,93,PG,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1977-04-20
+tt0414387,Pride & Prejudice,2005,7.8,244775,1158,129,PG,Romance; ,['Romance'],Romance,1,2005-11-23
+tt1385826,The Adjustment Bureau,2011,7.0,238519,473,106,PG-13,Romance; ,['Romance'],Romance,1,2011-03-04
+tt0497465,Vicky Cristina Barcelona,2008,7.1,237781,398,96,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2008-08-15
+tt0116695,Jerry Maguire,1996,7.3,235416,366,139,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1996-12-13
+tt0457939,The Holiday,2006,6.9,235047,560,136,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2006-12-08
+tt0077631,Grease,1978,7.2,230215,415,110,PG,Romance; ,['Romance'],Romance,1,1978-06-16
+tt0976051,The Reader,2008,7.6,226284,431,124,R,Romance; ,['Romance'],Romance,1,2009-01-30
+tt0381681,Before Sunset,2004,8.0,226255,542,80,R,Romance; ,['Romance'],Romance,1,2004-07-30
+tt1655442,The Artist,2011,7.9,226187,661,100,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2012-01-20
+tt2229499,Don Jon,2013,6.5,224896,338,90,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2013-09-27
+tt7653254,Marriage Story,2019,8.0,219894,1178,137,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2019-12-06
+tt0243155,Bridget Jones's Diary,2001,6.7,218715,588,97,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2001-04-13
+tt0163978,The Beach,2000,6.7,218197,587,119,R,Romance; ,['Romance'],Romance,1,2000-02-11
+tt1564367,Just Go with It,2011,6.4,215475,271,117,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-02-11
+tt0119643,Meet Joe Black,1998,7.2,208791,799,178,PG-13,Romance; ,['Romance'],Romance,1,1998-11-13
+tt0795421,Mamma Mia!,2008,6.4,208596,752,108,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2008-07-18
+tt1411238,No Strings Attached,2011,6.2,208289,214,108,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-01-21
+tt3464902,The Lobster,2015,7.2,207454,646,119,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2015-10-16
+tt0117509,Romeo + Juliet,1996,6.7,205296,576,120,PG-13,Romance; ,['Romance'],Romance,1,1996-11-01
+tt0333766,Garden State,2004,7.4,204812,973,102,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2004-08-20
+tt0251127,How to Lose a Guy in 10 Days,2003,6.4,203365,383,116,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2003-02-07
+tt0416320,Match Point,2005,7.6,201777,786,124,R,Romance; ,['Romance'],Romance,1,2006-01-20
+tt0108399,True Romance,1993,7.9,200842,537,119,R,Romance; ,['Romance'],Romance,1,1993-09-10
+tt1142988,The Ugly Truth,2009,6.4,199488,195,96,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2009-07-24
+tt0376541,Closer,2004,7.2,198838,952,104,R,Romance; ,['Romance'],Romance,1,2004-12-03
+tt0265208,The Girl Next Door,2004,6.7,197489,540,109,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2004-04-09
+tt2674426,Me Before You,2016,7.4,197474,457,106,PG-13,Romance; ,['Romance'],Romance,1,2016-06-03
+tt0431308,P.S. I Love You,2007,7.0,197346,276,126,PG-13,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2007-12-21
+tt5726616,Call Me by Your Name,2017,7.9,195583,951,132,R,Romance; ,['Romance'],Romance,1,2018-01-19
+tt0281358,A Walk to Remember,2002,7.4,195515,1010,101,PG,Romance; ,['Romance'],Romance,1,2002-01-25
+tt1155056,"I Love You, Man",2009,7.0,191014,234,105,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2009-03-20
+tt0099653,Ghost,1990,7.0,190746,301,127,PG-13,Romance; ,['Romance'],Romance,1,1990-07-13
+tt0959337,Revolutionary Road,2008,7.3,190069,486,119,R,Romance; ,['Romance'],Romance,1,2009-01-23
+tt0098635,When Harry Met Sally...,1989,7.6,189079,326,95,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,1989-07-21
+tt1284575,Bad Teacher,2011,5.6,189027,325,92,R,Comedy; Romance; ,"['Comedy', 'Romance']",Comedy,2,2011-06-24
+tt1219289,Limitless,2011,7.4,516619,485,105,PG-13,Sci-Fi; Thriller; ,"['Sci-Fi', 'Thriller']",Sci-Fi,2,2011-03-18
+tt0413300,Spider-Man 3,2007,6.2,486585,2061,139,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2007-05-04
+tt1483013,Oblivion,2013,7.0,474456,1006,124,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-04-19
+tt0376994,X-Men: The Last Stand,2006,6.7,473265,1955,104,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2006-05-26
+tt1663662,Pacific Rim,2013,6.9,458119,1240,131,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-07-12
+tt0458525,X-Men Origins: Wolverine,2009,6.6,457518,712,107,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2009-05-01
+tt1408101,Star Trek Into Darkness,2013,7.7,457107,1243,132,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-05-16
+tt0206634,Children of Men,2006,7.9,452558,1342,109,R,Drama; Sci-Fi; Thriller; ,"['Drama', 'Sci-Fi', 'Thriller']",Drama,3,2007-01-05
+tt0289879,The Butterfly Effect,2004,7.6,441951,1180,113,R,Drama; Sci-Fi; Thriller; ,"['Drama', 'Sci-Fi', 'Thriller']",Drama,3,2004-01-23
+tt0242653,The Matrix Revolutions,2003,6.8,437028,2126,129,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,2003-11-05
+tt2872732,Lucy,2014,6.4,430676,1137,89,R,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,2014-07-25
+tt0800080,The Incredible Hulk,2008,6.7,423889,797,112,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2008-06-13
+tt0119116,The Fifth Element,1997,7.7,423434,852,126,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1997-05-09
+tt1430132,The Wolverine,2013,6.7,420261,607,126,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2013-07-26
+tt4154664,Captain Marvel,2019,6.9,417001,7184,123,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2019-03-08
+tt1535108,Elysium,2013,6.6,411958,915,109,R,Action; Drama; Sci-Fi; ,"['Action', 'Drama', 'Sci-Fi']",Action,3,2013-08-09
+tt1872181,The Amazing Spider-Man 2,2014,6.6,407309,1181,142,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-05-02
+tt0407304,War of the Worlds,2005,6.5,406710,2838,116,PG-13,Adventure; Sci-Fi; Thriller; ,"['Adventure', 'Sci-Fi', 'Thriller']",Adventure,3,2005-06-29
+tt0319262,The Day After Tomorrow,2004,6.4,406360,1223,124,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2004-05-28
+tt1951265,The Hunger Games: Mockingjay - Part 1,2014,6.6,401820,611,123,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-11-21
+tt0120591,Armageddon,1998,6.7,387963,1224,151,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1998-07-01
+tt3385516,X-Men: Apocalypse,2016,6.9,381865,830,144,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2016-05-27
+tt1399103,Transformers: Dark of the Moon,2011,6.2,378545,939,154,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2011-06-29
+tt1055369,Transformers: Revenge of the Fallen,2009,6.0,377753,1494,149,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2009-06-24
+tt0181852,Terminator 3: Rise of the Machines,2003,6.3,369941,1719,109,R,Action; Sci-Fi; ,"['Action', 'Sci-Fi']",Action,2,2003-07-02
+tt0831387,Godzilla,2014,6.4,368278,1634,123,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2014-05-16
+tt0119567,The Lost World: Jurassic Park,1997,6.6,367727,653,129,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1997-05-23
+tt0093773,Predator,1987,7.8,362463,783,107,R,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,1987-06-12
+tt1637688,In Time,2011,6.7,361536,533,109,PG-13,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,2011-10-28
+tt0083866,E.T. the Extra-Terrestrial,1982,7.8,359808,610,115,PG,Sci-Fi; ,['Sci-Fi'],Sci-Fi,1,1982-06-11
+tt1677720,Ready Player One,2018,7.5,348661,1988,140,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2018-03-29
+tt1190080,2012,2009,5.8,345451,1174,158,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2009-11-13
+tt0438488,Terminator Salvation,2009,6.5,337484,1083,115,PG-13,Action; Adventure; Sci-Fi; ,"['Action', 'Adventure', 'Sci-Fi']",Action,3,2009-05-21
+tt1291584,Warrior,2011,8.2,424797,676,140,PG-13,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,2011-09-09
+tt1125849,The Wrestler,2008,7.9,285261,588,109,R,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2009-01-30
+tt3076658,Creed,2015,7.6,240217,515,133,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2015-11-25
+tt0364725,Dodgeball,2004,6.7,224256,406,92,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2004-06-18
+tt1798684,Southpaw,2015,7.4,211731,343,124,R,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2015-07-24
+tt0116483,Happy Gilmore,1996,7.0,191082,320,92,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1996-02-16
+tt0079817,Rocky II,1979,7.3,185752,218,119,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1979-06-15
+tt0089927,Rocky IV,1985,6.9,181314,379,91,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1985-11-27
+tt0084602,Rocky III,1982,6.8,168581,243,99,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1982-05-28
+tt0415306,Talladega Nights: The Ballad of Ricky Bobby,2006,6.6,163181,476,108,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2006-08-04
+tt0398165,The Longest Yard,2005,6.4,158464,336,113,PG-13,Comedy; Crime; Sport; ,"['Comedy', 'Crime', 'Sport']",Comedy,3,2005-05-27
+tt0445934,Blades of Glory,2007,6.3,154489,268,93,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2007-03-30
+tt0120484,The Waterboy,1998,6.1,145024,334,90,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1998-11-06
+tt0454945,She's the Man,2006,6.3,142831,292,105,PG-13,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,2006-03-17
+tt0385002,Green Street Hooligans,2005,7.5,139282,402,109,R,Crime; Drama; Sport; ,"['Crime', 'Drama', 'Sport']",Crime,3,2005-09-09
+tt0100507,Rocky V,1990,5.3,123555,305,104,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1990-11-16
+tt0146838,Any Given Sunday,1999,6.9,110159,466,162,R,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1999-12-22
+tt0080487,Caddyshack,1980,7.3,102192,285,98,R,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1980-07-25
+tt6343314,Creed II,2018,7.1,97820,764,130,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2018-11-21
+tt1023111,Never Back Down,2008,6.6,94170,190,113,PG-13,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,2008-03-14
+tt0248667,Ali,2001,6.8,91667,391,157,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2001-12-25
+tt0174856,The Hurricane,1999,7.6,89663,280,146,R,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2000-01-14
+tt0204946,Bring It On,2000,6.0,84978,386,98,PG-13,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,2000-08-25
+tt1648179,Here Comes the Boom,2012,6.4,84309,134,105,PG,Action; Comedy; Sport; ,"['Action', 'Comedy', 'Sport']",Action,3,2012-10-12
+tt3322364,Concussion,2015,7.1,83455,194,123,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2015-12-25
+tt1456635,Goon,2011,6.8,82574,165,92,R,Comedy; Drama; Sport; ,"['Comedy', 'Drama', 'Sport']",Comedy,3,2012-02-24
+tt0453562,42,2013,7.5,81640,242,128,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2013-04-12
+tt0457510,Nacho Libre,2006,5.7,79678,487,92,PG,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2006-06-16
+tt0839980,Semi-Pro,2008,5.8,77162,129,91,R,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2008-02-29
+tt0099371,Days of Thunder,1990,6.0,76691,129,107,PG-13,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,1990-06-27
+tt0116778,Kingpin,1996,6.9,75490,209,114,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1996-07-26
+tt0787475,Hot Rod,2007,6.7,74811,194,88,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2007-08-03
+tt0090863,The Color of Money,1986,7.0,72250,140,119,R,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1986-10-17
+tt0871510,Chak de! India,2007,8.2,71335,112,153,Not Rated,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2007-08-10
+tt0425413,"Run, Fat Boy, Run",2007,6.6,64800,151,100,PG-13,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,2008-03-28
+tt0445990,Invincible,2006,7.1,64317,159,105,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2006-08-25
+tt1172233,Whip It,2009,6.9,62820,129,111,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2009-10-02
+tt0118849,Children of Heaven,1997,8.3,61338,183,89,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1999-01-22
+tt0097815,Major League,1989,7.2,60362,120,107,R,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1989-04-07
+tt2083383,Trouble with the Curve,2012,6.8,58790,191,111,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2012-09-21
+tt2356180,Bhaag Milkha Bhaag,2013,8.2,58777,194,186,Not Rated,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2013-07-12
+tt0360201,Wimbledon,2004,6.3,58729,181,98,PG-13,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,2004-09-17
+tt0390022,Friday Night Lights,2004,7.2,57615,322,118,PG-13,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,2004-10-08
+tt2058673,Point Break,2015,5.3,56913,260,114,PG-13,Action; Crime; Sport; ,"['Action', 'Crime', 'Sport']",Action,3,2015-12-25
+tt0191397,The Replacements,2000,6.6,56892,269,118,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2000-08-11
+tt1661382,Grudge Match,2013,6.4,56593,132,113,PG-13,Comedy; Drama; Sport; ,"['Comedy', 'Drama', 'Sport']",Comedy,3,2013-12-25
+tt0758794,We Are Marshall,2006,7.1,56112,185,131,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2006-12-22
+tt0131857,BASEketball,1998,6.5,55800,211,103,R,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,1998-07-31
+tt0108002,Rudy,1993,7.5,54400,185,114,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,1993-10-22
+tt0082158,Chariots of Fire,1981,7.2,52940,240,125,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,1982-04-09
+tt0146984,The Legend of Bagger Vance,2000,6.7,52493,278,126,PG-13,Drama; Fantasy; Sport; ,"['Drama', 'Fantasy', 'Sport']",Drama,3,2000-11-03
+tt1606392,Win Win,2011,7.1,52334,120,106,R,Comedy; Drama; Sport; ,"['Comedy', 'Drama', 'Sport']",Comedy,3,2011-04-15
+tt2223990,Draft Day,2014,6.8,52057,158,110,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2014-04-11
+tt0355702,Lords of Dogtown,2005,7.1,51181,206,107,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2005-06-03
+tt0412080,The World's Fastest Indian,2005,7.8,50954,260,127,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2006-03-24
+tt0811138,The Love Guru,2008,3.8,49662,286,87,PG-13,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,2008-06-20
+tt0093692,Over the Top,1987,5.8,48899,155,93,PG,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,1987-02-13
+tt0097659,Kickboxer,1989,6.5,48479,133,97,R,Action; Sport; Thriller; ,"['Action', 'Sport', 'Thriller']",Action,3,1989-09-08
+tt0437863,The Benchwarmers,2006,5.5,47394,226,85,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2006-04-07
+tt0095250,The Big Blue,1988,7.6,47005,162,168,PG,Adventure; Drama; Sport; ,"['Adventure', 'Drama', 'Sport']",Adventure,3,1988-08-19
+tt0094812,Bull Durham,1988,7.1,46429,135,108,R,Comedy; Romance; Sport; ,"['Comedy', 'Romance', 'Sport']",Comedy,3,1988-06-15
+tt0116277,The Fan,1996,5.9,45246,103,116,R,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,1996-08-16
+tt0124718,He Got Game,1998,6.9,43286,122,136,R,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1998-05-01
+tt0087781,The Natural,1984,7.5,42728,208,138,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1984-05-11
+tt1647668,Million Dollar Arm,2014,7.0,42611,109,124,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2014-05-16
+tt0417217,Two for the Money,2005,6.3,42585,148,122,R,Crime; Drama; Sport; ,"['Crime', 'Drama', 'Sport']",Crime,3,2005-10-07
+tt0385726,Glory Road,2006,7.2,42010,154,118,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2006-01-13
+tt0091217,Hoosiers,1986,7.5,41815,150,114,PG,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,1987-02-27
+tt0424823,Balls of Fury,2007,5.3,40109,154,90,PG-13,Comedy; Crime; Sport; ,"['Comedy', 'Crime', 'Sport']",Comedy,3,2007-08-29
+tt0132245,Driven,2001,4.6,38749,346,116,PG-13,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,2001-04-27
+tt1596345,Pawn Sacrifice,2014,7.0,38338,121,115,PG-13,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2015-09-25
+tt0316465,Radio,2003,6.9,37537,202,109,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2003-10-24
+tt4832640,Sultan,2016,7.0,35954,156,170,Not Rated,Action; Drama; Sport; ,"['Action', 'Drama', 'Sport']",Action,3,2016-07-06
+tt0267891,The Ringer,2005,5.8,34713,163,94,PG-13,Comedy; Sport; ,"['Comedy', 'Sport']",Comedy,2,2005-12-23
+tt2097298,"McFarland, USA",2015,7.4,34319,106,129,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2015-02-20
+tt0076723,Slap Shot,1977,7.3,33455,164,123,R,Comedy; Drama; Sport; ,"['Comedy', 'Drama', 'Sport']",Comedy,3,1977-02-25
+tt4169250,M.S. Dhoni: The Untold Story,2016,7.7,32250,161,184,Not Rated,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2016-09-30
+tt0082136,The Cannonball Run,1981,6.3,32189,130,95,PG,Action; Comedy; Sport; ,"['Action', 'Comedy', 'Sport']",Action,3,1981-06-19
+tt0265662,The Rookie,2002,6.9,31474,176,127,G,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2002-03-29
+tt0126916,For Love of the Game,1999,6.6,30972,241,137,PG-13,Drama; Romance; Sport; ,"['Drama', 'Romance', 'Sport']",Drama,3,1999-09-17
+tt0300532,Blue Crush,2002,5.6,29521,212,104,PG-13,Drama; Romance; Sport; ,"['Drama', 'Romance', 'Sport']",Drama,3,2002-08-16
+tt0385705,The Football Factory,2004,6.8,28140,117,91,R,Crime; Drama; Sport; ,"['Crime', 'Drama', 'Sport']",Crime,3,2004-05-14
+tt0180734,Hardball,2001,6.4,27587,134,106,PG-13,Drama; Sport; ,"['Drama', 'Sport']",Drama,2,2001-09-14
+tt0388980,The Greatest Game Ever Played,2005,7.4,27289,119,120,PG,Biography; Drama; Sport; ,"['Biography', 'Drama', 'Sport']",Biography,3,2005-09-30
+tt0083284,Victory,1981,6.7,26806,108,116,PG,Drama; Sport; War; ,"['Drama', 'Sport', 'War']",Drama,3,1981-07-31
+tt0438315,Peaceful Warrior,2006,7.3,26084,192,120,PG-13,Drama; Romance; Sport; ,"['Drama', 'Romance', 'Sport']",Drama,3,2006-06-23
+tt1229238,Mission: Impossible - Ghost Protocol,2011,7.4,447114,576,132,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2011-12-21
+tt0887912,The Hurt Locker,2008,7.6,411933,973,131,R,Drama; Thriller; War; ,"['Drama', 'Thriller', 'War']",Drama,3,2009-07-31
+tt0830515,Quantum of Solace,2008,6.6,395714,1316,106,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2008-11-14
+tt0337978,Live Free or Die Hard,2007,7.1,382657,824,128,PG-13,Action; Thriller; ,"['Action', 'Thriller']",Action,2,2007-06-27
+tt0117060,Mission: Impossible,1996,7.1,377738,450,110,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,1996-05-22
+tt2379713,Spectre,2015,6.8,374071,1152,148,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2015-11-06
+tt1905041,Fast & Furious 6,2013,7.1,361499,492,130,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2013-05-24
+tt0112864,Die Hard with a Vengeance,1995,7.6,355455,384,128,R,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,1995-05-19
+tt3170832,Room,2015,8.1,352682,662,118,R,Drama; Thriller; ,"['Drama', 'Thriller']",Drama,2,2016-01-22
+tt2820852,Furious 7,2015,7.1,351611,739,137,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2015-04-03
+tt0361862,The Machinist,2004,7.7,348658,538,101,R,Drama; Thriller; ,"['Drama', 'Thriller']",Drama,2,2004-12-03
+tt2381249,Mission: Impossible - Rogue Nation,2015,7.4,332108,536,131,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2015-07-31
+tt0099423,Die Hard 2,1990,7.2,328030,363,124,R,Action; Thriller; ,"['Action', 'Thriller']",Action,2,1990-07-03
+tt0317919,Mission: Impossible III,2006,6.9,322182,909,126,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2006-05-05
+tt0111257,Speed,1994,7.2,320047,439,116,R,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,1994-06-10
+tt1320253,The Expendables,2010,6.5,319722,769,103,R,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2010-08-13
+tt1907668,Flight,2012,7.3,317752,573,138,R,Drama; Thriller; ,"['Drama', 'Thriller']",Drama,2,2012-11-02
+tt0120755,Mission: Impossible II,2000,6.1,306425,1490,123,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2000-05-24
+tt0117500,The Rock,1996,7.4,305379,466,136,R,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,1996-06-07
+tt0822854,Shooter,2007,7.2,303822,374,124,R,Action; Drama; Thriller; ,"['Action', 'Drama', 'Thriller']",Action,3,2007-03-23
+tt0790724,Jack Reacher,2012,7.0,300121,527,130,PG-13,Action; Thriller; ,"['Action', 'Thriller']",Action,2,2012-12-21
+tt0399201,The Island,2005,6.8,296267,948,136,PG-13,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,2005-07-22
+tt0100802,Total Recall,1990,7.5,292730,459,113,R,Action; Sci-Fi; Thriller; ,"['Action', 'Sci-Fi', 'Thriller']",Action,3,1990-06-01
+tt1764651,The Expendables 2,2012,6.6,287241,508,103,R,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2012-08-17
+tt1397280,Taken 2,2012,6.3,284295,505,92,PG-13,Action; Thriller; ,"['Action', 'Thriller']",Action,2,2012-10-05
+tt1194173,The Bourne Legacy,2012,6.7,279239,559,135,PG-13,Action; Adventure; Thriller; ,"['Action', 'Adventure', 'Thriller']",Action,3,2012-08-10
+tt2713180,Fury,2014,7.6,411964,929,134,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2014-10-17
+tt0325710,The Last Samurai,2003,7.7,389279,1030,154,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2003-12-05
+tt0091763,Platoon,1986,8.1,370941,603,120,R,Drama; War; ,"['Drama', 'War']",Drama,2,1987-02-06
+tt8579674,1917,2019,8.3,339629,2745,119,R,Drama; War; ,"['Drama', 'War']",Drama,2,2020-01-10
+tt0077416,The Deer Hunter,1978,8.1,302090,1138,183,R,Drama; War; ,"['Drama', 'War']",Drama,2,1979-02-23
+tt2584384,Jojo Rabbit,2019,7.9,234610,1334,108,PG-13,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,2019-11-08
+tt0914798,The Boy in the Striped Pajamas,2008,7.8,184484,482,94,PG-13,Drama; War; ,"['Drama', 'War']",Drama,2,2008-11-26
+tt0116209,The English Patient,1996,7.4,174451,510,162,R,Drama; Romance; War; ,"['Drama', 'Romance', 'War']",Drama,3,1996-12-06
+tt0120863,The Thin Red Line,1998,7.6,168244,1498,170,R,Drama; War; ,"['Drama', 'War']",Drama,2,1999-01-15
+tt0110322,Legends of the Fall,1994,7.6,143280,399,133,R,Drama; Romance; War; ,"['Drama', 'Romance', 'War']",Drama,3,1995-01-13
+tt1255953,Incendies,2010,8.3,140182,244,131,R,Drama; Mystery; War; ,"['Drama', 'Mystery', 'War']",Drama,3,2011-01-12
+tt0989757,Dear John,2010,6.3,135449,228,108,PG-13,Drama; Romance; War; ,"['Drama', 'Romance', 'War']",Drama,3,2010-02-05
+tt1234548,The Men Who Stare at Goats,2009,6.2,125141,295,94,R,Comedy; War; ,"['Comedy', 'War']",Comedy,2,2009-11-06
+tt0816442,The Book Thief,2013,7.6,124617,286,131,PG-13,Drama; War; ,"['Drama', 'War']",Drama,2,2013-11-27
+tt4172430,13 Hours,2016,7.3,113586,358,144,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2016-01-15
+tt0089881,Ran,1985,8.2,107488,279,162,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,1985-06-01
+tt5813916,The Mountain II,2016,8.9,103674,146,135,Null,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2016-11-04
+tt0096969,Born on the Fourth of July,1989,7.2,95537,204,145,R,Biography; Drama; War; ,"['Biography', 'Drama', 'War']",Biography,3,1990-01-05
+tt0066206,Patton,1970,7.9,91924,287,172,GP,Biography; Drama; War; ,"['Biography', 'Drama', 'War']",Biography,3,1970-04-02
+tt0141926,U-571,2000,6.6,75183,631,116,PG-13,Action; War; ,"['Action', 'War']",Action,2,2000-04-21
+tt0119173,G.I. Jane,1997,5.9,71669,150,125,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,1997-08-22
+tt0389557,Black Book,2006,7.7,71193,248,145,R,Drama; Thriller; War; ,"['Drama', 'Thriller', 'War']",Drama,3,2007-05-18
+tt1365050,Beasts of No Nation,2015,7.7,70819,169,137,Not Rated,Drama; War; ,"['Drama', 'War']",Drama,2,2015-10-16
+tt0066026,MASH,1970,7.5,66087,254,116,R,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,1970-03-18
+tt0245562,Windtalkers,2002,6.1,64349,461,134,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2002-06-14
+tt0083131,Stripes,1981,6.9,63335,165,106,R,Comedy; War; ,"['Comedy', 'War']",Comedy,2,1981-06-26
+tt0114787,Underground,1995,8.1,53854,145,167,Not Rated,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,1997-06-20
+tt0073650,"Salò, or the 120 Days of Sodom",1975,5.9,52316,428,117,Not Rated,Drama; Horror; War; ,"['Drama', 'Horror', 'War']",Drama,3,1976-05-19
+tt0091251,Come and See,1985,8.3,52118,501,142,Not Rated,Drama; War; ,"['Drama', 'War']",Drama,2,1985-10-17
+tt0251114,Hart's War,2002,6.3,50062,202,125,R,Drama; War; ,"['Drama', 'War']",Drama,2,2002-02-15
+tt0460989,The Wind that Shakes the Barley,2006,7.5,45234,235,127,Not Rated,Drama; War; ,"['Drama', 'War']",Drama,2,2007-03-23
+tt0065938,Kelly's Heroes,1970,7.6,44031,209,144,GP,Adventure; Comedy; War; ,"['Adventure', 'Comedy', 'War']",Adventure,3,1970-06-23
+tt0283509,No Man's Land,2001,7.9,43762,181,98,R,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,2001-09-19
+tt0160797,Rules of Engagement,2000,6.4,43553,281,128,R,Drama; Thriller; War; ,"['Drama', 'Thriller', 'War']",Drama,3,2000-04-07
+tt3808342,Son of Saul,2015,7.5,43370,147,107,R,Drama; War; ,"['Drama', 'War']",Drama,2,2015-06-11
+tt0073341,The Man Who Would Be King,1975,7.8,42865,189,129,PG,Adventure; History; War; ,"['Adventure', 'History', 'War']",Adventure,3,1975-12-19
+tt8291224,Uri: The Surgical Strike,2019,8.3,39997,947,138,Not Rated,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2019-01-11
+tt2396589,Mudbound,2017,7.4,39943,139,134,R,Drama; War; ,"['Drama', 'War']",Drama,2,2017-11-17
+tt0097027,Casualties of War,1989,7.1,39934,135,113,R,Crime; Drama; War; ,"['Crime', 'Drama', 'War']",Crime,3,1989-08-18
+tt4758646,War Machine,2017,6.0,39926,191,122,TV-MA,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,2017-05-26
+tt0091187,Heartbreak Ridge,1986,6.9,38473,137,130,R,Drama; War; ,"['Drama', 'War']",Drama,2,1986-12-05
+tt0170691,Tigerland,2000,7.0,37364,157,101,R,Drama; War; ,"['Drama', 'War']",Drama,2,2001-05-24
+tt0386064,Tae Guk Gi: The Brotherhood of War,2004,8.1,37166,241,140,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2004-09-24
+tt0073312,Love and Death,1975,7.7,34959,118,85,PG,Comedy; War; ,"['Comedy', 'War']",Comedy,2,1975-07-18
+tt0462396,The Last Legion,2007,5.4,33704,180,101,PG-13,Action; Adventure; War; ,"['Action', 'Adventure', 'War']",Action,3,2007-08-17
+tt1714209,In the Land of Blood and Honey,2011,4.5,33167,153,127,R,Drama; Romance; War; ,"['Drama', 'Romance', 'War']",Drama,3,2012-02-16
+tt0080979,Kagemusha,1980,8.0,30892,104,162,PG,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,1980-10-10
+tt1289403,The Guernsey Literary and Potato Peel Pie Society,2018,7.4,30652,258,124,TV-14,Drama; Romance; War; ,"['Drama', 'Romance', 'War']",Drama,3,2018-08-10
+tt0078723,1941,1979,5.8,30625,252,118,PG,Action; Comedy; War; ,"['Action', 'Comedy', 'War']",Action,3,1979-12-14
+tt1372686,Coriolanus,2011,6.1,30543,131,123,R,Drama; Thriller; War; ,"['Drama', 'Thriller', 'War']",Drama,3,2012-01-20
+tt0092593,Au Revoir les Enfants,1987,8.0,30195,105,104,PG,Drama; War; ,"['Drama', 'War']",Drama,2,1988-02-12
+tt0108211,Stalingrad,1993,7.5,29900,163,134,Not Rated,Drama; War; ,"['Drama', 'War']",Drama,2,1993-01-21
+tt0067140,Duck You Sucker,1971,7.6,28849,148,138,PG,Drama; War; Western; ,"['Drama', 'War', 'Western']",Drama,3,1972-07-07
+tt0107007,Gettysburg,1993,7.6,25505,287,271,PG,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,1993-10-08
+tt0074695,Cross of Iron,1977,7.5,24560,177,119,R,Drama; War; ,"['Drama', 'War']",Drama,2,1977-05-20
+tt4943322,The Ottoman Lieutenant,2017,6.6,23718,121,106,R,Drama; War; ,"['Drama', 'War']",Drama,2,2017-03-10
+tt9777644,Da 5 Bloods,2020,6.6,23105,586,154,R,Adventure; Drama; War; ,"['Adventure', 'Drama', 'War']",Adventure,3,2020-06-12
+tt0280491,Bloody Sunday,2002,7.6,22908,131,107,R,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2002-04-19
+tt1810683,Little Boy,2015,7.4,21808,139,106,PG-13,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2015-04-24
+tt6018306,Last Flag Flying,2017,6.9,21540,128,125,R,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,2017-11-03
+tt0065528,Catch-22,1970,7.1,21424,145,122,R,Comedy; Drama; War; ,"['Comedy', 'Drama', 'War']",Comedy,3,1970-06-24
+tt0326905,The Great Raid,2005,6.7,20965,194,132,R,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2005-08-12
+tt0373283,Saints and Soldiers,2003,6.7,19730,163,90,PG-13,Action; Drama; War; ,"['Action', 'Drama', 'War']",Action,3,2005-03-25
+tt0489281,Stop-Loss,2008,6.4,19456,102,112,R,Drama; War; ,"['Drama', 'War']",Drama,2,2008-03-28
+tt0318974,The Alamo,2004,6.0,19290,306,137,PG-13,Drama; History; War; ,"['Drama', 'History', 'War']",Drama,3,2004-04-09
