@@ -1,0 +1,108 @@
+/* ===================== DESIGN TOKENS =====================
+   Variables that you'll reuse throughout. Change once, updates everywhere.
+*/
+:root {
+  --ink: #1a1a1a;             /* Main text colour */
+  --paper: #f4ede4;           /* Page background */
+  --paper-warm: #ebe1d2;      /* Subtle backgrounds */
+  --film-red: #c1272d;        /* Accent (matches the map) */
+  --film-red-dark: #8c1b1f;
+  --film-gold: #d4a548;       /* Secondary accent */
+  --muted: #6b6258;           /* Subtitles, captions */
+  --hairline: #d8cfc1;        /* Borders, dividers */
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===================== RESET =====================
+   Removes default browser margins/paddings.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===================== BASE TYPOGRAPHY ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 16px;
+  max-width: 70ch; /* Caps line length at ~70 characters for readability */
+}
+
+/* ===================== LAYOUT ===================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 32px;
+}
+
+/* ===================== CHART CONTAINERS ===================== */
+/* Wraps each Vega-Lite chart with consistent spacing and a soft card look */
+[id^="chart-"] {
+  background: white;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 32px;
+  margin: 32px 0 48px 0;
+  box-shadow: 0 4px 20px rgba(26, 26, 26, 0.06);
+  overflow-x: auto; /* Scrollbar appears if a chart is too wide */
+}
+
+/* Center the actual SVG inside the card */
+[id^="chart-"] .vega-embed {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  main {
+    padding: 32px 16px;
+  }
+
+  [id^="chart-"] {
+    padding: 16px;
+  }
+}

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The World on Screen</title>
 
-  <!-- Your CSS file -->
+  <!-- CSS file -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Vega-Lite libraries from CDN — order matters: Vega → Vega-Lite → Vega-Embed -->
+  <!-- Vega-Lite libraries from CDN: Vega → Vega-Lite → Vega-Embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -18,16 +18,16 @@
   <main>
     <h1>The World on Screen</h1>
 
-    <!-- This is where the choropleth will render. The id MUST match what's in vega_lite_vis.js -->
-    <div id="chart_world_map"></div>
+    <!--choropleth will render-->
+    <div id="chart-world-map"></div>
 
-    <!-- Later you'll add more divs as you build more charts:
+    <!-- Top 10 Film-Producing Nations bar chart-->
     <div id="chart-top-countries"></div>
-    <div id="chart-films-by-year"></div>
-    -->
+
+    <!-- Genre Tides streamgraph -->
+    <div id="genre-tides"></div>
   </main>
 
-  <!-- Your embed script — MUST be at the bottom, AFTER the divs above exist -->
   <script src="vega_lite_vis.js"></script>
 </body>
 </html>
