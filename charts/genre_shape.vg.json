@@ -10,6 +10,31 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
+  "width": 520,
+  "height": 520,
+  "background": null,
+  "params": [
+    {
+      "name": "GenreChoice",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "name": "Filter genre: ",
+        "options": [
+          "All",
+          "Action",
+          "Adventure",
+          "Animation",
+          "Biography",
+          "Comedy",
+          "Crime",
+          "Drama",
+          "Horror",
+          "Romance"
+        ]
+      }
+    }
+  ],
   "data": {
     "url": "data/movies_joined.csv",
     "format": {
@@ -57,6 +82,7 @@
       "fold": ["Runtime", "Rating", "Budget", "Revenue", "Reviews"],
       "as": ["axis", "value"]
     },
+    {"filter": "GenreChoice == 'All' || datum.primary_genre == GenreChoice"},
     {
       "calculate": "datum.axis == 'Runtime' ? 0 : datum.axis == 'Rating' ? 1 : datum.axis == 'Budget' ? 2 : datum.axis == 'Revenue' ? 3 : 4",
       "as": "axis_order"
@@ -65,115 +91,149 @@
     {"calculate": "datum.value * cos(datum.angle)", "as": "x"},
     {"calculate": "datum.value * sin(datum.angle)", "as": "y"}
   ],
-  "facet": {
-    "field": "primary_genre",
-    "type": "nominal",
-    "title": null,
-    "header": {
-      "labelFont": "Inter",
-      "labelFontSize": 13,
-      "labelFontWeight": "bold",
-      "labelColor": "#1a1a1a"
-    }
-  },
-
-  "columns": 5,
-
-  "spec": {
-    "width": 170,
-    "height": 170,
-    "layer": [
-      {
-        "data": {
-          "values": [
-            {"axis_order": 0, "r": 0.25}, {"axis_order": 1, "r": 0.25}, {"axis_order": 2, "r": 0.25}, {"axis_order": 3, "r": 0.25}, {"axis_order": 4, "r": 0.25},
-            {"axis_order": 0, "r": 0.5}, {"axis_order": 1, "r": 0.5}, {"axis_order": 2, "r": 0.5}, {"axis_order": 3, "r": 0.5}, {"axis_order": 4, "r": 0.5},
-            {"axis_order": 0, "r": 0.75}, {"axis_order": 1, "r": 0.75}, {"axis_order": 2, "r": 0.75}, {"axis_order": 3, "r": 0.75}, {"axis_order": 4, "r": 0.75},
-            {"axis_order": 0, "r": 1}, {"axis_order": 1, "r": 1}, {"axis_order": 2, "r": 1}, {"axis_order": 3, "r": 1}, {"axis_order": 4, "r": 1}
-          ]
-        },
-        "transform": [
-          {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
-          {"calculate": "datum.r * cos(datum.angle)", "as": "grid_x"},
-          {"calculate": "datum.r * sin(datum.angle)", "as": "grid_y"}
-        ],
-        "mark": {
-          "type": "line",
-          "interpolate": "linear-closed",
-          "color": "#d8cbbb",
-          "strokeWidth": 1
-        },
-        "encoding": {
-          "x": {"field": "grid_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "y": {"field": "grid_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "order": {"field": "axis_order"},
-          "detail": {"field": "r"}
-        }
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {"axis_order": 0, "r": 0.25}, {"axis_order": 1, "r": 0.25}, {"axis_order": 2, "r": 0.25}, {"axis_order": 3, "r": 0.25}, {"axis_order": 4, "r": 0.25},
+          {"axis_order": 0, "r": 0.5}, {"axis_order": 1, "r": 0.5}, {"axis_order": 2, "r": 0.5}, {"axis_order": 3, "r": 0.5}, {"axis_order": 4, "r": 0.5},
+          {"axis_order": 0, "r": 0.75}, {"axis_order": 1, "r": 0.75}, {"axis_order": 2, "r": 0.75}, {"axis_order": 3, "r": 0.75}, {"axis_order": 4, "r": 0.75},
+          {"axis_order": 0, "r": 1}, {"axis_order": 1, "r": 1}, {"axis_order": 2, "r": 1}, {"axis_order": 3, "r": 1}, {"axis_order": 4, "r": 1}
+        ]
       },
-      {
-        "data": {
-          "values": [
-            {"axis": "Runtime", "axis_order": 0},
-            {"axis": "Rating", "axis_order": 1},
-            {"axis": "Budget", "axis_order": 2},
-            {"axis": "Revenue", "axis_order": 3},
-            {"axis": "Reviews", "axis_order": 4}
-          ]
-        },
-        "transform": [
-          {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
-          {"calculate": "1.18 * cos(datum.angle)", "as": "label_x"},
-          {"calculate": "1.18 * sin(datum.angle)", "as": "label_y"}
-        ],
-        "mark": {
-          "type": "text",
-          "font": "Inter",
-          "fontSize": 9,
-          "color": "#6b6258"
-        },
-        "encoding": {
-          "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "text": {"field": "axis"}
-        }
+      "transform": [
+        {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
+        {"calculate": "datum.r * cos(datum.angle)", "as": "grid_x"},
+        {"calculate": "datum.r * sin(datum.angle)", "as": "grid_y"}
+      ],
+      "mark": {
+        "type": "line",
+        "interpolate": "linear-closed",
+        "color": "#d8cbbb",
+        "strokeWidth": 1
       },
-      {
-        "mark": {
-          "type": "line",
-          "color": "#8C564B",
-          "fill": "#8C564B",
-          "fillOpacity": 0.22,
-          "strokeWidth": 2.5,
-          "interpolate": "linear-closed"
-        },
-        "encoding": {
-          "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "y": {"field": "y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "order": {"field": "axis_order"},
-          "tooltip": [
-            {"field": "primary_genre", "title": "Genre"},
-            {"field": "axis", "title": "Axis"},
-            {"field": "value", "title": "Normalised Score", "format": ".2f"}
-          ]
-        }
-      },
-      {
-        "mark": {
-          "type": "point",
-          "filled": true,
-          "size": 35,
-          "color": "#C1272D"
-        },
-        "encoding": {
-          "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
-          "y": {"field": "y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null}
-        }
+      "encoding": {
+        "x": {"field": "grid_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "y": {"field": "grid_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "order": {"field": "axis_order"},
+        "detail": {"field": "r"}
       }
-    ]
-  },
+    },
+    {
+      "data": {
+        "values": [
+          {"axis": "Runtime", "axis_order": 0},
+          {"axis": "Rating", "axis_order": 1},
+          {"axis": "Budget", "axis_order": 2},
+          {"axis": "Revenue", "axis_order": 3},
+          {"axis": "Reviews", "axis_order": 4}
+        ]
+      },
+      "transform": [
+        {"calculate": "2 * PI * datum.axis_order / 5 - PI / 2", "as": "angle"},
+        {"calculate": "1.16 * cos(datum.angle)", "as": "label_x"},
+        {"calculate": "1.16 * sin(datum.angle)", "as": "label_y"}
+      ],
+      "mark": {
+        "type": "text",
+        "font": "Inter",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#6b6258"
+      },
+      "encoding": {
+        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "text": {"field": "axis"}
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "linear-closed",
+        "strokeWidth": 2.2,
+        "fillOpacity": 0.18
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
+        "order": {"field": "axis_order"},
+        "detail": {"field": "primary_genre"},
+        "color": {
+          "field": "primary_genre",
+          "type": "nominal",
+          "title": "Genre",
+          "scale": {
+            "domain": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Drama",
+              "Horror",
+              "Romance"
+            ],
+            "range": [
+              "#4E79A7",
+              "#F28E2B",
+              "#B07AA1",
+              "#9C755F",
+              "#76B7B2",
+              "#EDC948",
+              "#E15759",
+              "#A0CBE8",
+              "#8C564B"
+            ]
+          }
+        },
+        "fill": {
+          "field": "primary_genre",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Action",
+              "Adventure",
+              "Animation",
+              "Biography",
+              "Comedy",
+              "Crime",
+              "Drama",
+              "Horror",
+              "Romance"
+            ],
+            "range": [
+              "#4E79A7",
+              "#F28E2B",
+              "#B07AA1",
+              "#9C755F",
+              "#76B7B2",
+              "#EDC948",
+              "#E15759",
+              "#A0CBE8",
+              "#8C564B"
+            ]
+          }
+        },
+        "opacity": {"value": 0.45},
+        "tooltip": [
+          {"field": "primary_genre", "title": "Genre"},
+          {"field": "axis", "title": "Axis"},
+          {"field": "value", "title": "Normalised Score", "format": ".2f"}
+        ]
+      }
+    }
+  ],
   "config": {
-    "background": null,
     "view": {"stroke": null},
-    "font": "Inter"
+    "font": "Inter",
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
   }
 }
