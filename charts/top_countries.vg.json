@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Top 10 Film-Producing Nations",
+    "subtitle": "Total films produced, 1970–2024",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 600,
+  "height": 380,
+  "background": null,
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 11,
+      "domain": false,
+      "ticks": false,
+      "grid": false
+    }
+  },
+  "data": {
+    "url": "data/films_by_country.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "film_count": "number",
+        "avg_rating": "number",
+        "total_revenue": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "film_count", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= 10"}
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#c1272d",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {"title": null, "labelPadding": 6}
+    },
+    "x": {
+      "field": "film_count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Films Produced",
+        "grid": true,
+        "gridColor": "#ebe1d2",
+        "gridDash": [2, 3],
+        "format": ",d",
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {"field": "film_count", "type": "quantitative", "title": "Number of Films", "format": ","},
+      {"field": "avg_rating", "type": "quantitative", "title": "Average Rating", "format": ".2f"},
+      {"field": "total_revenue", "type": "quantitative", "title": "Total Revenue (USD)", "format": "$,.0f"}
+    ]
+  }
+}
