@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Genre Tides in Global Cinema",
+    "subtitle": "Changing movie genre patterns, 1970–2024",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 650,
+  "height": 380,
+  "background": null,
+
+  "params": [
+    {
+      "name": "GenreFilter",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Action",
+          "Drama",
+          "Comedy",
+          "Crime",
+          "Adventure",
+          "Animation",
+          "Biography",
+          "Other"
+        ],
+        "name": "Filter Genre: "
+      },
+      "value": "All"
+    }
+  ],
+
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 11,
+      "domain": false,
+      "ticks": false,
+      "grid": false
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
+
+  "data": {
+    "url": "data/movies_joined.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year_ieee": "number",
+        "imdb_rating": "number",
+        "revenue": "number"
+      }
+    }
+  },
+
+  "transform": [
+    {
+      "filter": "datum.year_ieee >= 1970 && datum.year_ieee <= 2024 && datum.primary_genre != null"
+    },
+    {
+      "calculate": "indexof(['Action','Drama','Comedy','Crime','Adventure','Animation','Biography'], datum.primary_genre) >= 0 ? datum.primary_genre : 'Other'",
+      "as": "genre_grouped"
+    },
+    {
+      "filter": "GenreFilter == 'All' || datum.genre_grouped == GenreFilter"
+    }
+  ],
+
+  "mark": {
+    "type": "area",
+    "interpolate": "basis"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "year_ieee",
+      "type": "quantitative",
+      "axis": {
+        "title": "Release Year",
+        "format": "d",
+        "grid": true,
+        "gridColor": "#ebe1d2",
+        "gridDash": [2, 3]
+      }
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "stack": "center",
+      "axis": {
+        "title": "Number of Films"
+      }
+    },
+    "color": {
+      "field": "genre_grouped",
+      "type": "nominal",
+      "title": "Genre",
+      "scale": {
+        "range": [
+          "#4E79A7",
+          "#F28E2B",
+          "#B07AA1",
+          "#9C755F",
+          "#76B7B2",
+          "#EDC948",
+          "#BAB0AC",
+          "#E15759"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year_ieee",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "genre_grouped",
+        "type": "nominal",
+        "title": "Genre"
+      },
+      {
+        "aggregate": "count",
+        "type": "quantitative",
+        "title": "Number of Films"
+      }
+    ]
+  }
+}
