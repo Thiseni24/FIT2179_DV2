@@ -21,6 +21,16 @@
   "layer": [
     {
       "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#A8CBDD"
+      }
+    },
+    
+    {
+      "data": {
         "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
         "format": {"type": "topojson", "feature": "countries"}
       },
@@ -63,10 +73,12 @@
           },
           "legend": {
             "title": "Number of Films Produced",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 320,
+            "offset": 20,
             "titleFontSize": 11,
-            "labelFontSize": 10,
-            "orient": "bottom-right",
-            "gradientLength": 200
+            "labelFontSize": 10
           }
         },
         "tooltip": [
