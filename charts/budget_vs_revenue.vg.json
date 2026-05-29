@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Does a Bigger Budget Mean a Bigger Hit?",
+    "subtitle": "Budget versus box office revenue. Each dot is one film. (Log–log scale)",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 700,
+  "height": 480,
+  "background": null,
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
+  "layer": [
+    {
+      "description": "Break-even diagonal line (revenue = budget)",
+      "data": {
+        "values": [
+          {"x": 10000, "y": 10000},
+          {"x": 500000000, "y": 500000000}
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#d4a548",
+        "strokeDash": [4, 4],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Each film as a dot",
+      "data": {
+        "url": "data/tmdb.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "budget": "number",
+            "revenue": "number",
+            "vote_average": "number",
+            "year": "number"
+          }
+        }
+      },
+      "transform": [
+        {"filter": "datum.budget > 0"},
+        {"filter": "datum.revenue > 0"},
+        {"calculate": "datum.revenue / datum.budget", "as": "roi"},
+        {"calculate": "datum.revenue > datum.budget ? 'Profit' : 'Loss'", "as": "outcome"}
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 35,
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "budget",
+          "type": "quantitative",
+          "scale": {"type": "log"},
+          "axis": {
+            "title": "Budget (USD, log scale)",
+            "format": "$,.0s",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "y": {
+          "field": "revenue",
+          "type": "quantitative",
+          "scale": {"type": "log"},
+          "axis": {
+            "title": "Box Office Revenue (USD, log scale)",
+            "format": "$,.0s",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "color": {
+          "field": "outcome",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Profit", "Loss"],
+            "range": ["#c1272d", "#6b6258"]
+          },
+          "legend": {
+            "title": "Outcome",
+            "orient": "top-left",
+            "titleFontSize": 11,
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {"field": "title", "type": "nominal", "title": "Film"},
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "budget", "type": "quantitative", "title": "Budget", "format": "$,.0f"},
+          {"field": "revenue", "type": "quantitative", "title": "Revenue", "format": "$,.0f"},
+          {"field": "roi", "type": "quantitative", "title": "Return on Investment", "format": ".2f"},
+          {"field": "vote_average", "type": "quantitative", "title": "Average Rating", "format": ".2f"},
+          {"field": "tmdb_primary_genre", "type": "nominal", "title": "Genre"},
+          {"field": "primary_country", "type": "nominal", "title": "Country"}
+        ]
+      }
+    }
+  ]
+}

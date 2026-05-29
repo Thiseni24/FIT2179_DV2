@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Rated vs Discussed",
+    "subtitle": "Among the 1,095 most-reviewed IMDb films: how popular, how loved, how long, and where from.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 700,
+  "height": 480,
+  "background": null,
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#1a1a1a"
+    }
+  },
+  "data": {
+    "url": "data/movies_joined.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "imdb_rating": "number",
+        "num_raters": "number",
+        "num_reviews": "number",
+        "runtime_min": "number",
+        "year": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "country_filter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "United States of America",
+          "United Kingdom",
+          "France",
+          "Japan",
+          "Germany",
+          "Italy",
+          "Canada",
+          "India",
+          "South Korea",
+          "Australia",
+          "Spain"
+        ],
+        "name": "Filter by Country:  "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.imdb_rating != null && datum.num_raters != null && datum.runtime_min != null"},
+    {
+      "calculate": "indexof(['United States of America','United Kingdom','France','Japan','Germany','Italy','Canada','India','South Korea','Australia','Spain'], datum.primary_country) >= 0 ? datum.primary_country : 'Other'",
+      "as": "country_group"
+    },
+    {"filter": "country_filter == 'All' || datum.primary_country == country_filter"}
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.65,
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "imdb_rating",
+      "type": "quantitative",
+      "scale": {"domain": [0, 10]},
+      "axis": {
+        "title": "IMDb Rating",
+        "grid": true,
+        "gridColor": "#ebe1d2",
+        "gridDash": [2, 3],
+        "tickCount": 6
+      }
+    },
+    "y": {
+      "field": "num_raters",
+      "type": "quantitative",
+      "scale": {"type": "log"},
+      "axis": {
+        "title": "Number of Raters (log scale)",
+        "format": ",.0s",
+        "grid": true,
+        "gridColor": "#ebe1d2",
+        "gridDash": [2, 3]
+      }
+    },
+    "size": {
+      "field": "runtime_min",
+      "type": "quantitative",
+      "scale": {"range": [40, 600], "domain": [80, 220]},
+      "legend": {
+        "title": "Runtime (minutes)",
+        "orient": "right",
+        "titleFontSize": 11,
+        "labelFontSize": 10
+      }
+    },
+    "color": {
+      "field": "country_group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "United States of America", "United Kingdom", "France", "Japan",
+          "Germany", "Italy", "Canada", "India", "South Korea", "Australia",
+          "Spain", "Other"
+        ],
+        "range": [
+          "#c1272d", "#2e5e8a", "#d4a548", "#6b4d8a",
+          "#1a7a3c", "#8c1b1f", "#e07a3f", "#7a5d3a",
+          "#3a8a8a", "#4a4a4a", "#a83838", "#c8c2b3"
+        ]
+      },
+      "legend": {
+        "title": "Country",
+        "orient": "right",
+        "titleFontSize": 11,
+        "labelFontSize": 10,
+        "symbolType": "circle"
+      }
+    },
+    "tooltip": [
+      {"field": "title", "type": "nominal", "title": "Film"},
+      {"field": "year", "type": "quantitative", "title": "Year"},
+      {"field": "primary_country", "type": "nominal", "title": "Country"},
+      {"field": "imdb_rating", "type": "quantitative", "title": "IMDb Rating", "format": ".1f"},
+      {"field": "num_raters", "type": "quantitative", "title": "Number of Raters", "format": ","},
+      {"field": "num_reviews", "type": "quantitative", "title": "Number of Reviews", "format": ","},
+      {"field": "runtime_min", "type": "quantitative", "title": "Runtime (minutes)"},
+      {"field": "primary_genre", "type": "nominal", "title": "Genre"}
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Treemap of top studios by total box office revenue.",
+  "width": 700,
+  "height": 430,
+  "padding": 5,
+
+  "title": {
+    "text": "Power Players",
+    "subtitle": "Top studios by total box office revenue",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+
+  "data": [
+    {
+      "name": "studios",
+      "url": "data/tmdb.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "revenue": "number",
+          "budget": "number",
+          "vote_average": "number",
+          "year": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.revenue > 0 && datum.primary_company != null && datum.primary_company != ''"
+        },
+        {
+          "type": "filter",
+          "expr": "datum.year >= 1970 && datum.year <= 2024"
+        },
+        {
+          "type": "aggregate",
+          "groupby": ["primary_company", "primary_country"],
+          "fields": ["revenue", "title", "vote_average"],
+          "ops": ["sum", "count", "mean"],
+          "as": ["total_revenue", "film_count", "avg_rating"]
+        },
+        {
+          "type": "formula",
+          "as": "revenue_billions",
+          "expr": "datum.total_revenue / 1000000000"
+        },
+        {
+          "type": "window",
+          "sort": {
+            "field": "total_revenue",
+            "order": "descending"
+          },
+          "ops": ["rank"],
+          "as": ["rank"]
+        },
+        {
+          "type": "filter",
+          "expr": "datum.rank <= 20"
+        },
+        {
+          "type": "formula",
+          "as": "studio",
+          "expr": "datum.primary_company"
+        },
+        {
+          "type": "formula",
+          "as": "country",
+          "expr": "datum.primary_country == null || datum.primary_country == '' ? 'Unknown' : datum.primary_country"
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "source": "studios",
+      "transform": [
+        {
+          "type": "nest",
+          "keys": ["studio"]
+        },
+        {
+          "type": "treemap",
+          "field": "total_revenue",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "round": true,
+          "method": "squarify",
+          "size": [
+            {"signal": "width"},
+            {"signal": "height"}
+          ],
+          "paddingInner": 3
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "revenueColor",
+      "type": "linear",
+      "domain": {
+        "data": "studios",
+        "field": "revenue_billions"
+      },
+      "range": ["#f6c7b8", "#c1272d", "#7f1518"]
+    }
+  ],
+
+  "legends": [
+    {
+      "fill": "revenueColor",
+      "title": "Total Revenue (Billion USD)",
+      "orient": "right",
+      "gradientLength": 180,
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "format": ".0f"
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "tree"
+      },
+      "encode": {
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {
+            "scale": "revenueColor",
+            "field": "revenue_billions"
+          },
+          "stroke": {"value": "#ffffff"},
+          "strokeWidth": {"value": 1},
+          "tooltip": {
+            "signal": "{'Studio': datum.studio, 'Country': datum.country, 'Total Revenue': '$' + format(datum.revenue_billions, '.2f') + ' Billion', 'Films': datum.film_count, 'Average Rating': format(datum.avg_rating, '.2f')}"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "tree"
+      },
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x0 + 8"},
+          "y": {"signal": "datum.y0 + 18"},
+          "text": {"field": "studio"},
+          "fill": {"value": "#ffffff"},
+          "font": {"value": "Inter"},
+          "fontSize": {"value": 12},
+          "fontWeight": {"value": "bold"},
+          "limit": {"signal": "datum.x1 - datum.x0 - 12"},
+          "opacity": {
+            "signal": "(datum.x1 - datum.x0 > 70 && datum.y1 - datum.y0 > 38) ? 1 : 0"
+          }
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "background": null,
+    "view": {
+      "stroke": null
+    }
+  }
+}
