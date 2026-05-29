@@ -3,19 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>The World on Screen</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -25,10 +20,7 @@
 
   <main class="page">
 
-    <!-- ===================== HERO SECTION ===================== -->
-
     <section class="hero-card">
-
       <p class="eyebrow">A Visual Story of Global Cinema</p>
 
       <h1>The World on Screen</h1>
@@ -39,7 +31,6 @@
       </p>
 
       <div class="big-number-grid">
-
         <div>
           <span>25,230</span>
           <p>Films Analysed</p>
@@ -47,161 +38,187 @@
 
         <div>
           <span>1.1M</span>
-          <p>IMDB Reviews</p>
+          <p>IMDb Reviews</p>
         </div>
 
         <div>
-          <span>50+ years</span>
-          <p>of cinema</p>
+          <span>50+ yrs</span>
+          <p>Of Cinema</p>
         </div>
 
         <div>
           <span>85</span>
-          <p>countries</p>
+          <p>Countries</p>
         </div>
-
       </div>
-
     </section>
 
-    <!-- ===================== SECTION 1 ===================== -->
-
     <section class="story-section">
-
       <p class="section-tag">Act One</p>
-
       <h2>Where Cinema Comes From</h2>
 
       <p class="section-intro">
-        Film production is global, but highly uneven. A small number of countries
-        dominate output while many others contribute smaller yet still significant
-        film industries.
+        Film production is global, but highly uneven. A small number of countries dominate output while many others contribute smaller yet significant film industries.
       </p>
 
       <div class="chart-card full-width">
-
         <div id="chart-world-map"></div>
-
         <p class="chart-note">
-          The map shows that cinema production is geographically widespread,
-          but only a few regions emerge as dominant production hubs.
+          The map shows that cinema production is geographically widespread, but only a few regions emerge as dominant production hubs.
         </p>
-
       </div>
 
       <div class="chart-card full-width">
-
-        <div id="chart-top-countries"></div>
-
+        <div id="chart-country-genre-flow"></div>
         <p class="chart-note">
-          The United States produces dramatically more films than every other
-          country in the dataset, highlighting the scale difference between Hollywood
-          and other national industries.
+          The United States produces dramatically more films than every other country in the dataset, highlighting the scale difference between Hollywood and other national industries.
         </p>
-
       </div>
-
     </section>
 
-    <!-- ===================== SECTION 2 ===================== -->
-
     <section class="story-section">
-
       <p class="section-tag">Act Two</p>
-
       <h2>How Cinema Changed Over Time</h2>
 
       <p class="section-intro">
-        Film output and genre popularity have shifted across decades, reflecting
-        changing audience preferences, technological change and global disruptions.
+        Film output and genre popularity have shifted across decades, reflecting changing audience preferences, technological change and global disruptions.
       </p>
 
       <div class="two-column">
-
         <div class="chart-card">
-
           <div id="chart-films-each-year"></div>
-
           <p class="chart-note">
-            Film production increased steadily for decades before dropping sharply
-            during the COVID-19 pandemic period.
+            Film production increased steadily for decades before dropping sharply during the COVID-19 pandemic period.
           </p>
-
         </div>
 
         <div class="chart-card">
-
           <div id="chart-genre-tides"></div>
-
           <p class="chart-note">
-            Genres rise and fall in waves rather than growing evenly, suggesting
-            that audience interest shifts over time.
+            Genres rise and fall in waves rather than growing evenly, suggesting that audience interest shifts over time.
           </p>
-
         </div>
-
       </div>
-
     </section>
 
-    <!-- ===================== SECTION 3 ===================== -->
-
     <section class="story-section">
-
       <p class="section-tag">Act Three</p>
-
       <h2>What Films Look and Sound Like</h2>
 
       <p class="section-intro">
-        Films differ not only by country, but also by language, structure,
-        audience attention and commercial scale.
+        Films differ not only by country, but also by language, structure, audience attention and commercial scale.
       </p>
 
       <div class="two-column">
-
         <div class="chart-card">
-
           <div id="chart-languages-of-cinema"></div>
-
           <p class="chart-note">
-            English-language films dominate the dataset, though many other
-            languages continue to maintain visible cinematic presence.
+            English-language films dominate the dataset, though many other languages continue to maintain visible cinematic presence.
           </p>
-
         </div>
 
         <div class="chart-card">
-
           <div id="chart-genre-shape"></div>
-
           <p class="chart-note">
-            Each genre forms a distinct “fingerprint” based on runtime,
-            rating, revenue, budget and audience review activity.
+            Each genre forms a distinct “fingerprint” based on runtime, rating, revenue, budget and audience review activity.
           </p>
-
         </div>
-
       </div>
-
     </section>
 
-    <!-- ===================== ENDING ===================== -->
+    <div class="chart-card">
+      <div id="chart-two-crowds"></div>
+      <p class="chart-note">
+        IMDb and TMDB ratings remain close across decades, suggesting that both review communities tend to evaluate films in broadly similar ways.
+      </p>
+    </div>
+
+    <div class="chart-card">
+      <div id="chart-budget-revenue"></div>
+      <p class="chart-note">
+        The diagonal break-even line separates films that earned more than their budget from those that failed to recover production costs.
+      </p>
+    </div>
+
+    <div class="chart-card">
+      <div id="chart-rating-vs-reviews"></div>
+      <p class="chart-note">
+        Description.
+      </p>
+    </div>
+
+    <div class="chart-card">
+      <div id="chart-power-players"></div>
+      <p class="chart-note">
+        A small number of studios occupy most of the revenue space, showing how concentrated commercial cinema is among a few industry power players.
+      </p>
+    </div>
 
     <section class="ending-card">
-
       <h2>So, what does the world on screen look like?</h2>
-
       <p>
-        Global cinema is shaped by concentration and diversity at the same time:
-        a few countries and languages dominate production, while genres and
-        audience interests continue to evolve across decades.
+        Global cinema is shaped by concentration and diversity at the same time: a few countries and languages dominate production, while genres and audience interests continue to evolve across decades.
       </p>
-
     </section>
 
   </main>
 
-  <!-- Vega chart loader -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+
+      <div>
+        <h3>About</h3>
+        <p>
+          A storytelling visualisation exploring how global cinema has evolved across countries, genres, languages and audience attention from 1970–2024.
+        </p>
+        <p>
+          Built with Vega-Lite and vanilla HTML/CSS.
+        </p>
+      </div>
+
+      <div>
+        <h3>Data sources</h3>
+        <p>
+          <a href="https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies" target="_blank">
+            TMDB Movies Dataset
+          </a>
+        </p>
+        <p>
+          <a href="https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset" target="_blank">
+            IEEE IMDb Reviews Dataset
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <h3>Author</h3>
+        <p>
+          <strong>Thiseni Hewa Diyagahage</strong><br>
+          Student ID: 35693703
+        </p>
+        <p>
+          Published May 2026.
+        </p>
+      </div>
+
+      <div>
+        <h3>Acknowledgements</h3>
+        <p>
+          Typography: Inter & Playfair Display.
+        </p>
+        <p>
+          Developed for FIT2179 Data Visualisation 2.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Thiseni Hewa Diyagahage</p>
+      <p>Monash University Malaysia · FIT2179</p>
+    </div>
+  </footer>
+
   <script src="vega_lite_vis.js"></script>
 
 </body>
