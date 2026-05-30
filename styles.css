@@ -154,7 +154,7 @@ p {
   padding: 24px;
   margin-bottom: 28px;
   box-shadow: 0 3px 14px rgba(26, 26, 26, 0.05);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .chart-card .vega-embed {

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The Rise and Fall of World Languages on Screen",
-    "subtitle": "Tracking the top 10 film languages by decade (1970–2020). Each band's vertical position shows rank; thickness shows relative volume (square-root scaled).",
+    "subtitle": "Tracking the top 10 film languages by decade (1970–2020). Lines cross as languages overtake each other; band thickness shows relative volume.",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -13,6 +13,7 @@
   "width": 580,
   "height": 420,
   "background": null,
+  "padding": {"left": 10, "right": 110, "top": 20, "bottom": 30},
   "config": {
     "view": {"stroke": null},
     "font": "Inter",
@@ -32,18 +33,15 @@
     "url": "data/language_bump_area.csv",
     "format": {
       "type": "csv",
-      "parse": {"decade": "number", "rank": "number", "count": "number", "thickness": "number"}
+      "parse": {
+        "decade": "number",
+        "rank": "number",
+        "count": "number",
+        "band_top": "number",
+        "band_bottom": "number"
+      }
     }
   },
-  "transform": [
-    {
-      "window": [{"op": "sum", "field": "thickness", "as": "cumulative"}],
-      "sort": [{"field": "rank", "order": "ascending"}],
-      "groupby": ["decade"]
-    },
-    {"calculate": "datum.cumulative - datum.thickness", "as": "band_top"},
-    {"calculate": "datum.cumulative", "as": "band_bottom"}
-  ],
   "layer": [
     {
       "description": "Bands as areas between band_top and band_bottom",
@@ -51,7 +49,8 @@
         "type": "area",
         "interpolate": "monotone",
         "stroke": "white",
-        "strokeWidth": 1
+        "strokeWidth": 0.8,
+        "opacity": 0.9
       },
       "encoding": {
         "x": {
@@ -65,11 +64,13 @@
           }
         },
         "y": {
-          "field": "band_top",
+          "field": "band_bottom",
           "type": "quantitative",
+          "scale": {"domain": [-0.5, 11.5]},
           "axis": null
         },
-        "y2": {"field": "band_bottom"},
+        "y2": {"field": "band_top"},
+        "detail": {"field": "language", "type": "nominal"},
         "color": {
           "field": "language",
           "type": "nominal",
@@ -88,7 +89,7 @@
       }
     },
     {
-      "description": "Labels at right side of each band",
+      "description": "Right-side labels at last decade, positioned at band midpoints",
       "transform": [
         {"filter": "datum.decade == 2020"},
         {"calculate": "(datum.band_top + datum.band_bottom) / 2", "as": "label_y"}
@@ -102,7 +103,12 @@
       },
       "encoding": {
         "x": {"field": "decade", "type": "quantitative"},
-        "y": {"field": "label_y", "type": "quantitative"},
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {"domain": [-0.5, 11.5]},
+          "axis": null
+        },
         "text": {"field": "language", "type": "nominal"},
         "color": {
           "field": "language",
