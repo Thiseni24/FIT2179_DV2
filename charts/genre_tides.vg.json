@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Genre Tides in Global Cinema",
-    "subtitle": "Changing movie genre patterns, 1970–2024",
+    "subtitle": "How the seven most-produced film genres have grown and shifted, 1970–2024",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -13,29 +13,17 @@
   "width": 650,
   "height": 380,
   "background": null,
-
   "params": [
     {
       "name": "GenreFilter",
       "bind": {
         "input": "select",
-        "options": [
-          "All",
-          "Action",
-          "Drama",
-          "Comedy",
-          "Crime",
-          "Adventure",
-          "Animation",
-          "Biography",
-          "Other"
-        ],
-        "name": "Filter Genre: "
+        "options": ["All","Drama","Comedy","Action","Horror","Animation","Thriller","Crime","Other"],
+        "name": "Filter Genre:  "
       },
       "value": "All"
     }
   ],
-
   "config": {
     "view": {"stroke": null},
     "font": "Inter",
@@ -57,41 +45,30 @@
       "titleFontSize": 12
     }
   },
-
   "data": {
-    "url": "data/movies_joined.csv",
+    "url": "data/tmdb.csv",
     "format": {
       "type": "csv",
-      "parse": {
-        "year_ieee": "number",
-        "imdb_rating": "number",
-        "revenue": "number"
-      }
+      "parse": {"year": "number"}
     }
   },
-
   "transform": [
+    {"filter": "datum.year >= 1970 && datum.year <= 2024 && datum.tmdb_primary_genre != null"},
     {
-      "filter": "datum.year_ieee >= 1970 && datum.year_ieee <= 2024 && datum.primary_genre != null"
-    },
-    {
-      "calculate": "indexof(['Action','Drama','Comedy','Crime','Adventure','Animation','Biography'], datum.primary_genre) >= 0 ? datum.primary_genre : 'Other'",
+      "calculate": "indexof(['Drama','Comedy','Action','Horror','Animation','Thriller','Crime'], datum.tmdb_primary_genre) >= 0 ? datum.tmdb_primary_genre : 'Other'",
       "as": "genre_grouped"
     },
-    {
-      "filter": "GenreFilter == 'All' || datum.genre_grouped == GenreFilter"
-    }
+    {"filter": "GenreFilter == 'All' || datum.genre_grouped == GenreFilter"}
   ],
-
   "mark": {
     "type": "area",
-    "interpolate": "basis"
+    "interpolate": "monotone"
   },
-
   "encoding": {
     "x": {
-      "field": "year_ieee",
+      "field": "year",
       "type": "quantitative",
+      "scale": {"domain": [1970, 2024]},
       "axis": {
         "title": "Release Year",
         "format": "d",
@@ -104,44 +81,26 @@
       "aggregate": "count",
       "type": "quantitative",
       "stack": "center",
-      "axis": {
-        "title": "Number of Films"
-      }
+      "axis": null
     },
     "color": {
       "field": "genre_grouped",
       "type": "nominal",
       "title": "Genre",
       "scale": {
-        "range": [
-          "#4E79A7",
-          "#F28E2B",
-          "#B07AA1",
-          "#9C755F",
-          "#76B7B2",
-          "#EDC948",
-          "#BAB0AC",
-          "#E15759"
-        ]
+        "domain": ["Drama","Comedy","Action","Horror","Animation","Thriller","Crime","Other"],
+        "range": ["#7a2e3e","#d4a017","#d65a1f","#2c2c2c","#5a7fa5","#3a4d6c","#2d6166","#9b9085"]
+      },
+      "legend": {
+        "orient": "right",
+        "titleFontSize": 12,
+        "labelFontSize": 11
       }
     },
     "tooltip": [
-      {
-        "field": "year_ieee",
-        "type": "quantitative",
-        "title": "Year",
-        "format": "d"
-      },
-      {
-        "field": "genre_grouped",
-        "type": "nominal",
-        "title": "Genre"
-      },
-      {
-        "aggregate": "count",
-        "type": "quantitative",
-        "title": "Number of Films"
-      }
+      {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+      {"field": "genre_grouped", "type": "nominal", "title": "Genre"},
+      {"aggregate": "count", "type": "quantitative", "title": "Number of Films"}
     ]
   }
 }

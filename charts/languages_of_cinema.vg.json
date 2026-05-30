@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Languages of Cinema",
-    "subtitle": "Share of films by original language, 1970–2024",
+    "text": "The Rise and Fall of World Languages on Screen",
+    "subtitle": "Tracking the top 10 film languages by decade (1970–2020). Each band's vertical position shows rank; thickness shows relative volume (square-root scaled).",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -10,115 +10,9 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 650,
-  "height": 360,
+  "width": 580,
+  "height": 420,
   "background": null,
-  "data": {
-    "url": "data/tmdb.csv",
-    "format": {
-      "type": "csv",
-      "parse": {
-        "year": "number"
-      }
-    }
-  },
-  "transform": [
-    {
-      "filter": "datum.year >= 1970 && datum.year <= 2024 && datum.original_language != null"
-    },
-    {
-      "calculate": "indexof(['en','fr','es','ja','ko','hi','de','it','zh'], datum.original_language) >= 0 ? datum.original_language : 'Other'",
-      "as": "language_grouped"
-    },
-    {
-      "calculate": "datum.language_grouped == 'en' ? 'English' : datum.language_grouped == 'fr' ? 'French' : datum.language_grouped == 'es' ? 'Spanish' : datum.language_grouped == 'ja' ? 'Japanese' : datum.language_grouped == 'ko' ? 'Korean' : datum.language_grouped == 'hi' ? 'Hindi' : datum.language_grouped == 'de' ? 'German' : datum.language_grouped == 'it' ? 'Italian' : datum.language_grouped == 'zh' ? 'Chinese' : 'Other'",
-      "as": "language_label"
-    },
-    {
-      "calculate": "datum.language_grouped == 'en' ? 1 : datum.language_grouped == 'fr' ? 2 : datum.language_grouped == 'es' ? 3 : datum.language_grouped == 'it' ? 4 : datum.language_grouped == 'ja' ? 5 : datum.language_grouped == 'hi' ? 6 : datum.language_grouped == 'ko' ? 7 : datum.language_grouped == 'de' ? 8 : datum.language_grouped == 'zh' ? 9 : 10",
-      "as": "language_order"
-    }
-  ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone"
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "quantitative",
-      "axis": {
-        "title": "Release Year",
-        "format": "d",
-        "grid": true,
-        "gridColor": "#ebe1d2",
-        "gridDash": [2, 3]
-      }
-    },
-    "y": {
-      "aggregate": "count",
-      "type": "quantitative",
-      "stack": "normalize",
-      "axis": {
-        "title": "Share of Films",
-        "format": "%"
-      }
-    },
-    "color": {
-      "field": "language_label",
-      "type": "nominal",
-      "title": "Original Language",
-      "scale": {
-        "domain": [
-          "English",
-          "French",
-          "Spanish",
-          "Italian",
-          "Japanese",
-          "Hindi",
-          "Korean",
-          "German",
-          "Chinese",
-          "Other"
-        ],
-        "range": [
-          "#8C564B",
-          "#4E79A7",
-          "#F28E2B",
-          "#B07AA1",
-          "#76B7B2",
-          "#EDC948",
-          "#9C755F",
-          "#BAB0AC",
-          "#A0CBE8",
-          "#D8CBBB"
-        ]
-      }
-    },
-    "order": {
-      "field": "language_order",
-      "type": "ordinal",
-      "sort": "ascending"
-    },
-    "tooltip": [
-      {
-        "field": "year",
-        "type": "quantitative",
-        "title": "Year",
-        "format": "d"
-      },
-      {
-        "field": "language_label",
-        "type": "nominal",
-        "title": "Language"
-      },
-      {
-        "aggregate": "count",
-        "type": "quantitative",
-        "title": "Number of Films"
-      }
-    ]
-  },
   "config": {
     "view": {"stroke": null},
     "font": "Inter",
@@ -132,12 +26,94 @@
       "domain": false,
       "ticks": false,
       "grid": false
-    },
-    "legend": {
-      "labelFont": "Inter",
-      "titleFont": "Inter",
-      "labelFontSize": 11,
-      "titleFontSize": 12
     }
-  }
+  },
+  "data": {
+    "url": "data/language_bump_area.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"decade": "number", "rank": "number", "count": "number", "thickness": "number"}
+    }
+  },
+  "transform": [
+    {
+      "window": [{"op": "sum", "field": "thickness", "as": "cumulative"}],
+      "sort": [{"field": "rank", "order": "ascending"}],
+      "groupby": ["decade"]
+    },
+    {"calculate": "datum.cumulative - datum.thickness", "as": "band_top"},
+    {"calculate": "datum.cumulative", "as": "band_bottom"}
+  ],
+  "layer": [
+    {
+      "description": "Bands as areas between band_top and band_bottom",
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "quantitative",
+          "scale": {"domain": [1970, 2020]},
+          "axis": {
+            "title": "Decade",
+            "format": "d",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "band_top",
+          "type": "quantitative",
+          "axis": null
+        },
+        "y2": {"field": "band_bottom"},
+        "color": {
+          "field": "language",
+          "type": "nominal",
+          "scale": {
+            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
+            "range": ["#7a2e3e","#d65a1f","#d4a017","#3a4d6c","#c98092","#5a7fa5","#2d6166","#b08652","#6b5a8a","#9b9085"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "language", "type": "nominal", "title": "Language"},
+          {"field": "decade", "type": "quantitative", "title": "Decade", "format": "d"},
+          {"field": "rank", "type": "quantitative", "title": "Rank"},
+          {"field": "count", "type": "quantitative", "title": "Number of Films", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Labels at right side of each band",
+      "transform": [
+        {"filter": "datum.decade == 2020"},
+        {"calculate": "(datum.band_top + datum.band_bottom) / 2", "as": "label_y"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {"field": "decade", "type": "quantitative"},
+        "y": {"field": "label_y", "type": "quantitative"},
+        "text": {"field": "language", "type": "nominal"},
+        "color": {
+          "field": "language",
+          "type": "nominal",
+          "scale": {
+            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
+            "range": ["#7a2e3e","#d65a1f","#d4a017","#3a4d6c","#c98092","#5a7fa5","#2d6166","#b08652","#6b5a8a","#9b9085"]
+          },
+          "legend": null
+        }
+      }
+    }
+  ]
 }

@@ -1,129 +1,147 @@
 country,film_count,avg_rating,total_revenue
-Afghanistan,4,6.76,148671
-Albania,5,6.29,0
+Afghanistan,5,6.72,148671
+Albania,6,6.15,0
 Algeria,6,6.88,26434188
 Angola,1,5.73,0
-Argentina,157,6.66,465926794
+Argentina,169,6.64,468386951
 Armenia,1,6.71,0
-Aruba,4,4.67,44547333
-Australia,406,6.3,9909544085
-Austria,91,6.61,378859591
+Aruba,6,4.99,45586859
+Australia,438,6.3,11592773783
+Austria,114,6.63,493664467
 Azerbaijan,1,6.78,0
-Bahamas,3,5.14,18873863
+Bahamas,4,5.18,18930437
 Belarus,4,6.98,8230397
-Belgium,514,6.4,2548256009
+Belgium,584,6.4,2934556995
 Bhutan,1,7.41,0
 Bolivia,4,6.82,987883
-Bosnia and Herzegovina,7,6.82,7820458
-Botswana,1,7.11,0
-Brazil,256,6.7,731545694
-Bulgaria,35,6.19,1956510235
-Burkina Faso,2,6.81,214605
-Cambodia,4,7.07,28341387
-Cameroon,1,6.85,0
-Canada,1329,6.1,25696568453
-Chile,46,6.6,78039422
-China,363,6.69,27702348615
-Colombia,28,7.06,137414245
-Congo,1,7.95,0
+Bosnia and Herzegovina,11,7.17,7820458
+Botswana,3,7.11,60000000
+Brazil,277,6.69,749390155
+Bulgaria,46,6.12,1956918405
+Burkina Faso,3,6.72,214605
+Cambodia,8,6.75,29936385
+Cameroon,3,6.85,214605
+Canada,1494,6.12,29180967650
+Cayman Islands,1,5.58,0
+Chile,58,6.63,170042454
+China,435,6.67,31196750042
+Colombia,42,6.92,419702623
+Congo,2,7.26,0
 Costa Rica,1,7.0,0
-Cote D'Ivoire,2,7.06,35137811
-Croatia,7,6.93,1417453
-Cuba,9,6.87,2087569
+Cote D'Ivoire,3,7.0,35137811
+Croatia,13,6.83,9117476
+Cuba,12,6.81,2143735
 Cyprus,3,6.52,65078855
-Czechia,63,6.6,3240348693
+Czechia,86,6.6,3596039985
 Czechoslovakia,15,7.42,0
-Denmark,193,6.64,1009855673
-Dominican Republic,7,7.46,62623793
-Ecuador,2,7.65,12804889
-Egypt,10,7.25,7061274
-Estonia,9,6.88,276784
-Ethiopia,1,6.21,49667
+Denmark,250,6.64,1828387707
+Dominican Republic,8,7.31,62623793
+East Germany,1,7.59,0
+Ecuador,3,7.87,14120265
+Egypt,13,7.15,9056286
+Estonia,11,6.97,989013
+Ethiopia,2,7.14,49667
 Faeroe Islands,1,7.9,0
-Finland,46,6.57,586093758
-France,2345,6.33,20577358650
-Georgia,4,5.78,0
-Germany,883,6.39,18556436112
-Ghana,1,7.6,9077700
-Greece,26,6.54,38938599
+Finland,85,6.66,718705213
+France,3367,6.38,30358978579
+French Polynesia,1,6.44,0
+Georgia,11,6.65,416167
+Germany,1512,6.44,32576628120
+Ghana,3,7.52,9077700
+Greece,44,6.64,97667829
+Guadaloupe,1,6.67,31626978
 Guatemala,5,6.74,0
 Honduras,1,6.48,0
-Hong Kong,306,6.65,4125515458
-Hungary,43,6.67,486213972
-Iceland,25,6.45,421733159
-India,508,6.68,8238326165
-Indonesia,24,6.3,90304742
-Iran,30,7.23,5399312
-Ireland,129,6.46,1153146424
-Israel,22,6.16,25827624
-Italy,1159,6.13,3179884461
+Hong Kong,464,6.62,14416221164
+Hungary,100,6.52,2403632616
+Iceland,55,6.44,786360829
+India,556,6.67,11325521254
+Indonesia,30,6.39,100932812
+Iran,44,7.2,55202431
+Iraq,4,7.21,479226
+Ireland,229,6.43,2203128123
+Israel,59,6.27,78770933
+Italy,1630,6.28,6192964709
 Jamaica,2,7.09,0
-Japan,1012,6.98,16047170591
-Jordan,2,6.61,768449
-Kazakhstan,1,6.96,0
-Kenya,2,6.46,249468
-Kuwait,1,7.26,15000000
-Latvia,5,6.15,0
-Lebanon,2,5.99,10375893
+Japan,1178,6.92,22405510217
+Jordan,6,6.97,9443922
+Kazakhstan,7,6.55,27428827
+Kenya,4,6.84,3645813
+Kuwait,3,7.28,17176304
+Lao People's Democratic Republic,1,6.8,0
+Latvia,11,6.48,94909
+Lebanon,13,6.94,98056129
 Liberia,1,6.24,0
-Libyan Arab Jamahiriya,1,7.3,1500000
-Lithuania,4,6.17,0
-Luxembourg,14,5.92,55957452
-Macedonia,1,7.93,1133735
+Libyan Arab Jamahiriya,2,7.28,16500000
+Liechtenstein,3,5.62,4858139
+Lithuania,16,6.01,6823110
+Luxembourg,93,6.39,349114234
+Macao,1,6.9,63513743
+Macedonia,7,7.1,1897582
 Malawi,1,7.93,0
-Malaysia,5,5.64,8520317
-Malta,4,6.31,601374929
+Malaysia,9,5.79,8609804
+Mali,1,6.6,0
+Malta,14,6.13,1216486155
 Mauritius,2,6.74,30556
-Mexico,285,7.01,1480283846
+Mexico,369,6.87,2782090838
+Monaco,1,7.37,19406406
 Mongolia,3,7.18,3162153
-Morocco,8,6.06,53385242
+Montenegro,4,6.01,2490055
+Morocco,31,6.43,1277560246
 Myanmar,1,6.66,82264
-Namibia,2,6.17,4192440
-Netherlands,93,6.25,139482999
+Namibia,4,6.12,4192440
+Nepal,1,7.22,0
+Netherlands,210,6.51,1303413304
 Netherlands Antilles,1,6.8,231156
-New Zealand,68,6.54,7321897010
-Nigeria,2,6.17,0
-Norway,62,6.39,106056090
+New Caledonia,1,6.78,0
+New Zealand,98,6.46,8862850989
+Nicaragua,1,6.32,257043
+Nigeria,3,5.92,7171
+Norway,148,6.54,565215681
 Pakistan,1,7.95,0
-Palestinian Territory,1,7.16,0
-Panama,1,6.48,0
-Paraguay,3,6.95,0
-Peru,8,6.68,199594295
-Philippines,16,6.19,204743724
-Poland,144,6.57,33715356
-Portugal,10,6.32,126783
-Puerto Rico,10,6.48,1113984
-Qatar,3,7.08,3106046
-Romania,48,5.82,89881056
-Russian Federation,194,6.51,1226798098
-Rwanda,1,7.1,0
-Saudi Arabia,1,6.32,0
-Senegal,2,6.67,4017253
-Serbia,11,6.18,1541
-Serbia and Montenegro,1,8.04,0
-Singapore,3,5.5,32761895
-Slovakia,3,6.7,173245939
-Slovenia,1,6.7,0
-South Africa,61,6.04,396655447
-South Korea,404,7.03,3909150988
-Soviet Union,52,7.56,2788083
-Spain,481,6.3,3062881025
+Palestinian Territory,7,6.96,3738686
+Panama,3,6.97,0
+Paraguay,6,6.49,163794509
+Peru,20,6.53,402611521
+Philippines,22,6.18,231550895
+Poland,213,6.64,713384139
+Portugal,41,6.29,93138147
+Puerto Rico,18,6.51,61050984
+Qatar,18,7.21,86617149
+Romania,102,6.21,385266999
+Russia,235,6.54,1824165809
+Rwanda,2,7.15,0
+Saudi Arabia,5,7.1,22837364
+Senegal,5,6.61,4231858
+Serbia,27,6.36,172225630
+Serbia and Montenegro,3,7.6,0
+Singapore,24,6.22,58464115
+Slovakia,11,6.58,180251467
+Slovenia,9,6.83,420415116
+Solomon Islands,1,7.45,98126565
+South Africa,117,6.02,1601708219
+South Korea,464,6.99,5409027283
+Soviet Union,62,7.52,8456126
+Spain,825,6.36,8219686488
 Sri Lanka,1,5.73,0
-Sweden,83,6.58,418259803
-Switzerland,31,6.33,1098331898
-Syrian Arab Republic,2,7.63,0
-Taiwan,47,6.82,164033278
+St. Pierre and Miquelon,1,6.47,0
+Sweden,278,6.63,1491432403
+Switzerland,169,6.56,1544392202
+Syrian Arab Republic,4,7.21,0
+Taiwan,89,6.81,2089428004
 Tanzania,1,8.6,0
-Thailand,50,6.34,182525206
-Tunisia,1,6.74,0
-Turkey,153,6.79,405576570
-Uganda,1,6.48,200
-Ukraine,7,6.96,28079237
-United Arab Emirates,18,6.33,943069090
-United Kingdom,1674,6.43,57763134469
-United States of America,10636,6.23,453698426944
-Uruguay,6,6.46,163794509
-Venezuela,10,7.1,4619068
-Vietnam,3,6.64,6890000
-Yugoslavia,4,7.48,0
-Zambia,1,5.24,0
+Thailand,79,6.34,758896937
+Tunisia,11,6.82,7302430
+Turkey,189,6.79,625530460
+Uganda,2,6.72,34823964
+Ukraine,26,6.72,102501661
+United Arab Emirates,37,6.46,1771139006
+United Kingdom,2888,6.43,93807229429
+United States of America,13876,6.25,616948614327
+Uruguay,20,6.59,165805480
+Vanuatu,1,6.66,0
+Venezuela,15,7.09,5939073
+Vietnam,6,6.67,39577214
+Yugoslavia,20,6.63,28400000
+Zambia,2,5.97,0
+Zimbabwe,2,7.23,28726904

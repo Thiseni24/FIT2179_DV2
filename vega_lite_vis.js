@@ -10,7 +10,8 @@ const chartConfigs = [
   { id: "chart-budget-revenue", spec: "charts/budget_vs_revenue.vg.json" },
   { id: "chart-rating-vs-reviews", spec: "charts/rating_vs_reviews.vg.json" },
   { id: "chart-power-players", spec: "charts/power_players.vg.json" },
-  { id: "chart-country-genre-flow", spec: "charts/country_genre_flow.vg.json" },
+  { id: "chart-genre-flow", spec: "charts/genre_chord.vg.json" },
+  { id: "chart-mpa-heatmap", spec: "charts/mpa_heatmap.vg.json" }
 ];
 
 // Embed each chart with shared options

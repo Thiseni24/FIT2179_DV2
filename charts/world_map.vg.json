@@ -20,15 +20,12 @@
   "projection": {"type": "equalEarth"},
   "layer": [
     {
-      "data": {
-        "sphere": true
-      },
+      "data": {"sphere": true},
       "mark": {
         "type": "geoshape",
         "fill": "#A8CBDD"
       }
     },
-    
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
@@ -55,7 +52,9 @@
             "fields": ["film_count", "avg_rating", "total_revenue"]
           }
         },
-        {"filter": "datum.film_count != null"}
+        {
+          "filter": "datum.film_count != null && datum.film_count > 0"
+        }
       ],
       "mark": {
         "type": "geoshape",
@@ -68,8 +67,8 @@
           "type": "quantitative",
           "scale": {
             "type": "log",
-            "scheme": "reds",
-            "domain": [1, 10000]
+            "range": ["#f2d6d0", "#e0999a", "#a7627c", "#491734"],
+            "interpolate": "lab"
           },
           "legend": {
             "title": "Number of Films Produced",
@@ -82,40 +81,30 @@
           }
         },
         "tooltip": [
-          {"field": "properties.name", "type": "nominal", "title": "Country"},
-          {"field": "film_count", "type": "quantitative", "title": "Number of Films", "format": ","},
-          {"field": "avg_rating", "type": "quantitative", "title": "Average Rating", "format": ".2f"},
-          {"field": "total_revenue", "type": "quantitative", "title": "Total Revenue (USD)", "format": "$,.0f"}
+          {
+            "field": "properties.name",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "film_count",
+            "type": "quantitative",
+            "title": "Number of Films",
+            "format": ","
+          },
+          {
+            "field": "avg_rating",
+            "type": "quantitative",
+            "title": "Average Rating",
+            "format": ".2f"
+          },
+          {
+            "field": "total_revenue",
+            "type": "quantitative",
+            "title": "Total Revenue (USD)",
+            "format": "$,.0f"
+          }
         ]
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {"country": "United States", "lon": -98, "lat": 39, "label": "USA"},
-          {"country": "Canada", "lon": -106, "lat": 56, "label": "Canada"},
-          {"country": "United Kingdom", "lon": -2, "lat": 54, "label": "UK"},
-          {"country": "France", "lon": 2, "lat": 47, "label": "France"},
-          {"country": "Germany", "lon": 10, "lat": 51, "label": "Germany"},
-          {"country": "Italy", "lon": 12, "lat": 43, "label": "Italy"},
-          {"country": "Japan", "lon": 138, "lat": 36, "label": "Japan"},
-          {"country": "India", "lon": 79, "lat": 22, "label": "India"},
-          {"country": "Australia", "lon": 134, "lat": -25, "label": "Australia"},
-          {"country": "Brazil", "lon": -53, "lat": -10, "label": "Brazil"},
-          {"country": "South Korea", "lon": 128, "lat": 36, "label": "S. Korea"},
-          {"country": "China", "lon": 104, "lat": 35, "label": "China"}
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "fontSize": 11,
-        "fontWeight": "bold",
-        "color": "white"
-      },
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "label", "type": "nominal"}
       }
     }
   ]

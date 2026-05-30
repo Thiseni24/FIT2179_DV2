@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Genre Connections",
+    "subtitle": "Which genres tend to share the same films? Thicker bands connect stronger pairings.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 600,
+  "height": 600,
+  "background": null,
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter"
+  },
+  "layer": [
+    {
+    "description": "Ribbons connecting genre pairs",
+    "data": {
+        "url": "data/chord_ribbons.csv",
+        "format": {
+        "type": "csv",
+        "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
+        }
+    },
+    "transform": [
+        {"calculate": "min(0.7, 0.12 + (datum.pair_count / 2700) * 0.55)", "as": "ribbon_opacity"}
+    ],
+    "mark": {
+        "type": "line",
+        "interpolate": "linear-closed",
+        "strokeWidth": 0,
+        "fill": null
+    },
+    "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "order": {"field": "point_order", "type": "quantitative"},
+        "detail": {"field": "ribbon_id", "type": "nominal"},
+        "fill": {
+        "field": "dominant_genre",
+        "type": "nominal",
+        "scale": {
+            "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
+            "range": ["#7a2e3e","#ffd380","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
+        },
+        "legend": null
+        },
+        "fillOpacity": {"field": "ribbon_opacity", "type": "quantitative", "legend": null},
+        "tooltip": [
+        {"field": "genre_a", "type": "nominal", "title": "Genre A"},
+        {"field": "genre_b", "type": "nominal", "title": "Genre B"},
+        {"field": "pair_count", "type": "quantitative", "title": "Films sharing both", "format": ","}
+        ]
+    }
+    },
+    {
+      "description": "Arc segments around the perimeter (drawn first as background)",
+      "data": {
+        "url": "data/chord_arcs.csv",
+        "format": {
+          "type": "csv",
+          "parse": {"x": "number", "y": "number", "point_order": "number", "total": "number"}
+        }
+      },
+      "mark": {
+        "type": "line",
+        "interpolate": "linear-closed",
+        "strokeWidth": 0,
+        "fill": null
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "order": {"field": "point_order", "type": "quantitative"},
+        "detail": {"field": "genre", "type": "nominal"},
+        "fill": {
+          "field": "genre",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
+            "range": ["#c1272d","#d4a548","#6b4d8a","#e07a3f","#a83838","#2e5e8a","#7a5d3a","#4a4a4a","#3a8a8a","#8c1b1f"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "genre", "type": "nominal", "title": "Genre"},
+          {"field": "total", "type": "quantitative", "title": "Total co-occurrences", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Genre labels",
+      "data": {
+        "url": "data/chord_labels.csv",
+        "format": {
+          "type": "csv",
+          "parse": {"label_x": "number", "label_y": "number"}
+        }
+      },
+      "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#1a1a1a"},
+      "encoding": {
+        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "text": {"field": "genre", "type": "nominal"}
+      }
+    }
+  ]
+}
