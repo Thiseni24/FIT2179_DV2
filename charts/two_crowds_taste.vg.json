@@ -38,9 +38,9 @@
     },
     {
       "aggregate": [
-        {"op": "mean", "field": "imdb_rating", "as": "IMDb"},
-        {"op": "mean", "field": "vote_average", "as": "TMDB"},
-        {"op": "count", "as": "film_count"}
+        { "op": "mean", "field": "imdb_rating", "as": "IMDb" },
+        { "op": "mean", "field": "vote_average", "as": "TMDB" },
+        { "op": "count", "as": "film_count" }
       ],
       "groupby": ["decade", "decade_start"]
     },
@@ -88,7 +88,7 @@
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": {"domain": [6.8, 8.0]},
+          "scale": { "domain": [6.8, 8.0] },
           "axis": {
             "title": "Average Rating",
             "grid": true,
@@ -98,27 +98,14 @@
           }
         },
         "color": {
-          "field": "decade",
-          "type": "nominal",
-          "title": "Decade",
-          "scale": {
-            "domain": ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
-            "range": [
-              "#8C564B",
-              "#B07AA1",
-              "#4E79A7",
-              "#76B7B2",
-              "#F28E2B",
-              "#C1272D"
-            ]
-          }
+          "value": "#766153"
         },
-        "detail": {"field": "decade"},
+        "detail": { "field": "decade" },
         "tooltip": [
-          {"field": "decade", "title": "Decade"},
-          {"field": "rating_source", "title": "Rating Source"},
-          {"field": "average_rating", "title": "Average Rating", "format": ".2f"},
-          {"field": "film_count", "title": "Films Compared", "format": ","}
+          { "field": "decade", "title": "Decade" },
+          { "field": "rating_source", "title": "Rating Source" },
+          { "field": "average_rating", "title": "Average Rating", "format": ".2f" },
+          { "field": "film_count", "title": "Films Compared", "format": "," }
         ]
       }
     },
@@ -126,7 +113,8 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 90
+        "size": 90,
+        "opacity": 0.9
       },
       "encoding": {
         "x": {
@@ -137,23 +125,10 @@
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": {"domain": [6.8, 8.0]}
+          "scale": { "domain": [6.8, 8.0] }
         },
         "color": {
-          "field": "decade",
-          "type": "nominal",
-          "legend": null,
-          "scale": {
-            "domain": ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
-            "range": [
-              "#8C564B",
-              "#B07AA1",
-              "#4E79A7",
-              "#76B7B2",
-              "#F28E2B",
-              "#C1272D"
-            ]
-          }
+          "value": "#766153"
         }
       }
     },
@@ -169,7 +144,8 @@
         "dx": -10,
         "fontSize": 11,
         "fontWeight": "bold",
-        "font": "Inter"
+        "font": "Inter",
+        "color": "#6b6258"
       },
       "encoding": {
         "x": {
@@ -180,26 +156,10 @@
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": {"domain": [6.8, 8.0]}
+          "scale": { "domain": [6.8, 8.0] }
         },
         "text": {
           "field": "decade"
-        },
-        "color": {
-          "field": "decade",
-          "type": "nominal",
-          "legend": null,
-          "scale": {
-            "domain": ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
-            "range": [
-              "#8C564B",
-              "#B07AA1",
-              "#4E79A7",
-              "#76B7B2",
-              "#F28E2B",
-              "#C1272D"
-            ]
-          }
         }
       }
     },
@@ -215,7 +175,8 @@
         "dx": 10,
         "fontSize": 11,
         "fontWeight": "bold",
-        "font": "Inter"
+        "font": "Inter",
+        "color": "#6b6258"
       },
       "encoding": {
         "x": {
@@ -226,32 +187,74 @@
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": {"domain": [6.8, 8.0]}
+          "scale": { "domain": [6.8, 8.0] }
         },
         "text": {
           "field": "decade"
-        },
-        "color": {
-          "field": "decade",
-          "type": "nominal",
-          "legend": null,
-          "scale": {
-            "domain": ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
-            "range": [
-              "#8C564B",
-              "#B07AA1",
-              "#4E79A7",
-              "#76B7B2",
-              "#F28E2B",
-              "#C1272D"
-            ]
-          }
         }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x1": "IMDb", "y1": 7.81, "x2": "TMDB", "y2": 7.88}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "nominal", "sort": ["IMDb", "TMDB"]},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"value": 300},
+        "x2": {"value": 470},
+        "y": {"value": 8.0},
+        "y2": {"value": 78.0}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "Decades of critical recognition, \n reviews and cultural impact \nhelp classic films maintain \nstrong audience ratings."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "font": "Inter",
+        "fontSize": 11,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "x": {"value": 305},
+        "y": {"value": 15},
+        "text": {"field": "label"}
       }
     }
   ],
   "config": {
-    "view": {"stroke": null},
+    "view": { "stroke": null },
     "font": "Inter",
     "axis": {
       "labelFont": "Inter",
@@ -260,13 +263,6 @@
       "titleColor": "#6b6258",
       "domain": false,
       "ticks": false
-    },
-    "legend": {
-      "labelFont": "Inter",
-      "titleFont": "Inter",
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "orient": "right"
     }
   }
 }
