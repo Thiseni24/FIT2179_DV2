@@ -1,13 +1,8 @@
 {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Treemap of top studios by total box office revenue.",
-  "width": 700,
-  "height": 430,
-  "padding": 5,
-
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Power Players",
-    "subtitle": "Top studios by total box office revenue",
+    "subtitle": "Studios by number of films, total revenue and revenue per film",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -15,170 +10,179 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-
-  "data": [
+  "width": 700,
+  "height": 430,
+  "background": null,
+  "data": {
+    "url": "data/tmdb.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "revenue": "number",
+        "budget": "number",
+        "vote_average": "number",
+        "year": "number"
+      }
+    }
+  },
+  "transform": [
     {
-      "name": "studios",
-      "url": "data/tmdb.csv",
-      "format": {
-        "type": "csv",
-        "parse": {
-          "revenue": "number",
-          "budget": "number",
-          "vote_average": "number",
-          "year": "number"
-        }
-      },
-      "transform": [
-        {
-          "type": "filter",
-          "expr": "datum.revenue > 0 && datum.primary_company != null && datum.primary_company != ''"
-        },
-        {
-          "type": "filter",
-          "expr": "datum.year >= 1970 && datum.year <= 2024"
-        },
-        {
-          "type": "aggregate",
-          "groupby": ["primary_company", "primary_country"],
-          "fields": ["revenue", "title", "vote_average"],
-          "ops": ["sum", "count", "mean"],
-          "as": ["total_revenue", "film_count", "avg_rating"]
-        },
-        {
-          "type": "formula",
-          "as": "revenue_billions",
-          "expr": "datum.total_revenue / 1000000000"
-        },
-        {
-          "type": "window",
-          "sort": {
-            "field": "total_revenue",
-            "order": "descending"
-          },
-          "ops": ["rank"],
-          "as": ["rank"]
-        },
-        {
-          "type": "filter",
-          "expr": "datum.rank <= 20"
-        },
-        {
-          "type": "formula",
-          "as": "studio",
-          "expr": "datum.primary_company"
-        },
-        {
-          "type": "formula",
-          "as": "country",
-          "expr": "datum.primary_country == null || datum.primary_country == '' ? 'Unknown' : datum.primary_country"
-        }
-      ]
+      "filter": "datum.revenue > 0 && datum.primary_company != null && datum.primary_company != ''"
     },
     {
-      "name": "tree",
-      "source": "studios",
-      "transform": [
-        {
-          "type": "nest",
-          "keys": ["studio"]
-        },
-        {
-          "type": "treemap",
-          "field": "total_revenue",
-          "sort": {
-            "field": "value",
-            "order": "descending"
-          },
-          "round": true,
-          "method": "squarify",
-          "size": [
-            {"signal": "width"},
-            {"signal": "height"}
-          ],
-          "paddingInner": 3
-        }
-      ]
+      "filter": "datum.year >= 1970 && datum.year <= 2024"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "revenue", "as": "total_revenue"},
+        {"op": "count", "field": "title", "as": "film_count"},
+        {"op": "mean", "field": "vote_average", "as": "avg_rating"}
+      ],
+      "groupby": ["primary_company", "primary_country"]
+    },
+    {
+      "calculate": "datum.total_revenue / 1000000000",
+      "as": "revenue_billions"
+    },
+    {
+      "calculate": "datum.total_revenue / datum.film_count / 1000000",
+      "as": "avg_revenue_per_film"
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "total_revenue", "order": "descending"}]
+    },
+    {
+      "filter": "datum.rank <= 20"
     }
   ],
-
-  "scales": [
+  "layer": [
     {
-      "name": "revenueColor",
-      "type": "linear",
-      "domain": {
-        "data": "studios",
-        "field": "revenue_billions"
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "color": "#5c724a",
+        "opacity": 0.8,
+        "stroke": "grey",
+        "strokeWidth": 1.5
       },
-      "range": ["#f6c7b8", "#c1272d", "#7f1518"]
-    }
-  ],
-
-  "legends": [
-    {
-      "fill": "revenueColor",
-      "title": "Total Revenue (Billion USD)",
-      "orient": "right",
-      "gradientLength": 180,
-      "labelFont": "Inter",
-      "titleFont": "Inter",
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "format": ".0f"
-    }
-  ],
-
-  "marks": [
-    {
-      "type": "rect",
-      "from": {
-        "data": "tree"
-      },
-      "encode": {
-        "update": {
-          "x": {"field": "x0"},
-          "y": {"field": "y0"},
-          "x2": {"field": "x1"},
-          "y2": {"field": "y1"},
-          "fill": {
-            "scale": "revenueColor",
-            "field": "revenue_billions"
-          },
-          "stroke": {"value": "#ffffff"},
-          "strokeWidth": {"value": 1},
-          "tooltip": {
-            "signal": "{'Studio': datum.studio, 'Country': datum.country, 'Total Revenue': '$' + format(datum.revenue_billions, '.2f') + ' Billion', 'Films': datum.film_count, 'Average Rating': format(datum.avg_rating, '.2f')}"
+      "encoding": {
+        "x": {
+          "field": "film_count",
+          "type": "quantitative",
+          "title": "Number of Films",
+          "axis": {
+            "grid": true,
+            "gridColor": "#eadfce",
+            "labelFontSize": 11,
+            "titleFontSize": 12
           }
-        }
+        },
+        "y": {
+          "field": "revenue_billions",
+          "type": "quantitative",
+          "title": "Total Revenue (Billion USD)",
+          "axis": {
+            "grid": true,
+            "gridColor": "#eadfce",
+            "labelFontSize": 11,
+            "titleFontSize": 12
+          }
+        },
+        "size": {
+          "field": "avg_revenue_per_film",
+          "type": "quantitative",
+          "title": "Average Revenue per Film (Million USD)",
+          "scale": {"range": [150, 3500]},
+          "legend": {
+            "orient": "right",
+            "title": "Revenue per Film"
+          }
+        },
+        "tooltip": [
+          {"field": "primary_company", "title": "Studio"},
+          {"field": "primary_country", "title": "Country"},
+          {"field": "film_count", "title": "Number of Films", "format": ","},
+          {"field": "revenue_billions", "title": "Total Revenue (Billion USD)", "format": ".2f"},
+          {"field": "avg_revenue_per_film", "title": "Revenue per Film (Million USD)", "format": ".1f"},
+          {"field": "avg_rating", "title": "Average Rating", "format": ".2f"}
+        ]
       }
     },
     {
-      "type": "text",
-      "from": {
-        "data": "tree"
+      "data": {
+        "values": [
+          {"x1": 116, "y1": 32.0, "x2": 148, "y2": 32.0}
+        ]
       },
-      "encode": {
-        "update": {
-          "x": {"signal": "datum.x0 + 8"},
-          "y": {"signal": "datum.y0 + 18"},
-          "text": {"field": "studio"},
-          "fill": {"value": "#ffffff"},
-          "font": {"value": "Inter"},
-          "fontSize": {"value": 12},
-          "fontWeight": {"value": "bold"},
-          "limit": {"signal": "datum.x1 - datum.x0 - 12"},
-          "opacity": {
-            "signal": "(datum.x1 - datum.x0 > 70 && datum.y1 - datum.y0 > 38) ? 1 : 0"
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.4
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 148, "x2": 215, "y": 29.0, "y2": 33.0}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 151,
+            "y": 31.8,
+            "label": "Disney's revenue was greatly \nboosted by their acquisition of \nMarvel, Pixar and Lucasfilm."
           }
-        }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 11,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ],
-
   "config": {
-    "background": null,
-    "view": {
-      "stroke": null
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "domain": false,
+      "tickColor": "#cfc3b4",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258"
     }
   }
 }
