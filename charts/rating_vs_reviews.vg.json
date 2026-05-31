@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Rated vs Discussed",
-    "subtitle": "Among the 1,095 most-reviewed IMDb films: how popular, how loved, how long, and where from.",
+    "subtitle": "IMDb rating versus audience attention among the most-reviewed films",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -39,7 +39,7 @@
         "imdb_rating": "number",
         "num_raters": "number",
         "num_reviews": "number",
-        "runtime_min": "number",
+        "revenue": "number",
         "year": "number"
       }
     }
@@ -69,87 +69,164 @@
     }
   ],
   "transform": [
-    {"filter": "datum.imdb_rating != null && datum.num_raters != null && datum.runtime_min != null"},
+    {
+      "filter": "datum.imdb_rating != null && datum.num_raters != null && datum.revenue != null"
+    },
     {
       "calculate": "indexof(['United States of America','United Kingdom','France','Japan','Germany','Italy','Canada','India','South Korea','Australia','Spain'], datum.primary_country) >= 0 ? datum.primary_country : 'Other'",
       "as": "country_group"
     },
-    {"filter": "country_filter == 'All' || datum.primary_country == country_filter"}
+    {
+      "filter": "country_filter == 'All' || datum.primary_country == country_filter"
+    },
+    {
+      "joinaggregate": [
+        {"op": "mean", "field": "num_raters", "as": "avg_raters_line"}
+      ]
+    }
   ],
-  "mark": {
-    "type": "circle",
-    "opacity": 0.65,
-    "stroke": "white",
-    "strokeWidth": 0.5
-  },
-  "encoding": {
-    "x": {
-      "field": "imdb_rating",
-      "type": "quantitative",
-      "scale": {"domain": [0, 10]},
-      "axis": {
-        "title": "IMDb Rating",
-        "grid": true,
-        "gridColor": "#ebe1d2",
-        "gridDash": [2, 3],
-        "tickCount": 6
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "opacity": 0.5,
+        "stroke": "beige",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "imdb_rating",
+          "type": "quantitative",
+          "scale": {"domain": [0, 10]},
+          "axis": {
+            "title": "IMDb Rating",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3],
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "num_raters",
+          "type": "quantitative",
+          "scale": {"type": "log", "domain": [10000, 3000000]},
+          "axis": {
+            "title": "Number of Raters (log scale)",
+            "format": ",.0s",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "size": {
+          "field": "revenue",
+          "type": "quantitative",
+          "scale": {"range": [50, 950]},
+          "legend": {
+            "title": "Revenue (USD)",
+            "orient": "right",
+            "titleFontSize": 11,
+            "labelFontSize": 10,
+            "format": "$,.0s"
+          }
+        },
+        "color": {
+          "field": "country_group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "United States of America",
+              "United Kingdom",
+              "France",
+              "Japan",
+              "Germany",
+              "Italy",
+              "Canada",
+              "India",
+              "South Korea",
+              "Australia",
+              "Spain",
+              "Other"
+            ],
+            "range": [
+              "#bcbd8b",
+              "#9c89b8",
+              "#D4C08D",
+              "#A58FB3",
+              "#847577",
+              "#C99B95",
+              "#a39171",
+              "#bd632f",
+              "#b392ac",
+              "#766153",
+              "#a5a58d",
+              "#DCD8CF"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "titleFontSize": 11,
+            "labelFontSize": 10,
+            "symbolType": "circle"
+          }
+        },
+        "tooltip": [
+          {"field": "title_ieee", "type": "nominal", "title": "Film"},
+          {"field": "year_ieee", "type": "quantitative", "title": "Year"},
+          {"field": "primary_country", "type": "nominal", "title": "Country"},
+          {"field": "imdb_rating", "type": "quantitative", "title": "IMDb Rating", "format": ".1f"},
+          {"field": "num_raters", "type": "quantitative", "title": "Number of Raters", "format": ","},
+          {"field": "num_reviews", "type": "quantitative", "title": "Number of Reviews", "format": ","},
+          {"field": "revenue", "type": "quantitative", "title": "Revenue", "format": "$,.2s"}
+        ]
       }
     },
-    "y": {
-      "field": "num_raters",
-      "type": "quantitative",
-      "scale": {"type": "log"},
-      "axis": {
-        "title": "Number of Raters (log scale)",
-        "format": ",.0s",
-        "grid": true,
-        "gridColor": "#ebe1d2",
-        "gridDash": [2, 3]
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [6, 4],
+        "strokeWidth": 1.5,
+        "color": "#6b6258"
+      },
+      "encoding": {
+        "x": {"datum": 7}
       }
     },
-    "size": {
-      "field": "runtime_min",
-      "type": "quantitative",
-      "scale": {"range": [40, 600], "domain": [80, 220]},
-      "legend": {
-        "title": "Runtime (minutes)",
-        "orient": "right",
-        "titleFontSize": 11,
-        "labelFontSize": 10
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [6, 4],
+        "strokeWidth": 1.5,
+        "color": "#6b6258"
+      },
+      "encoding": {
+        "y": {"field": "avg_raters_line", "type": "quantitative"}
       }
     },
-    "color": {
-      "field": "country_group",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "United States of America", "United Kingdom", "France", "Japan",
-          "Germany", "Italy", "Canada", "India", "South Korea", "Australia",
-          "Spain", "Other"
-        ],
-        "range": [
-          "#c1272d", "#2e5e8a", "#d4a548", "#6b4d8a",
-          "#1a7a3c", "#8c1b1f", "#e07a3f", "#7a5d3a",
-          "#3a8a8a", "#4a4a4a", "#a83838", "#c8c2b3"
+    {
+      "data": {
+        "values": [
+          {"x": 8.7, "y": 4200000, "label": "Acclaimed\nBlockbusters"},
+          {"x": 8.7, "y": 18000, "label": "Hidden\nGems"},
+          {"x": 1.1, "y": 4200000, "label": "Popular but\nDivisive"},
+          {"x": 1.1, "y": 18000, "label": "Forgotten\nFilms"}
         ]
       },
-      "legend": {
-        "title": "Country",
-        "orient": "right",
-        "titleFontSize": 11,
-        "labelFontSize": 10,
-        "symbolType": "circle"
+      "mark": {
+        "type": "text",
+        "font": "Inter",
+        "fontSize": 12,
+        "fontWeight": "700",
+        "color": "#6b6258",
+        "align": "left",
+        "baseline": "middle",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
-    },
-    "tooltip": [
-      {"field": "title", "type": "nominal", "title": "Film"},
-      {"field": "year", "type": "quantitative", "title": "Year"},
-      {"field": "primary_country", "type": "nominal", "title": "Country"},
-      {"field": "imdb_rating", "type": "quantitative", "title": "IMDb Rating", "format": ".1f"},
-      {"field": "num_raters", "type": "quantitative", "title": "Number of Raters", "format": ","},
-      {"field": "num_reviews", "type": "quantitative", "title": "Number of Reviews", "format": ","},
-      {"field": "runtime_min", "type": "quantitative", "title": "Runtime (minutes)"},
-      {"field": "primary_genre", "type": "nominal", "title": "Genre"}
-    ]
-  }
+    }
+  ]
 }
