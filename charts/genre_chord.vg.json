@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Genre Connections",
-    "subtitle": "Which genres tend to share the same films? Thicker bands connect stronger pairings.",
+    "subtitle": "Which genres tend to share the same films? Select a genre to see its connections, or keep it on All for the full picture.",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -17,49 +17,66 @@
     "view": {"stroke": null},
     "font": "Inter"
   },
+  "params": [
+    {
+      "name": "GenreFocus",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All","Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
+        "name": "Focus on Genre:  "
+      }
+    }
+  ],
   "layer": [
     {
-    "description": "Ribbons connecting genre pairs",
-    "data": {
+      "description": "Ribbons connecting genre pairs",
+      "data": {
         "url": "data/chord_ribbons.csv",
         "format": {
-        "type": "csv",
-        "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
+          "type": "csv",
+          "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
         }
-    },
-    "transform": [
+      },
+      "transform": [
         {"calculate": "min(0.7, 0.12 + (datum.pair_count / 2700) * 0.55)", "as": "ribbon_opacity"}
-    ],
-    "mark": {
-        "type": "line",
-        "interpolate": "linear-closed",
-        "strokeWidth": 0,
-        "fill": null
-    },
-    "encoding": {
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "linear-closed"
+      },
+      "encoding": {
         "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
         "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "ribbon_id", "type": "nominal"},
-        "fill": {
-        "field": "dominant_genre",
-        "type": "nominal",
-        "scale": {
+        "color": {
+          "field": "dominant_genre",
+          "type": "nominal",
+          "scale": {
             "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
-            "range": ["#7a2e3e","#ffd380","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
+            "range": ["#7a2e3e","#d4a017","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
+          },
+          "legend": null
         },
-        "legend": null
+        "opacity": {
+          "condition": {
+            "test": "GenreFocus == 'All' || datum.genre_a == GenreFocus || datum.genre_b == GenreFocus",
+            "field": "ribbon_opacity",
+            "type": "quantitative"
+          },
+          "value": 0
         },
-        "fillOpacity": {"field": "ribbon_opacity", "type": "quantitative", "legend": null},
         "tooltip": [
-        {"field": "genre_a", "type": "nominal", "title": "Genre A"},
-        {"field": "genre_b", "type": "nominal", "title": "Genre B"},
-        {"field": "pair_count", "type": "quantitative", "title": "Films sharing both", "format": ","}
+          {"field": "genre_a", "type": "nominal", "title": "Genre A"},
+          {"field": "genre_b", "type": "nominal", "title": "Genre B"},
+          {"field": "pair_count", "type": "quantitative", "title": "Films sharing both genres", "format": ","},
+          {"field": "dominant_genre", "type": "nominal", "title": "Dominant genre"}
         ]
-    }
+      }
     },
     {
-      "description": "Arc segments around the perimeter (drawn first as background)",
+      "description": "Arc segments around the perimeter",
       "data": {
         "url": "data/chord_arcs.csv",
         "format": {
@@ -68,28 +85,28 @@
         }
       },
       "mark": {
-        "type": "line",
+        "type": "area",
         "interpolate": "linear-closed",
-        "strokeWidth": 0,
-        "fill": null
+        "stroke": "white",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
         "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "genre", "type": "nominal"},
-        "fill": {
+        "color": {
           "field": "genre",
           "type": "nominal",
           "scale": {
             "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
-            "range": ["#c1272d","#d4a548","#6b4d8a","#e07a3f","#a83838","#2e5e8a","#7a5d3a","#4a4a4a","#3a8a8a","#8c1b1f"]
+            "range": ["#7a2e3e","#d4a017","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
           },
           "legend": null
         },
         "tooltip": [
           {"field": "genre", "type": "nominal", "title": "Genre"},
-          {"field": "total", "type": "quantitative", "title": "Total co-occurrences", "format": ","}
+          {"field": "total", "type": "quantitative", "title": "Total co-occurrences with other genres", "format": ","}
         ]
       }
     },
