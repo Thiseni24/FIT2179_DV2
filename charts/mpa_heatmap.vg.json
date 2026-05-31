@@ -135,11 +135,11 @@
           "type": "quantitative",
           "scale": {
             "range": [
-                "#FFFBEA",
-                "#FFE8A3",
-                "#FFD43B",
-                "#FAB005",
-                "#D97706"
+                "#F3EFE8",
+                "#D6E3E0",
+                "#A9C6C2",
+                "#6F9D99",
+                "#3F6F6B"
             ]
           },
           "legend": {
@@ -172,7 +172,7 @@
       "mark": {
         "type": "text",
         "fontSize": 12,
-        "fontWeight": "normal",
+        "fontWeight": "bold",
         "color": "black"
       },
 
