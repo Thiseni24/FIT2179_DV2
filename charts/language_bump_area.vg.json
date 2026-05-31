@@ -44,7 +44,6 @@
   },
   "layer": [
     {
-      "description": "Bands as areas between band_top and band_bottom",
       "mark": {
         "type": "area",
         "interpolate": "monotone",
@@ -75,8 +74,8 @@
           "field": "language",
           "type": "nominal",
           "scale": {
-            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
-            "range": ["#dda15e","#355070","#bb8588","#ffe1a8","#6A3D2A","#8A7862","#b8bedd","#e07a5f","#c44536","#22223b"]
+            "domain": ["English", "French", "Italian", "Japanese", "Spanish", "German", "Korean", "Hindi", "Chinese", "Russian"],
+            "range": ["#dda15e", "#355070", "#bb8588", "#ffe1a8", "#6A3D2A", "#8A7862", "#b8bedd", "#e07a5f", "#c44536", "#22223b"]
           },
           "legend": null
         },
@@ -89,7 +88,6 @@
       }
     },
     {
-      "description": "Right-side labels at last decade, positioned at band midpoints",
       "transform": [
         {"filter": "datum.decade == 2020"},
         {"calculate": "(datum.band_top + datum.band_bottom) / 2", "as": "label_y"}
@@ -114,22 +112,44 @@
           "field": "language",
           "type": "nominal",
           "scale": {
-            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
-            "range": ["#7a2e3e","#d65a1f","#d4a017","#3a4d6c","#c98092","#5a7fa5","#2d6166","#b08652","#6b5a8a","#9b9085"]
+            "domain": ["English", "French", "Italian", "Japanese", "Spanish", "German", "Korean", "Hindi", "Chinese", "Russian"],
+            "range": ["#7a2e3e", "#d65a1f", "#d4a017", "#3a4d6c", "#c98092", "#5a7fa5", "#2d6166", "#b08652", "#6b5a8a", "#9b9085"]
           },
           "legend": null
         }
       }
     },
     {
-      "description": "Annotation callout box",
-      "data": {"values": [{"x1": 2000, "x2": 2019.5, "y1": 0, "y2": 2.0}]},
+      "data": {
+        "values": [
+          {"x1": 1998, "y1": 2.5, "x2": 1990, "y2": 0.5}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#5a5046",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x1": 1980, "x2": 1997, "y1": -0.8, "y2": 0.7}
+        ]
+      },
       "mark": {
         "type": "rect",
         "cornerRadius": 8,
         "fill": "#f0e6d2",
         "stroke": "#8a7e6a",
-        "strokeWidth": 1
+        "strokeWidth": 1,
+        "opacity": 0.96
       },
       "encoding": {
         "x": {"field": "x1", "type": "quantitative"},
@@ -139,55 +159,29 @@
       }
     },
     {
-      "description": "Connector line from the dot to the box",
-      "data": {"values": [{"x1": 1996, "x2": 2000, "y": 2.5}]},
-      "mark": {
-        "type": "rule",
-        "stroke": "#5a5046",
-        "strokeWidth": 1.2
+      "data": {
+        "values": [
+          {
+            "x": 1988.5,
+            "y": 0.4,
+            "label": "Government investments in the film \nindustry during the late 1990s helped \nKorean cinema expand globally."
+          }
+        ]
       },
-      "encoding": {
-        "x": {"field": "x1", "type": "quantitative"},
-        "x2": {"field": "x2"},
-        "y": {"field": "y", "type": "quantitative"}
-      }
-    },
-    {
-      "description": "Annotation anchor dot, sitting on the Korean ribbon (late 1990s)",
-      "data": {"values": [{"x": 1996, "y": 2.5}]},
-      "mark": {
-        "type": "circle",
-        "size": 220,
-        "fill": "#8a9b6e",
-        "stroke": "#5a5046",
-        "strokeWidth": 1.2
-      },
-      "encoding": {
-        "x": {"field": "x", "type": "quantitative"},
-        "y": {"field": "y", "type": "quantitative"}
-      }
-    },
-    {
-      "description": "Annotation text inside the box",
-      "data": {"values": [{"x": 2009.75, "y": 2.5}]},
       "mark": {
         "type": "text",
-        "text": [
-          "Government investment in film",
-          "and television during the late",
-          "1990s helped Korean entertainment",
-          "expand internationally"
-        ],
         "align": "center",
         "baseline": "middle",
-        "fontSize": 11,
+        "fontSize": 10.5,
         "lineHeight": 14,
         "fill": "#3a3530",
-        "font": "Inter"
+        "font": "Inter",
+        "lineBreak": "\n"
       },
       "encoding": {
         "x": {"field": "x", "type": "quantitative"},
-        "y": {"field": "y", "type": "quantitative"}
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ]
