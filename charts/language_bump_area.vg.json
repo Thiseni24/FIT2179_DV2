@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Rise and Fall of World Languages on Screen",
+    "subtitle": "Tracking the top 10 film languages by decade (1970–2020). Lines cross as languages overtake each other; band thickness shows relative volume.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b6258",
+    "font": "Playfair Display",
+    "subtitleFont": "Inter"
+  },
+  "width": 580,
+  "height": 420,
+  "background": null,
+  "padding": {"left": 10, "right": 110, "top": 20, "bottom": 30},
+  "config": {
+    "view": {"stroke": null},
+    "font": "Inter",
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#1a1a1a",
+      "titleColor": "#6b6258",
+      "labelFontSize": 11,
+      "titleFontSize": 11,
+      "domain": false,
+      "ticks": false,
+      "grid": false
+    }
+  },
+  "data": {
+    "url": "data/language_bump_area.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "decade": "number",
+        "rank": "number",
+        "count": "number",
+        "band_top": "number",
+        "band_bottom": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Bands as areas between band_top and band_bottom",
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "stroke": "white",
+        "strokeWidth": 0.8,
+        "opacity": 0.9
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "quantitative",
+          "scale": {"domain": [1970, 2020]},
+          "axis": {
+            "title": "Decade",
+            "format": "d",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "band_bottom",
+          "type": "quantitative",
+          "scale": {"domain": [-0.5, 11.5]},
+          "axis": null
+        },
+        "y2": {"field": "band_top"},
+        "detail": {"field": "language", "type": "nominal"},
+        "color": {
+          "field": "language",
+          "type": "nominal",
+          "scale": {
+            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
+            "range": ["#dda15e","#355070","#bb8588","#ffe1a8","#6A3D2A","#8A7862","#b8bedd","#e07a5f","#c44536","#22223b"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "language", "type": "nominal", "title": "Language"},
+          {"field": "decade", "type": "quantitative", "title": "Decade", "format": "d"},
+          {"field": "rank", "type": "quantitative", "title": "Rank"},
+          {"field": "count", "type": "quantitative", "title": "Number of Films", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Right-side labels at last decade, positioned at band midpoints",
+      "transform": [
+        {"filter": "datum.decade == 2020"},
+        {"calculate": "(datum.band_top + datum.band_bottom) / 2", "as": "label_y"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {"field": "decade", "type": "quantitative"},
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {"domain": [-0.5, 11.5]},
+          "axis": null
+        },
+        "text": {"field": "language", "type": "nominal"},
+        "color": {
+          "field": "language",
+          "type": "nominal",
+          "scale": {
+            "domain": ["English","French","Italian","Japanese","Spanish","German","Korean","Hindi","Chinese","Russian"],
+            "range": ["#7a2e3e","#d65a1f","#d4a017","#3a4d6c","#c98092","#5a7fa5","#2d6166","#b08652","#6b5a8a","#9b9085"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "description": "Annotation callout box",
+      "data": {"values": [{"x1": 2000, "x2": 2019.5, "y1": 0, "y2": 2.0}]},
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 8,
+        "fill": "#f0e6d2",
+        "stroke": "#8a7e6a",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Connector line from the dot to the box",
+      "data": {"values": [{"x1": 1996, "x2": 2000, "y": 2.5}]},
+      "mark": {
+        "type": "rule",
+        "stroke": "#5a5046",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Annotation anchor dot, sitting on the Korean ribbon (late 1990s)",
+      "data": {"values": [{"x": 1996, "y": 2.5}]},
+      "mark": {
+        "type": "circle",
+        "size": 220,
+        "fill": "#8a9b6e",
+        "stroke": "#5a5046",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Annotation text inside the box",
+      "data": {"values": [{"x": 2009.75, "y": 2.5}]},
+      "mark": {
+        "type": "text",
+        "text": [
+          "Government investment in film",
+          "and television during the late",
+          "1990s helped Korean entertainment",
+          "expand internationally"
+        ],
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 11,
+        "lineHeight": 14,
+        "fill": "#3a3530",
+        "font": "Inter"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    }
+  ]
+}
