@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Two Crowds, Similar Taste",
-    "subtitle": "Average IMDb and TMDB ratings by decade",
+    "subtitle": "How two major film communities judge the same eras of cinema",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

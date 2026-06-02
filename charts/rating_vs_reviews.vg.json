@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Rated vs Discussed",
-    "subtitle": "IMDb rating versus audience attention among the most-reviewed films",
+    "text": "Critics, Crowds & Cash",
+    "subtitle": "Do highly rated films attract the most attention?",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Power Players",
-    "subtitle": "Studios by number of films, total revenue and revenue per film",
+    "text": "The Studios That Rule the Box Office",
+    "subtitle": "Comparing studio output, revenue, and earning power",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

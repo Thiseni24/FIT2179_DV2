@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Does a Bigger Budget Mean a Bigger Hit?",
-    "subtitle": "Budget versus box office revenue. Each dot is one film. (Log–log scale)",
+    "subtitle": "Exploring the relationship between production spending and box-office success",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
