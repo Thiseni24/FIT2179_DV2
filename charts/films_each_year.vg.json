@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Films Released Each Year",
-    "subtitle": "Annual film count in the TMDB dataset",
+    "text": "The Boom and Bust of Global Film Production",
+    "subtitle": "A timeline of cinema's rapid expansion and post-pandemic slowdown",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

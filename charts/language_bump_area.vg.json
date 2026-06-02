@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The Rise and Fall of World Languages on Screen",
-    "subtitle": "Tracking the top 10 film languages by decade (1970–2020). Lines cross as languages overtake each other; band thickness shows relative volume.",
+    "subtitle": "Following the languages that shaped global film production",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

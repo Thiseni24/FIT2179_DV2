@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Genre Tides in Global Cinema",
-    "subtitle": "How the seven most-produced film genres have grown and shifted, 1970–2024",
+    "subtitle": "Tracking the changing popularity of cinema's biggest genres over five decades",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
