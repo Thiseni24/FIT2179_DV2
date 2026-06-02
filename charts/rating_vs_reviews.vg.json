@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Critics, Crowds & Cash",
+    "text": "Critics, Crowds and Cash",
     "subtitle": "Do highly rated films attract the most attention?",
     "anchor": "start",
     "fontSize": 20,
