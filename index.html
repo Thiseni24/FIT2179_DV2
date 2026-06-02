@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -18,221 +18,296 @@
 
 <body>
 
-  <main class="page">
+  <!-- STICKY NAVIGATION -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="#top" class="topnav-brand">The World on Screen</a>
+      <ul class="topnav-links">
+        <li><a href="#act-one">Origins</a></li>
+        <li><a href="#act-two">Evolution</a></li>
+        <li><a href="#act-three">Economics</a></li>
+        <li><a href="#act-four">Patterns</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page" id="top">
 
     <!-- HERO -->
     <section class="hero-card">
       <p class="eyebrow">A Visual Story of Global Cinema</p>
       <h1>The World on Screen</h1>
       <p class="hero-subtitle">
-        From Hollywood blockbusters to emerging film industries, global cinema has transformed dramatically over the past 
-        five decades. Explore how production, genres, languages, and audience preferences have evolved, and what these 
+        From Hollywood blockbusters to emerging film industries, global cinema has transformed dramatically over the past
+        five decades. Explore how production, genres, languages, and audience preferences have evolved, and what these
         changes reveal about the stories the world chooses to tell.
       </p>
       <div class="big-number-grid">
         <div><span>25,230</span><p>Films Analysed</p></div>
-        <div><span>1.1M</span><p>Audience Voices</p></div>
-        <div><span>50+ yrs</span><p>Of Change</p></div>
+        <div><span>1.1 Million</span><p>Audience Voices</p></div>
+        <div><span>50+ years</span><p>Of Change</p></div>
         <div><span>146</span><p>Countries</p></div>
       </div>
     </section>
 
     <!-- ACT ONE -->
-    <section class="story-section">
-      <p class="section-tag">Act One</p>
-      <h2>Where Cinema Comes From</h2>
-      <p class="section-intro">
-        Behind every film is a place. While cinema reaches audiences worldwide, production remains concentrated in a 
-        small number of powerful filmmaking hubs.
-      </p>
-
-      <div class="chart-card">
-        <div id="chart-world-map"></div>
-        <p class="chart-note">
-          Film production is heavily concentrated in a relatively small number of countries, with the United States, India, 
-          China, and several major European industries accounting for a large share of global output. The map highlights 
-          a noticeable shift toward Asia, where rapidly expanding film industries have become major contributors to worldwide 
-          cinema production. In contrast, many countries across Africa remain underrepresented, not because of a lack of 
-          storytelling traditions, but because limited investment, smaller domestic film markets, lower access to filmmaking 
-          technology and weaker global distribution networks make large-scale film production more difficult. Rather than being evenly 
-          distributed across the world, modern cinema is shaped by a handful of highly productive regional hubs that exert significant 
-          cultural and economic influence over the global film industry.
+    <section class="act" id="act-one">
+      <header class="act-header">
+        <span class="act-label">Act One</span>
+        <h2 class="act-title">Where <em>Cinema</em> Comes From</h2>
+        <p class="act-intro">
+          Behind every film is a place. While cinema reaches audiences worldwide, production remains concentrated in a
+          small number of powerful filmmaking hubs.
         </p>
+      </header>
+
+      <div class="act-body">
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-world-map"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Film production is heavily concentrated in a relatively small number of countries, with the United States, India,
+              China, and several major European industries accounting for a large share of global output. The map highlights
+              a noticeable shift toward Asia, where rapidly expanding film industries have become major contributors to worldwide
+              cinema production. In contrast, many countries across Africa remain underrepresented, not because of a lack of
+              storytelling traditions, but because limited investment, smaller domestic film markets, lower access to filmmaking
+              technology and weaker global distribution networks make large-scale film production more difficult. Rather than being evenly
+              distributed across the world, modern cinema is shaped by a handful of highly productive regional hubs that exert significant
+              cultural and economic influence over the global film industry.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- ACT TWO -->
-    <section class="story-section">
-      <p class="section-tag">Act Two</p>
-      <h2>The Evolution of the Silver Screen</h2>
-      <p class="section-intro">
-        Cinema is constantly reinventing itself. Genres surge and fade, languages rise to prominence, and changing audience 
-        tastes reshape what reaches the screen.
-      </p>
-
-      <div class="chart-card">
-        <div id="chart-films-each-year"></div>
-        <p class="chart-note">
-          Global film production expanded steadily for decades, but the most dramatic growth occurred after the early 
-          2000s as digital filmmaking lowered production costs and made film creation more accessible worldwide. 
-          By the late 2010s, annual releases had reached record highs, reflecting the rapid expansion of international film 
-          industries and growing demand for content across cinemas and streaming platforms. However, this long period 
-          of growth was abruptly disrupted in 2020 when the COVID-19 pandemic halted productions, delayed releases, and 
-          closed cinemas around the world. Although production has since recovered, the industry has not fully returned to 
-          its pre-pandemic trajectory. Shifts toward streaming-first releases, rising production costs, labour strikes, 
-          and increased financial caution from studios have slowed the pace of recovery. Together, these trends 
-          suggest that the pandemic did not simply interrupt global cinema, it accelerated long-term changes that continue 
-          to reshape how films are produced and distributed today
+    <section class="act" id="act-two">
+      <header class="act-header">
+        <span class="act-label">Act Two</span>
+        <h2 class="act-title">The <em>Evolution</em> of the Silver Screen</h2>
+        <p class="act-intro">
+          Cinema is constantly reinventing itself. Genres surge and fade, languages rise to prominence, and changing audience
+          tastes reshape what reaches the screen.
         </p>
-      </div>
+      </header>
 
-      <div class="chart-card">
-        <div id="chart-genre-tides"></div>
-        <p class="chart-note">
-          The 2000s and 2010s marked a turning point for global cinema. Advances in digital effects and filmmaking 
-          technology fuelled the rise of visually spectacular action and animation films, while drama and comedy 
-          remained consistently popular due to their broad appeal and ability to adapt to changing social and cultural 
-          trends. Horror experienced a renaissance during the 2010s as filmmakers increasingly used the genre to explore 
-          contemporary anxieties, social issues, and psychological themes (prominent examples of this being films such as Get Out(2017) and Midsommer(2019)) 
-          rather than relying solely on traditional scares. 
-          Although streaming platforms expanded access to a wider range of films, evolving audience tastes and new 
-          storytelling approaches played an even greater role in reshaping the genre landscape. Together, 
-          these trends reveal how global cinema evolved from a relatively stable genre mix into a more diverse and dynamic 
-          industry.
-        </p>
-      </div>
+      <div class="act-body">
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-films-each-year"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Global film production expanded steadily for decades, but the most dramatic growth occurred after the early
+              2000s as digital filmmaking lowered production costs and made film creation more accessible worldwide.
+              By the late 2010s, annual releases had reached record highs, reflecting the rapid expansion of international film
+              industries and growing demand for content across cinemas and streaming platforms. However, this long period
+              of growth was abruptly disrupted in 2020 when the COVID-19 pandemic halted productions, delayed releases, and
+              closed cinemas around the world. Although production has since recovered, the industry has not fully returned to
+              its pre-pandemic trajectory. Shifts toward streaming-first releases, rising production costs, labour strikes,
+              and increased financial caution from studios have slowed the pace of recovery. Together, these trends
+              suggest that the pandemic did not simply interrupt global cinema, it accelerated long-term changes that continue
+              to reshape how films are produced and distributed today.
+            </p>
+          </div>
+        </article>
 
-      <div class="chart-card">
-        <div id="chart-language-bump"></div>
-        <p class="chart-note">
-          While English remained dominant through Hollywood's global distribution networks, many film industries reached 
-          peak output during the 2000s and early 2010s. Advances in digital filmmaking lowered production costs, while 
-          expanding multiplex cinemas and international distribution created greater demand for films worldwide. 
-          As streaming platforms emerged, audiences gained easier access to foreign-language content, helping regional 
-          industries such as Korean and Spanish cinema reach global viewers. At the same time, traditionally influential 
-          industries including Japanese and Italian cinema became less prominent as competition increased and audience 
-          attention spread across a wider range of international productions. Together, these trends suggest that global 
-          cinema has become increasingly decentralised, with influence shared across a broader range of regional film 
-          industries rather than concentrated in a few long-established producers.
-        </p>
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-genre-tides"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              The 2000s and 2010s marked a turning point for global cinema. Advances in digital effects and filmmaking
+              technology fuelled the rise of visually spectacular action and animation films, while drama and comedy
+              remained consistently popular due to their broad appeal and ability to adapt to changing social and cultural
+              trends. Horror experienced a renaissance during the 2010s as filmmakers increasingly used the genre to explore
+              contemporary anxieties, social issues, and psychological themes (prominent examples of this being films such as Get Out (2017) and Midsommar (2019))
+              rather than relying solely on traditional scares.
+              Although streaming platforms expanded access to a wider range of films, evolving audience tastes and new
+              storytelling approaches played an even greater role in reshaping the genre landscape. Together,
+              these trends reveal how global cinema evolved from a relatively stable genre mix into a more diverse and dynamic
+              industry.
+            </p>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-language-bump"></div>
+          </div>
+          <div class="chart-notes">
+            <div class="chart-stat">
+              <strong>~67%</strong>
+              <span>of films analysed are in English</span>
+            </div>
+            <p class="chart-note">
+              While English remained dominant through Hollywood's global distribution networks, many film industries reached
+              peak output during the 2000s and early 2010s. Advances in digital filmmaking lowered production costs, while
+              expanding multiplex cinemas and international distribution created greater demand for films worldwide.
+              As streaming platforms emerged, audiences gained easier access to foreign-language content, helping regional
+              industries such as Korean and Spanish cinema reach global viewers. At the same time, traditionally influential
+              industries including Japanese and Italian cinema became less prominent as competition increased and audience
+              attention spread across a wider range of international productions. Together, these trends suggest that global
+              cinema has become increasingly decentralised, with influence shared across a broader range of regional film
+              industries rather than concentrated in a few long-established producers.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- ACT THREE -->
-    <section class="story-section">
-      <p class="section-tag">Act Three</p>
-      <h2>The Economics of Cinema</h2>
-      <p class="section-intro">
-        Not every blockbuster begins with a huge budget, and not every acclaimed film finds a mass audience. These charts 
-        explore how money, attention, and audience perception combine to determine success in cinema.
-      </p>
-
-      <div class="chart-card">
-        <div id="chart-power-players"></div>
-        <p class="chart-note">
-          The relationship between film volume and revenue is far from linear. Studios such as Disney generate exceptionally 
-          high revenue because they own major franchises like Marvel, Star Wars, Pixar, and live-action remakes, 
-          which already have established global fan bases. These franchises reduce financial risk, attract 
-          stronger investor confidence, receive larger marketing budgets, and secure wider international distribution. 
-          As a result, a small number of blockbuster releases can generate billions in revenue, allowing franchise-driven 
-          studios to outperform competitors with much larger catalogues of standalone films.
+    <section class="act" id="act-three">
+      <header class="act-header">
+        <span class="act-label">Act Three</span>
+        <h2 class="act-title">The <em>Economics</em> of Cinema</h2>
+        <p class="act-intro">
+          Not every blockbuster begins with a huge budget, and not every acclaimed film finds a mass audience. These charts
+          explore how money, attention, and audience perception combine to determine success in cinema.
         </p>
-      </div>
+      </header>
 
-      <div class="chart-card">
-        <div id="chart-budget-revenue"></div>
-        <p class="chart-note">
-          While higher-budget films generally achieve higher box office revenues, the relationship is far from guaranteed. 
-          Larger budgets allow studios to invest in visual effects, major actors, global marketing campaigns, and wider 
-          theatrical releases, increasing a film's potential audience and commercial reach. However, these advantages also 
-          come with greater financial risk, as expensive productions require significantly larger returns to become 
-          profitable. The chart shows that many high-budget films still generate losses due to factors such as poor 
-          critical reception, franchise fatigue, or intense competition at release. At the same time, lower-budget films 
-          can achieve exceptional returns by attracting dedicated audiences, generating strong word-of-mouth, or benefiting 
-          from streaming and niche markets. Together, these patterns suggest that budget expands a film's opportunity for 
-          success, but audience reception, marketing effectiveness, and cultural relevance ultimately determine whether that 
-          investment pays off.
-        </p>
-      </div>
+      <div class="act-body">
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-power-players"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              The relationship between film volume and revenue is far from linear. Studios such as Disney generate exceptionally
+              high revenue because they own major franchises like Marvel, Star Wars, Pixar, and live-action remakes,
+              which already have established global fan bases. These franchises reduce financial risk, attract
+              stronger investor confidence, receive larger marketing budgets, and secure wider international distribution.
+              As a result, a small number of blockbuster releases can generate billions in revenue, allowing franchise-driven
+              studios to outperform competitors with much larger catalogues of standalone films.
+            </p>
+          </div>
+        </article>
 
-      <div class="chart-card">
-        <div id="chart-rating-vs-reviews"></div>
-        <p class="chart-note">
-          Success in cinema is not determined by ratings alone. While highly rated films often attract more audience 
-          attention, the largest box-office successes are concentrated where strong ratings and widespread discussion 
-          intersect. This suggests that commercial success is driven not only by quality, but also by a film's ability 
-          to generate conversation and cultural relevance. At the same time, the presence of highly rated yet 
-          less-discussed films highlights how critical acclaim does not always translate into financial success 
-          or mainstream visibility. Together, these patterns reveal that the most profitable films are often those that 
-          balance audience approval, broad appeal, and public attention.
-        </p>
-      </div>
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-budget-revenue"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              While higher-budget films generally achieve higher box office revenues, the relationship is far from guaranteed.
+              Larger budgets allow studios to invest in visual effects, major actors, global marketing campaigns, and wider
+              theatrical releases, increasing a film's potential audience and commercial reach. However, these advantages also
+              come with greater financial risk, as expensive productions require significantly larger returns to become
+              profitable. The chart shows that many high-budget films still generate losses due to factors such as poor
+              critical reception, franchise fatigue, or intense competition at release. At the same time, lower-budget films
+              can achieve exceptional returns by attracting dedicated audiences, generating strong word-of-mouth, or benefiting
+              from streaming and niche markets. Together, these patterns suggest that budget expands a film's opportunity for
+              success, but audience reception, marketing effectiveness, and cultural relevance ultimately determine whether that
+              investment pays off.
+            </p>
+          </div>
+        </article>
 
-      <div class="chart-card">
-        <div id="chart-two-crowds"></div>
-        <p class="chart-note">
-          Although IMDb and TMDB attract different communities, both platforms show remarkably similar opinions 
-          across decades. Older films consistently receive higher ratings, suggesting that cultural longevity, 
-          critical recognition, and lasting influence shape audience perception more strongly than platform 
-          differences. TMDB ratings remain slightly higher across every decade, which may reflect differences 
-          in platform behaviour: TMDB is often used by dedicated film enthusiasts who actively catalogue 
-          and track films they choose to watch, while IMDb reaches a broader mainstream audience and larger 
-          voting base. Larger audiences typically introduce a wider range of opinions, causing ratings to 
-          become more moderate over time.
-        </p>
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-rating-vs-reviews"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Success in cinema is not determined by ratings alone. While highly rated films often attract more audience
+              attention, the largest box-office successes are concentrated where strong ratings and widespread discussion
+              intersect. This suggests that commercial success is driven not only by quality, but also by a film's ability
+              to generate conversation and cultural relevance. At the same time, the presence of highly rated yet
+              less-discussed films highlights how critical acclaim does not always translate into financial success
+              or mainstream visibility. Together, these patterns reveal that the most profitable films are often those that
+              balance audience approval, broad appeal, and public attention.
+            </p>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-two-crowds"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Although IMDb and TMDB attract different communities, both platforms show remarkably similar opinions
+              across decades. Older films consistently receive higher ratings, suggesting that cultural longevity,
+              critical recognition, and lasting influence shape audience perception more strongly than platform
+              differences. TMDB ratings remain slightly higher across every decade, which may reflect differences
+              in platform behaviour: TMDB is often used by dedicated film enthusiasts who actively catalogue
+              and track films they choose to watch, while IMDb reaches a broader mainstream audience and larger
+              voting base. Larger audiences typically introduce a wider range of opinions, causing ratings to
+              become more moderate over time.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- ACT FOUR -->
-    <section class="story-section">
-      <p class="section-tag">Act Four</p>
-      <h2>The Anatomy of a Film</h2>
-      <p class="section-intro">
-        Every film leaves a fingerprint. Genres, certifications, and audience expectations combine in different ways to 
-        shape the stories we see on screen.
-      </p>
-
-      <div class="chart-card">
-        <div id="chart-mpa-heatmap"></div>
-        <p class="chart-note">
-          Film certifications influence more than just who can watch a movie, they are also associated with differences 
-          in audience reach, runtime, and reception. Family-oriented films (G and PG) tend to achieve the highest popularity,
-          reflecting their ability to attract viewers across multiple age groups. In contrast, PG-13 and R-rated 
-          films are substantially longer, often allowing for more complex stories and mature themes, yet this does not 
-          necessarily translate into higher IMDb ratings. The results suggest that broader accessibility may play a larger 
-          role in audience engagement than content maturity alone, highlighting the trade-off between reaching a wider 
-          audience and exploring more specialised themes.
+    <section class="act" id="act-four">
+      <header class="act-header">
+        <span class="act-label">Act Four</span>
+        <h2 class="act-title">The <em>Patterns</em> Beneath</h2>
+        <p class="act-intro">
+          Every film leaves a fingerprint. Genres, certifications, and audience expectations combine in different ways to
+          shape the stories we see on screen.
         </p>
-      </div>
+      </header>
 
-      <div class="chart-card">
-        <div id="chart-genre-shape"></div>
-        <p class="chart-note">
-          Each genre leaves a distinctive production and audience “fingerprint,” revealing that success in cinema is achieved 
-          through very different strategies. Genres such as action and animation combine large budgets with high revenues, 
-          reflecting the financial demands of visual effects, franchise building, and global distribution. In contrast, 
-          biography, drama, and romance films achieve strong ratings despite more modest production spending, suggesting 
-          that audiences often reward compelling stories and performances as much as technical spectacle. Runtime also varies
-          noticeably across genres, with character-driven genres tending to favour longer narratives that allow for deeper
-          emotional and thematic development. Together, these patterns show that commercial success, critical acclaim, 
-          and audience engagement do not always come from the same formula, highlighting the diverse ways films connect 
-          with viewers.
+      <div class="act-body">
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-mpa-heatmap"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Film certifications influence more than just who can watch a movie, they are also associated with differences
+              in audience reach, runtime, and reception. Family-oriented films (G and PG) tend to achieve the highest popularity,
+              reflecting their ability to attract viewers across multiple age groups. In contrast, PG-13 and R-rated
+              films are substantially longer, often allowing for more complex stories and mature themes, yet this does not
+              necessarily translate into higher IMDb ratings. The results suggest that broader accessibility may play a larger
+              role in audience engagement than content maturity alone, highlighting the trade-off between reaching a wider
+              audience and exploring more specialised themes.
+            </p>
+          </div>
+        </article>
 
-        </p>
-      </div>
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-genre-shape"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Each genre leaves a distinctive production and audience "fingerprint," revealing that success in cinema is achieved
+              through very different strategies. Genres such as action and animation combine large budgets with high revenues,
+              reflecting the financial demands of visual effects, franchise building, and global distribution. In contrast,
+              biography, drama, and romance films achieve strong ratings despite more modest production spending, suggesting
+              that audiences often reward compelling stories and performances as much as technical spectacle. Runtime also varies
+              noticeably across genres, with character-driven genres tending to favour longer narratives that allow for deeper
+              emotional and thematic development. Together, these patterns show that commercial success, critical acclaim,
+              and audience engagement do not always come from the same formula, highlighting the diverse ways films connect
+              with viewers.
+            </p>
+          </div>
+        </article>
 
-      <div class="chart-card">
-        <div id="chart-genre-flow"></div>
-        <p class="chart-note">
-          Film genres rarely exist in isolation. The strongest connections occur between genres that complement one another, 
-          such as action and adventure, crime and thriller, or drama and romance. Drama emerges as the most 
-          interconnected genre, reflecting its ability to add emotional depth to a wide range of stories. The diagram also 
-          highlights how modern cinema increasingly relies on hybrid storytelling, where films combine multiple genres to 
-          appeal to diverse audiences and balance different forms of entertainment. Rather than being defined by a single 
-          genre, many successful films are built from combinations of themes, tones, and narrative styles, revealing the 
-          interconnected nature of contemporary filmmaking.
-
-        </p>
+        <article class="chart-card">
+          <div class="chart-stage">
+            <div id="chart-genre-flow"></div>
+          </div>
+          <div class="chart-notes">
+            <p class="chart-note">
+              Film genres rarely exist in isolation. The strongest connections occur between genres that complement one another,
+              such as action and adventure, crime and thriller, or drama and romance. Drama emerges as the most
+              interconnected genre, reflecting its ability to add emotional depth to a wide range of stories. The diagram also
+              highlights how modern cinema increasingly relies on hybrid storytelling, where films combine multiple genres to
+              appeal to diverse audiences and balance different forms of entertainment. Rather than being defined by a single
+              genre, many successful films are built from combinations of themes, tones, and narrative styles, revealing the
+              interconnected nature of contemporary filmmaking.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -240,10 +315,10 @@
     <section class="ending-card">
       <h2>So, what does the world on screen look like?</h2>
       <p>
-        Behind every point, line, and connection in this story are the choices of filmmakers and the tastes of audiences 
-        across generations. Cinema is not defined by a single country, genre, language, or formula for success. It is shaped 
-        by millions of people creating, watching, discussing, and sharing stories. The patterns revealed throughout this 
-        journey help explain how films are made and consumed, but they also highlight something equally important: the 
+        Behind every point, line, and connection in this story are the choices of filmmakers and the tastes of audiences
+        across generations. Cinema is not defined by a single country, genre, language, or formula for success. It is shaped
+        by millions of people creating, watching, discussing, and sharing stories. The patterns revealed throughout this
+        journey help explain how films are made and consumed, but they also highlight something equally important: the
         enduring human desire to tell stories and see ourselves reflected on screen.
       </p>
     </section>
@@ -251,58 +326,60 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
+      <div class="footer-grid">
 
-      <div>
-        <h3>About</h3>
-        <p>
-          A storytelling visualisation exploring how global cinema has evolved across countries, genres, languages and audience attention from 1970–2024.
-        </p>
-        <p>
-          Built with Vega-Lite and vanilla HTML/CSS.
-        </p>
+        <div>
+          <h3>About</h3>
+          <p>
+            A storytelling visualisation exploring how global cinema has evolved across countries, genres, languages and audience attention from 1970–2024.
+          </p>
+          <p>
+            Built with Vega-Lite and vanilla HTML/CSS.
+          </p>
+        </div>
+
+        <div>
+          <h3>Data sources</h3>
+          <p>
+            <a href="https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies" target="_blank">
+              TMDB Movies Dataset
+            </a>
+          </p>
+          <p>
+            <a href="https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset" target="_blank">
+              IEEE IMDb Reviews Dataset
+            </a>
+          </p>
+        </div>
+
+        <div>
+          <h3>Author</h3>
+          <p>
+            <strong>Thiseni Hewa Diyagahage</strong><br>
+            Student ID: 35693703
+          </p>
+          <p>
+            Published May 2026.
+          </p>
+        </div>
+
+        <div>
+          <h3>Acknowledgements</h3>
+          <p>
+            Typography: Inter &amp; Playfair Display.
+          </p>
+          <p>
+            Developed for FIT2179 Data Visualisation 2.
+          </p>
+        </div>
+
       </div>
 
-      <div>
-        <h3>Data sources</h3>
-        <p>
-          <a href="https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies" target="_blank">
-            TMDB Movies Dataset
-          </a>
-        </p>
-        <p>
-          <a href="https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset" target="_blank">
-            IEEE IMDb Reviews Dataset
-          </a>
-        </p>
+      <div class="footer-bottom">
+        <p>© 2026 Thiseni Hewa Diyagahage</p>
+        <p>Monash University Malaysia · FIT2179</p>
       </div>
-
-      <div>
-        <h3>Author</h3>
-        <p>
-          <strong>Thiseni Hewa Diyagahage</strong><br>
-          Student ID: 35693703
-        </p>
-        <p>
-          Published May 2026.
-        </p>
-      </div>
-
-      <div>
-        <h3>Acknowledgements</h3>
-        <p>
-          Typography: Inter & Playfair Display.
-        </p>
-        <p>
-          Developed for FIT2179 Data Visualisation 2.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Thiseni Hewa Diyagahage</p>
-      <p>Monash University Malaysia · FIT2179</p>
     </div>
   </footer>
 
