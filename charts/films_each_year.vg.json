@@ -4,8 +4,8 @@
     "text": "The Boom and Bust of Global Film Production",
     "subtitle": "A timeline of cinema's rapid expansion and post-pandemic slowdown",
     "anchor": "start",
-    "fontSize": 20,
-    "subtitleFontSize": 13,
+    "fontSize": 30,
+    "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
     "subtitleFont": "Inter"

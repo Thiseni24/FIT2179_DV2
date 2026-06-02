@@ -5,15 +5,15 @@
     "text": "Inside Movie Certifications",
     "subtitle": "Comparing popularity, audience ratings, and runtime across different certification levels",
     "anchor": "start",
-    "fontSize": 20,
+    "fontSize": 30,
     "subtitleFontSize": 13,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
 
-  "width": 420,
-  "height": 300,
+  "width": 600,
+  "height": 500,
   "padding": {"left": 5, "right": 360, "top": 5, "bottom": 5},
 
   "data": {

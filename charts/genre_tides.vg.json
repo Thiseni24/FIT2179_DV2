@@ -4,8 +4,8 @@
     "text": "Genre Tides in Global Cinema",
     "subtitle": "Tracking the changing popularity of cinema's biggest genres over five decades",
     "anchor": "start",
-    "fontSize": 20,
-    "subtitleFontSize": 13,
+    "fontSize": 30,
+    "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
     "subtitleFont": "Inter"
