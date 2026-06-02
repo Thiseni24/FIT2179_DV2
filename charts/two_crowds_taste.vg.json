@@ -10,8 +10,8 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 520,
-  "height": 360,
+  "width": 600,
+  "height": 400,
   "background": null,
   "data": {
     "url": "data/movies_joined.csv",
