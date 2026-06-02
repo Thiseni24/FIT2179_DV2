@@ -80,6 +80,10 @@
           "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
         }
       },
+      "transform": [
+        {"calculate": "datum.dominant_genre", "as": "primary_genre"},
+        {"calculate": "datum.genre_a == datum.dominant_genre ? datum.genre_b : datum.genre_a", "as": "secondary_genre"}
+      ],
       "mark": {
         "type": "line",
         "interpolate": "linear-closed",
@@ -100,10 +104,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "genre_a", "type": "nominal", "title": "Genre A"},
-          {"field": "genre_b", "type": "nominal", "title": "Genre B"},
-          {"field": "pair_count", "type": "quantitative", "title": "Films sharing both genres", "format": ","},
-          {"field": "dominant_genre", "type": "nominal", "title": "Dominant genre"}
+          {"field": "primary_genre", "type": "nominal", "title": "Primary genre"},
+          {"field": "secondary_genre", "type": "nominal", "title": "Secondary genre"},
+          {"field": "pair_count", "type": "quantitative", "title": "Films sharing both genres", "format": ","}
         ]
       }
     },
@@ -140,6 +143,75 @@
           {"field": "genre", "type": "nominal", "title": "Genre"},
           {"field": "total", "type": "quantitative", "title": "Total co-occurrences with other genres", "format": ","}
         ]
+      }
+    },
+    {
+      "description": "Annotation connector to Thriller arc",
+      "data": {
+        "values": [
+          {"x1": 420, "y1": 490, "x2": 420, "y2": 530}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "y": {"field": "y1", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Annotation box for Thriller",
+      "data": {
+        "values": [
+          {"x": 374, "x2": 573, "y": 530, "y2": 594}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Annotation text for Thriller",
+      "data": {
+        "values": [
+          {
+            "x": 383,
+            "y": 542,
+            "label": "Thrillers often blend with crime,\ndrama and action because suspense\nintensifies existing stories rather\nthan standing alone."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "text": {"field": "label"}
       }
     },
     {

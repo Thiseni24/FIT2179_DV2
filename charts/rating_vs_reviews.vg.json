@@ -227,6 +227,72 @@
         "y": {"field": "y", "type": "quantitative"},
         "text": {"field": "label"}
       }
+    },
+    {
+      "data": {
+        "values": [
+          {"x1": 6.1, "y1": 420000, "x2": 2.7, "y2": 1200000}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 2.0, "x2": 4.6, "y": 750000, "y2": 1850000}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 2.1,
+            "y": 1600000,
+            "label": "Controversial films often attract \nlarge numbers of ratings because \naudiences are motivated to share \nboth praise and criticism."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
     }
   ]
 }

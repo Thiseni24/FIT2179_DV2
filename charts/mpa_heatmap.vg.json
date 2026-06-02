@@ -11,6 +11,7 @@
 
   "width": 420,
   "height": 300,
+  "padding": {"left": 5, "right": 360, "top": 5, "bottom": 5},
 
   "data": {
     "url": "data/movies_joined.csv"
@@ -20,76 +21,37 @@
     {
       "filter": "datum.mpaa != null && datum.mpaa != '' && datum.mpaa != 'Null' && datum.mpaa != 'Not Rated' && datum.mpaa != 'Unrated'"
     },
-
     {
-      "joinaggregate": [
-        {
-          "op": "count",
-          "as": "MovieCount"
-        }
-      ],
+      "joinaggregate": [{"op": "count", "as": "MovieCount"}],
       "groupby": ["mpaa"]
     },
-
     {
       "filter": "datum.MovieCount >= 10"
     },
-
     {
       "aggregate": [
-        {
-          "op": "mean",
-          "field": "popularity",
-          "as": "Average Popularity"
-        },
-        {
-          "op": "mean",
-          "field": "imdb_rating",
-          "as": "Average IMDb Rating"
-        },
-        {
-          "op": "mean",
-          "field": "runtime_min",
-          "as": "Average Runtime"
-        },
-        {
-          "op": "count",
-          "as": "Number of Titles"
-        }
+        {"op": "mean", "field": "popularity", "as": "Average Popularity"},
+        {"op": "mean", "field": "imdb_rating", "as": "Average IMDb Rating"},
+        {"op": "mean", "field": "runtime_min", "as": "Average Runtime"},
+        {"op": "count", "as": "Number of Titles"}
       ],
       "groupby": ["mpaa"]
     },
-
     {
-      "fold": [
-        "Average Popularity",
-        "Average IMDb Rating",
-        "Average Runtime"
-      ],
+      "fold": ["Average Popularity", "Average IMDb Rating", "Average Runtime"],
       "as": ["Metric", "Value"]
     },
-
     {
       "joinaggregate": [
-        {
-          "op": "min",
-          "field": "Value",
-          "as": "MinValue"
-        },
-        {
-          "op": "max",
-          "field": "Value",
-          "as": "MaxValue"
-        }
+        {"op": "min", "field": "Value", "as": "MinValue"},
+        {"op": "max", "field": "Value", "as": "MaxValue"}
       ],
       "groupby": ["Metric"]
     },
-
     {
       "calculate": "(datum.Value - datum.MinValue) / (datum.MaxValue - datum.MinValue)",
       "as": "NormalisedValue"
     },
-
     {
       "calculate": "datum.Metric == 'Average Runtime' ? format(datum.Value, '.1f') + ' min' : format(datum.Value, '.1f')",
       "as": "ValueLabel"
@@ -104,70 +66,34 @@
         "stroke": "#f5f5f5",
         "strokeWidth": 0.5
       },
-
       "encoding": {
         "x": {
           "field": "Metric",
           "type": "nominal",
-          "sort": [
-            "Average Popularity",
-            "Average IMDb Rating",
-            "Average Runtime"
-          ],
-          "axis": {
-            "title": null,
-            "labelAngle": 0,
-            "labelFontSize": 11
-          }
+          "sort": ["Average Popularity", "Average IMDb Rating", "Average Runtime"],
+          "axis": {"title": null, "labelAngle": 0, "labelFontSize": 11}
         },
-
         "y": {
           "field": "mpaa",
           "type": "ordinal",
-          "axis": {
-            "title": "Movie Certification",
-            "labelFontSize": 11
-          }
+          "axis": {"title": "Movie Certification", "labelFontSize": 11}
         },
-
         "color": {
           "field": "NormalisedValue",
           "type": "quantitative",
           "scale": {
-            "range": [
-                "#F3EFE8",
-                "#D6E3E0",
-                "#A9C6C2",
-                "#6F9D99",
-                "#3F6F6B"
-            ]
+            "range": ["#F3EFE8", "#D6E3E0", "#A9C6C2", "#6F9D99", "#3F6F6B"]
           },
-          "legend": {
-            "title": "Relative Average"
-          }
+          "legend": {"title": "Relative Average"}
         },
-
         "tooltip": [
-          {
-            "field": "mpaa",
-            "title": "Certification"
-          },
-          {
-            "field": "Metric"
-          },
-          {
-            "field": "Value",
-            "title": "Average Value",
-            "format": ".2f"
-          },
-          {
-            "field": "Number of Titles",
-            "title": "Number of Titles"
-          }
+          {"field": "mpaa", "title": "Certification"},
+          {"field": "Metric"},
+          {"field": "Value", "title": "Average Value", "format": ".2f"},
+          {"field": "Number of Titles", "title": "Number of Titles"}
         ]
       }
     },
-
     {
       "mark": {
         "type": "text",
@@ -175,35 +101,74 @@
         "fontWeight": "bold",
         "color": "black"
       },
-
       "encoding": {
         "x": {
           "field": "Metric",
           "type": "nominal",
-          "sort": [
-            "Average Popularity",
-            "Average IMDb Rating",
-            "Average Runtime"
-          ]
+          "sort": ["Average Popularity", "Average IMDb Rating", "Average Runtime"]
         },
-
-        "y": {
-          "field": "mpaa",
-          "type": "ordinal"
-        },
-
-        "text": {
-          "field": "ValueLabel"
-        }
+        "y": {"field": "mpaa", "type": "ordinal"},
+        "text": {"field": "ValueLabel"}
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"value": 420},
+        "x2": {"value": 450},
+        "y": {"value": 200},
+        "y2": {"value": 270}
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"value": 450},
+        "x2": {"value": 625},
+        "y": {"value": 237},
+        "y2": {"value": 304}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "PG-13 is Hollywood's\ncommercial 'sweet spot': mature \nthemes, broad access and \nstrong box-office potential."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": {"value": 457},
+        "y": {"value": 250},
+        "text": {"field": "label"}
       }
     }
   ],
 
   "config": {
-    "view": {
-      "stroke": null
-    },
-
+    "view": {"stroke": null},
     "axis": {
       "domain": false,
       "tickColor": "#cccccc"

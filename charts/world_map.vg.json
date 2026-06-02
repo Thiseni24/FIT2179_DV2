@@ -67,7 +67,7 @@
           "type": "quantitative",
           "scale": {
             "type": "log",
-            "range": ["#f2d6d0", "#e0999a", "#a7627c", "#491734"],
+            "range": ["#edddd4", "#e26d5c", "#a44a3f", "#772e25"],
             "interpolate": "lab"
           },
           "legend": {
@@ -105,6 +105,72 @@
             "format": "$,.0f"
           }
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"lon1": 78, "lat1": 15, "lon2": 70, "lat2": -2}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.3
+      },
+      "encoding": {
+        "longitude": {"field": "lon1", "type": "quantitative"},
+        "latitude": {"field": "lat1", "type": "quantitative"},
+        "longitude2": {"field": "lon2"},
+        "latitude2": {"field": "lat2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"lon": 52.5, "lon2": 100, "lat": -16.5, "lat2": -2}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#dcd4c9",
+        "stroke": "#c0b7aa",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "longitude2": {"field": "lon2"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "latitude2": {"field": "lat2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 53,
+            "lat": -5,
+            "label": "India's diverse regional \nfilm industries fuel its \nhigh production levels."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ]

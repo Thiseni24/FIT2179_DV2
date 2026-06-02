@@ -30,7 +30,7 @@
       "description": "Break-even diagonal line (revenue = budget)",
       "data": {
         "values": [
-          {"x": 10000, "y": 10000},
+          {"x": 1000, "y": 1000},
           {"x": 500000000, "y": 500000000}
         ]
       },
@@ -60,7 +60,7 @@
         }
       },
       "transform": [
-        {"filter": "datum.budget > 0"},
+        {"filter": "datum.budget >= 1000"},
         {"filter": "datum.revenue > 0"},
         {"calculate": "datum.revenue / datum.budget", "as": "roi"},
         {"calculate": "datum.revenue > datum.budget ? 'Profit' : 'Loss'", "as": "outcome"}
@@ -100,13 +100,15 @@
           "type": "nominal",
           "scale": {
             "domain": ["Profit", "Loss"],
-            "range": ["#c1272d", "#6b6258"]
+            "range": ["#6b8e4e", "#780116"]
           },
           "legend": {
             "title": "Outcome",
-            "orient": "top-left",
+            "orient": "right",
             "titleFontSize": 11,
-            "labelFontSize": 11
+            "labelFontSize": 11,
+            "symbolSize": 120,
+            "symbolOpacity": 0.7
           }
         },
         "tooltip": [
@@ -119,6 +121,111 @@
           {"field": "tmdb_primary_genre", "type": "nominal", "title": "Genre"},
           {"field": "primary_country", "type": "nominal", "title": "Country"}
         ]
+      }
+    },
+    {
+      "description": "Connector line to annotation",
+      "data": {
+        "values": [
+          {
+            "x1": 25000,
+            "y1": 105000000,
+            "x2": 10000,
+            "y2": 200000000
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Connector line to annotation",
+      "data": {
+        "values": [
+          {
+            "x1": 60000,
+            "y1": 240000000,
+            "x2": 31000,
+            "y2": 700000000
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#6b6258",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Annotation box",
+      "data": {
+        "values": [
+          {
+            "x1": 1500,
+            "x2": 31000,
+            "y1": 200000000,
+            "y2": 7000000000
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 6,
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "description": "Annotation text",
+      "data": {
+        "values": [
+          {
+            "x": 1700,
+            "y": 4300000000
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "text": [
+          "The rise of viral internet",
+          "marketing allowed some",
+          "films to reach global",
+          "audiences without massive",
+          "promotional budgets."
+        ],
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 11,
+        "lineHeight": 14,
+        "fill": "#6b6258",
+        "font": "Inter"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
       }
     }
   ]

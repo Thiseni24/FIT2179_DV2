@@ -18,7 +18,7 @@
       "name": "GenreFilter",
       "bind": {
         "input": "select",
-        "options": ["All","Drama","Comedy","Action","Horror","Animation","Thriller","Crime","Other"],
+        "options": ["All", "Drama", "Comedy", "Action", "Horror", "Animation", "Thriller", "Crime", "Other"],
         "name": "Filter Genre:  "
       },
       "value": "All"
@@ -60,47 +60,183 @@
     },
     {"filter": "GenreFilter == 'All' || datum.genre_grouped == GenreFilter"}
   ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone"
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "quantitative",
-      "scale": {"domain": [1970, 2024]},
-      "axis": {
-        "title": "Release Year",
-        "format": "d",
-        "grid": true,
-        "gridColor": "#ebe1d2",
-        "gridDash": [2, 3]
-      }
-    },
-    "y": {
-      "aggregate": "count",
-      "type": "quantitative",
-      "stack": "center",
-      "axis": null
-    },
-    "color": {
-      "field": "genre_grouped",
-      "type": "nominal",
-      "title": "Genre",
-      "scale": {
-        "domain": ["Drama","Comedy","Action","Horror","Animation","Thriller","Crime","Other"],
-        "range": ["#7a2e3e","#ffd380","#d65a1f","#2c2c2c","#7FB8A4","#3a4d6c","#2d6166","#9b9085"]
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
       },
-      "legend": {
-        "orient": "right",
-        "titleFontSize": 12,
-        "labelFontSize": 11
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [1970, 2024]},
+          "axis": {
+            "title": "Release Year",
+            "format": "d",
+            "grid": true,
+            "gridColor": "#ebe1d2",
+            "gridDash": [2, 3]
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "stack": "center",
+          "axis": null
+        },
+        "color": {
+          "field": "genre_grouped",
+          "type": "nominal",
+          "title": "Genre",
+          "scale": {
+            "domain": ["Drama", "Comedy", "Action", "Horror", "Animation", "Thriller", "Crime", "Other"],
+            "range": ["#7a2e3e", "#ffd380", "#d65a1f", "#2c2c2c", "#7FB8A4", "#3a4d6c", "#2d6166", "#9b9085"]
+          },
+          "legend": {
+            "orient": "right",
+            "titleFontSize": 12,
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "genre_grouped", "type": "nominal", "title": "Genre"},
+          {"aggregate": "count", "type": "quantitative", "title": "Number of Films"}
+        ]
       }
     },
-    "tooltip": [
-      {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
-      {"field": "genre_grouped", "type": "nominal", "title": "Genre"},
-      {"aggregate": "count", "type": "quantitative", "title": "Number of Films"}
-    ]
-  }
+    {
+      "data": {
+        "values": [
+          {"x1": 2013, "y1": 130, "x2": 2010, "y2": 100}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.4
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 1990, "x2": 2010, "y": 170, "y2": -50}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 1991,
+            "y": 138,
+            "label": "Thriller Films that blended suspense with \nsocial commentary helped thrillers appeal to \nwider audiences, driving the genre's \nresurgence during the 2010s."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x1": 2009, "y1": 980, "x2": 2003, "y2": 1050}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.4
+      },
+      "encoding": {
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 1985.4, "x2": 2003, "y": 1240, "y2": 1000}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 1986,
+            "y": 1200,
+            "label": "Advances in visual effects and \nthe rise of blockbuster franchises \nhelped action movies attract audiences \nacross languages and cultures."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Inter",
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
 }

@@ -90,61 +90,67 @@
     {
       "data": {
         "values": [
-          {
-            "year": 2020,
-            "films": 910,
-            "label": "COVID-19 disrupted global film production"
-          }
+          {"x1": 2020, "y1": 910, "x2": 2010, "y2": 1100}
         ]
       },
       "mark": {
-        "type": "point",
-        "filled": true,
-        "size": 120,
-        "color": "#C1272D"
+        "type": "rule",
+        "color": "#6b6258",
+        "strokeWidth": 1.3
       },
       "encoding": {
-        "x": {
-          "field": "year",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "films",
-          "type": "quantitative"
-        }
+        "x": {"field": "x1", "type": "quantitative"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 1995, "x2": 2010, "y": 980, "y2": 1210}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f4ede4",
+        "stroke": "#d8cfc1",
+        "strokeWidth": 1,
+        "cornerRadius": 6,
+        "opacity": 0.97
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
       }
     },
     {
       "data": {
         "values": [
           {
-            "year": 2020,
-            "films": 910,
-            "label": "COVID-19 disrupted global film production"
+            "x": 1995.6,
+            "y": 1177,
+            "label": "COVID-19 forced productions\nto shut down globally, delaying \nreleases and reducing film \noutput after years of growth."
           }
         ]
       },
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": 12,
-        "dy": -12,
-        "fontSize": 11,
+        "baseline": "middle",
         "font": "Inter",
-        "color": "#6b6258"
+        "fontSize": 10.5,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n",
+        "lineHeight": 14
       },
       "encoding": {
-        "x": {
-          "field": "year",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "films",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "label"
-        }
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ]
