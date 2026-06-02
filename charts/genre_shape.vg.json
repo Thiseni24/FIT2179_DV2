@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Shape of Every Genre",
-    "subtitle": "5-axis genre fingerprints · TMDB: runtime, rating, budget, revenue · IEEE: review count",
+    "text": "The Genre Fingerprints",
+    "subtitle": "Exploring how differentgenres differ in scale, reception, and commercial performance",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,

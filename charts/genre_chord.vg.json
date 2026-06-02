@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Genre Connections",
-    "subtitle": "Which genres tend to share the same films? Select a genre to see its connections, or keep it on All for the full picture.",
+    "text": " The Genre Web",
+    "subtitle": "The most common genre partnerships in modern cinema",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
