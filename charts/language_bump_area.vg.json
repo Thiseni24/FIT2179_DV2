@@ -10,8 +10,8 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 580,
-  "height": 420,
+  "width": 2000,
+  "height": 900,
   "background": null,
   "padding": {"left": 10, "right": 110, "top": 20, "bottom": 30},
   "config": {
