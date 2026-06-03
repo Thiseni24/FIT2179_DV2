@@ -10,7 +10,7 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 900,
+  "width": 1100,
   "height": 480,
   "background": null,
   "config": {
@@ -67,7 +67,7 @@
       ],
       "mark": {
         "type": "circle",
-        "size": 35,
+        "size": 40,
         "opacity": 0.5
       },
       "encoding": {
