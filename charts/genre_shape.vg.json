@@ -10,8 +10,8 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 520,
-  "height": 520,
+  "width": 540,
+  "height": 540,
   "background": null,
   "params": [
     {
@@ -137,7 +137,7 @@
       "mark": {
         "type": "text",
         "font": "Inter",
-        "fontSize": 12,
+        "fontSize": 16,
         "fontWeight": "bold",
         "color": "#6b6258"
       },
@@ -282,7 +282,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 13,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",
