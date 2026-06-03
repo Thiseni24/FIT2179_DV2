@@ -266,6 +266,61 @@ p { margin-bottom: 16px; }
   max-width: 52ch;
 }
 
+/* ===== TEXT HIGHLIGHTS ===== */
+
+.hl {
+  font-weight: 700;
+}
+
+.keyword {
+  font-weight: 700;
+}
+
+/* Countries */
+.usa { color: #bcbd8b; }
+.uk { color: #9c89b8; }
+.france { color: #D4C08D; }
+.japan { color: #A58FB3; }
+.germany { color: #847577; }
+.italy { color: #C99B95; }
+.canada { color: #a39171; }
+.india { color: #bd632f; }
+.korea { color: #b392ac; }
+.australia { color: #766153; }
+.spain { color: #a5a58d; }
+.china { color: #c44536; }
+
+/* Genres */
+.drama { color: #7a2e3e; }
+.comedy { color: #c89400; } 
+.thriller { color: #3a4d6c; }
+.action { color: #d65a1f; }
+.romance { color: #c98092; }
+.crime { color: #2d6166; }
+.adventure { color: #b08652; }
+.horror { color: #2c2c2c; }
+.scifi { color: #5a7fa5; }
+.family { color: #7a8c4f; }
+.animation { color: #5a8a78; }       /* muted teal */
+.biography { color: #9C755F; }       /* warm brown */
+
+
+/* Languages */
+.english { color: #dda15e; }
+.french-lang { color: #355070; }
+.italian-lang { color: #bb8588; }
+.japanese-lang { color: #c8a854; } 
+.spanish-lang { color: #6A3D2A; }
+.german-lang { color: #8A7862; }
+.korean-lang { color: #b8bedd; }
+.hindi-lang { color: #e07a5f; }
+.chinese-lang { color: #c44536; }
+.russian-lang { color: #22223b; }
+
+/* Profit/Loss (used in budget vs revenue description) */
+.profit { color: #5a7a3e; font-weight: 700; }
+.loss   { color: #780116; font-weight: 700; }
+
 /* ============ CHART STAT CALLOUT ============ */
 .chart-stat {
   display: block;
