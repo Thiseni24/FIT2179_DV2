@@ -96,7 +96,7 @@
         "type": "text",
         "align": "left",
         "dx": 8,
-        "fontSize": 11,
+        "fontSize": 30,
         "fontWeight": 600
       },
       "encoding": {
