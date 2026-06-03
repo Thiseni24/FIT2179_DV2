@@ -10,8 +10,8 @@
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
-  "width": 650,
-  "height": 350,
+  "width": 1100,
+  "height": 400,
   "background": null,
   "config": {
     "view": {"stroke": null},
