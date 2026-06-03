@@ -1,17 +1,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": " The Genre Web",
-    "subtitle": "The most common genre partnerships in modern cinema",
+    "text": "The Genre Web",
+    "subtitle": "Tracing which genres lead films and which more often play a supporting role",
     "anchor": "start",
     "fontSize": 30,
     "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Inter",
+    "subtitleFontStyle": "italic"
   },
-  "width": 600,
-  "height": 600,
+  "width": 800,
+  "height": 800,
   "background": null,
   "config": {
     "view": {"stroke": null},
@@ -30,7 +31,7 @@
   ],
   "layer": [
     {
-      "description": "Visible ribbons connecting genre pairs",
+      "description": "Visible ribbons (coloured by source / 'from' genre)",
       "data": {
         "url": "data/chord_ribbons.csv",
         "format": {
@@ -39,7 +40,7 @@
         }
       },
       "transform": [
-        {"calculate": "min(0.7, 0.12 + (datum.pair_count / 2700) * 0.55)", "as": "ribbon_opacity"}
+        {"calculate": "min(0.78, 0.18 + (datum.pair_count / 1600) * 0.55)", "as": "ribbon_opacity"}
       ],
       "mark": {
         "type": "line",
@@ -48,12 +49,12 @@
         "fill": null
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "ribbon_id", "type": "nominal"},
         "fill": {
-          "field": "dominant_genre",
+          "field": "from_genre",
           "type": "nominal",
           "scale": {
             "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
@@ -63,7 +64,7 @@
         },
         "fillOpacity": {
           "condition": {
-            "test": "GenreFocus == 'All' || datum.genre_a == GenreFocus || datum.genre_b == GenreFocus",
+            "test": "GenreFocus == 'All' || datum.from_genre == GenreFocus || datum.to_genre == GenreFocus",
             "field": "ribbon_opacity",
             "type": "quantitative"
           },
@@ -72,7 +73,7 @@
       }
     },
     {
-      "description": "Invisible hover catcher — thick stroke for tooltip hit-testing",
+      "description": "Invisible hover catcher for tooltips",
       "data": {
         "url": "data/chord_ribbons.csv",
         "format": {
@@ -80,10 +81,6 @@
           "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
         }
       },
-      "transform": [
-        {"calculate": "datum.dominant_genre", "as": "primary_genre"},
-        {"calculate": "datum.genre_a == datum.dominant_genre ? datum.genre_b : datum.genre_a", "as": "secondary_genre"}
-      ],
       "mark": {
         "type": "line",
         "interpolate": "linear-closed",
@@ -92,31 +89,31 @@
         "fill": null
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "ribbon_id", "type": "nominal"},
         "opacity": {
           "condition": {
-            "test": "GenreFocus == 'All' || datum.genre_a == GenreFocus || datum.genre_b == GenreFocus",
+            "test": "GenreFocus == 'All' || datum.from_genre == GenreFocus || datum.to_genre == GenreFocus",
             "value": 1
           },
           "value": 0
         },
         "tooltip": [
-          {"field": "primary_genre", "type": "nominal", "title": "Primary genre"},
-          {"field": "secondary_genre", "type": "nominal", "title": "Secondary genre"},
-          {"field": "pair_count", "type": "quantitative", "title": "Films sharing both genres", "format": ","}
+          {"field": "from_genre", "type": "nominal", "title": "From (primary)"},
+          {"field": "to_genre", "type": "nominal", "title": "To (secondary)"},
+          {"field": "pair_count", "type": "quantitative", "title": "Films", "format": ","}
         ]
       }
     },
     {
-      "description": "Arc segments around the perimeter",
+      "description": "Arc segments (out and in halves per genre)",
       "data": {
         "url": "data/chord_arcs.csv",
         "format": {
           "type": "csv",
-          "parse": {"x": "number", "y": "number", "point_order": "number", "total": "number"}
+          "parse": {"x": "number", "y": "number", "point_order": "number", "total": "number", "arc_id": "number"}
         }
       },
       "mark": {
@@ -126,10 +123,10 @@
         "fill": null
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
-        "detail": {"field": "genre", "type": "nominal"},
+        "detail": {"field": "arc_id", "type": "nominal"},
         "fill": {
           "field": "genre",
           "type": "nominal",
@@ -141,15 +138,16 @@
         },
         "tooltip": [
           {"field": "genre", "type": "nominal", "title": "Genre"},
-          {"field": "total", "type": "quantitative", "title": "Total co-occurrences with other genres", "format": ","}
+          {"field": "direction", "type": "nominal", "title": "Half"},
+          {"field": "total", "type": "quantitative", "title": "Films", "format": ","}
         ]
       }
     },
     {
-      "description": "Annotation connector to Thriller arc",
+      "description": "Annotation connector — points at Romance's incoming arc",
       "data": {
         "values": [
-          {"x1": 420, "y1": 490, "x2": 420, "y2": 530}
+          {"x1": 280, "y1": 420, "x2": 195, "y2": 555}
         ]
       },
       "mark": {
@@ -158,17 +156,17 @@
         "strokeWidth": 1.2
       },
       "encoding": {
-        "x": {"field": "x1", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "y1", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "x1", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "y1", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "x2": {"field": "x2"},
         "y2": {"field": "y2"}
       }
     },
     {
-      "description": "Annotation box for Thriller",
+      "description": "Annotation box",
       "data": {
         "values": [
-          {"x": 374, "x2": 573, "y": 530, "y2": 594}
+          {"x": 280, "x2": 560, "y": 340, "y2": 420}
         ]
       },
       "mark": {
@@ -180,20 +178,20 @@
         "opacity": 0.97
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
         "x2": {"field": "x2"},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "y2": {"field": "y2"}
       }
     },
     {
-      "description": "Annotation text for Thriller",
+      "description": "Annotation text",
       "data": {
         "values": [
           {
-            "x": 383,
-            "y": 542,
-            "label": "Thrillers often blend with crime,\ndrama and action because suspense\nintensifies existing stories rather\nthan standing alone."
+            "x": 290,
+            "y": 380,
+            "label": "Romance rarely leads. Most romantic\nfilms are primarily Drama or Comedy\nwith a romantic thread — its incoming\narc is over 3× larger than outgoing."
           }
         ]
       },
@@ -202,15 +200,15 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 11,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",
         "lineHeight": 14
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "text": {"field": "label"}
       }
     },
@@ -225,8 +223,8 @@
       },
       "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#1a1a1a"},
       "encoding": {
-        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 600]}, "axis": null},
-        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [600, 0]}, "axis": null},
+        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
+        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
         "text": {"field": "genre", "type": "nominal"}
       }
     }
