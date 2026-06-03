@@ -8,7 +8,7 @@
     "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
   "width": 1100,
   "height": 480,
@@ -76,7 +76,7 @@
           "type": "quantitative",
           "scale": {"type": "log"},
           "axis": {
-            "title": "Budget (USD, log scale)",
+            "title": "Budget (USD)",
             "format": "$,.0s",
             "grid": true,
             "gridColor": "#ebe1d2",
@@ -88,7 +88,7 @@
           "type": "quantitative",
           "scale": {"type": "log"},
           "axis": {
-            "title": "Box Office Revenue (USD, log scale)",
+            "title": "Box Office Revenue (USD)",
             "format": "$,.0s",
             "grid": true,
             "gridColor": "#ebe1d2",
@@ -202,30 +202,26 @@
       "data": {
         "values": [
           {
-            "x": 1700,
-            "y": 4300000000
+            "x": 1800,
+            "y": 4000000000,
+            "label": "The rise of viral internet marketing \nallowed some films to reach global \naudiences without massive \npromotional budgets."
           }
         ]
       },
       "mark": {
         "type": "text",
-        "text": [
-          "The rise of viral internet",
-          "marketing allowed some",
-          "films to reach global",
-          "audiences without massive",
-          "promotional budgets."
-        ],
         "align": "left",
         "baseline": "middle",
-        "fontSize": 11,
-        "lineHeight": 14,
-        "fill": "#6b6258",
-        "font": "Inter"
+        "font": "Inter",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "color": "#6b6258",
+        "lineBreak": "\n"
       },
       "encoding": {
         "x": {"field": "x", "type": "quantitative"},
-        "y": {"field": "y", "type": "quantitative"}
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ]
