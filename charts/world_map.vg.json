@@ -4,12 +4,11 @@
     "text": "A Map of Modern Cinema",
     "subtitle": "Where the world's films are made",
     "anchor": "start",
-    "fontSize": 30,
+    "fontSize": 27,
     "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter",
-    "subtitleFontStyle": "italic"
+    "subtitleFont": "Helvetica"  
   },
   "width": 1000,
   "height": 500,

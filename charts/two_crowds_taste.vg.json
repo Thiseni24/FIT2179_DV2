@@ -4,11 +4,11 @@
     "text": "Two Crowds, Similar Taste",
     "subtitle": "How two major film communities judge the same eras of cinema",
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 13,
+    "fontSize": 37,
+    "subtitleFontSize": 20,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
   "width": 600,
   "height": 400,
@@ -56,7 +56,7 @@
     {
       "mark": {
         "type": "rule",
-        "color": "#d8cfc1",
+        "color": "#6c584c",
         "strokeWidth": 1.5
       },
       "encoding": {
@@ -94,11 +94,11 @@
             "grid": true,
             "gridColor": "#ebe1d2",
             "gridDash": [2, 3],
-            "labelFontSize": 11
+            "labelFontSize": 14
           }
         },
         "color": {
-          "value": "#766153"
+          "value": "#414833"
         },
         "detail": { "field": "decade" },
         "tooltip": [
@@ -128,7 +128,7 @@
           "scale": { "domain": [6.8, 8.0] }
         },
         "color": {
-          "value": "#766153"
+          "value": "#414833"
         }
       }
     },
@@ -142,7 +142,7 @@
         "type": "text",
         "align": "right",
         "dx": -10,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "font": "Inter",
         "color": "#6b6258"
@@ -173,7 +173,7 @@
         "type": "text",
         "align": "left",
         "dx": 10,
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "bold",
         "font": "Inter",
         "color": "#6b6258"
@@ -222,9 +222,9 @@
         "opacity": 0.97
       },
       "encoding": {
-        "x": {"value": 300},
-        "x2": {"value": 473},
-        "y": {"value": 7.0},
+        "x": {"value": 315},
+        "x2": {"value": 526},
+        "y": {"value": 3},
         "y2": {"value": 76.0}
       }
     },
@@ -232,7 +232,7 @@
       "data": {
         "values": [
           {
-            "label": "Decades of critical recognition, \n reviews and cultural impact \nhelp classic films maintain \nstrong audience ratings."
+            "label": "Many classic films remain \nrelevant and highly rated \nthrough ongoing restoration \nand re-releases."
           }
         ]
       },
@@ -241,14 +241,14 @@
         "align": "left",
         "baseline": "top",
         "font": "Inter",
-        "fontSize": 11,
+        "fontSize": 14.5,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n"
       },
       "encoding": {
-        "x": {"value": 305},
-        "y": {"value": 15},
+        "x": {"value": 325},
+        "y": {"value": 9},
         "text": {"field": "label"}
       }
     }
