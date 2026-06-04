@@ -59,7 +59,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
-            "range": ["#7a2e3e","#ffd380","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
+            "range": ["#7a2e3e","#ffd380","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#0d1f2d","#5a7fa5","#7a8c4f"]
           },
           "legend": null
         },

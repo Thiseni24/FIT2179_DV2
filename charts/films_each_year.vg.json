@@ -50,6 +50,28 @@
   ],
   "layer": [
     {
+      "data": {
+        "values": [
+          {"year": 2020, "year2": 2024, "y": 0, "y2": 1300}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#861a1e",
+        "opacity": 0.08
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [1970, 2024]}
+        },
+        "x2": {"field": "year2"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
       "mark": {
         "type": "line",
         "color": "#8C564B",
@@ -60,6 +82,7 @@
         "x": {
           "field": "year",
           "type": "quantitative",
+          "scale": {"domain": [1970, 2024]},
           "axis": {
             "title": "Release Year",
             "format": "d",
@@ -136,7 +159,7 @@
       "data": {
         "values": [
           {
-            "x": 1995.6,
+            "x": 1990,
             "y": 1177,
             "label": "COVID-19 forced productions\nto shut down globally, delaying \nreleases and reducing film \noutput after years of growth."
           }
@@ -147,11 +170,11 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 13.5,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",
-        "lineHeight": 14
+        "lineHeight": 16
       },
       "encoding": {
         "x": {"field": "x", "type": "quantitative"},

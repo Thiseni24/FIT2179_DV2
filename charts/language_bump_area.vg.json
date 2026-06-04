@@ -4,14 +4,14 @@
     "text": "The Rise and Fall of Languages on Screen",
     "subtitle": "Following the languages that shaped global film production",
     "anchor": "start",
-    "fontSize": 31,
-    "subtitleFontSize": 19,
+    "fontSize": 90,
+    "subtitleFontSize": 55,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
     "subtitleFont": "Helvetica"
   },
-  "width": 1020,
-  "height": 420,
+  "width": 3020,
+  "height": 1020,
   "background": null,
   "padding": {"left": 10, "right": 110, "top": 20, "bottom": 30},
   "config": {
@@ -22,8 +22,8 @@
       "titleFont": "Inter",
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
-      "labelFontSize": 11,
-      "titleFontSize": 11,
+      "labelFontSize": 35,
+      "titleFontSize": 35,
       "domain": false,
       "ticks": false,
       "grid": false
@@ -75,7 +75,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["English", "French", "Italian", "Japanese", "Spanish", "German", "Korean", "Hindi", "Chinese", "Russian"],
-            "range": ["#dda15e", "#355070", "#bb8588", "#ffe1a8", "#6A3D2A", "#8A7862", "#b8bedd", "#e07a5f", "#c44536", "#22223b"]
+            "range": ["#dda15e", "#355070", "#bb8588", "#727d71", "#6A3D2A", "#8A7862", "#b8bedd", "#e07a5f", "#c44536", "#22223b"]
           },
           "legend": null
         },
@@ -96,7 +96,7 @@
         "type": "text",
         "align": "left",
         "dx": 8,
-        "fontSize": 12,
+        "fontSize": 38,
         "fontWeight": 600
       },
       "encoding": {
@@ -140,7 +140,7 @@
     {
       "data": {
         "values": [
-          {"x1": 1980, "x2": 1997, "y1": -0.8, "y2": 0.7}
+          {"x1": 1986, "x2": 1997, "y1": -0.98, "y2": 0.7}
         ]
       },
       "mark": {
@@ -162,18 +162,18 @@
       "data": {
         "values": [
           {
-            "x": 1988.5,
-            "y": 0.4,
+            "x": 1986.5,
+            "y": 0.35,
             "label": "Government investments in the film \nindustry during the late 1990s helped \nKorean cinema expand globally."
           }
         ]
       },
       "mark": {
         "type": "text",
-        "align": "center",
+        "align": "left",
         "baseline": "middle",
-        "fontSize": 10.5,
-        "lineHeight": 14,
+        "fontSize": 35,
+        "lineHeight": 42,
         "fill": "#6b6258",
         "font": "Inter",
         "lineBreak": "\n"

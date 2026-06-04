@@ -100,7 +100,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["Profit", "Loss"],
-            "range": ["#6b8e4e", "#780116"]  
+            "range": ["#6b8e4e", "#bbbbbb"]  
           },
           "legend": {
             "title": "Outcome",

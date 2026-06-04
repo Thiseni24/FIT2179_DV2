@@ -155,7 +155,7 @@
         "type": "line",
         "interpolate": "linear-closed",
         "strokeWidth": 2.2,
-        "fillOpacity": 0.18
+        "fillOpacity": 0.1
       },
       "encoding": {
         "x": {"field": "x", "type": "quantitative", "scale": {"domain": [-1.35, 1.35]}, "axis": null},
@@ -186,7 +186,7 @@
               "#ffd380",
               "#2d6166",
               "#7a2e3e",
-              "#2c2c2c",
+              "#0d1f2d",
               "#c98092"
             ]
           }

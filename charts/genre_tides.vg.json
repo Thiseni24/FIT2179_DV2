@@ -91,7 +91,7 @@
           "title": "Genre",
           "scale": {
             "domain": ["Drama", "Comedy", "Action", "Horror", "Animation", "Thriller", "Crime", "Other"],
-            "range": ["#7a2e3e", "#ffd380", "#d65a1f", "#2c2c2c", "#7FB8A4", "#3a4d6c", "#2d6166", "#9b9085"]
+            "range": ["#7a2e3e", "#ffd380", "#d65a1f", "#0d1f2d", "#7FB8A4", "#3a4d6c", "#2d6166", "#9b9085"]
           },
           "legend": {
             "orient": "right",
