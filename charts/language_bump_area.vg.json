@@ -1,17 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Rise and Fall of World Languages on Screen",
+    "text": "The Rise and Fall of Languages on Screen",
     "subtitle": "Following the languages that shaped global film production",
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 18,
+    "fontSize": 31,
+    "subtitleFontSize": 19,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
-  "width": 2000,
-  "height": 900,
+  "width": 1020,
+  "height": 420,
   "background": null,
   "padding": {"left": 10, "right": 110, "top": 20, "bottom": 30},
   "config": {
@@ -96,7 +96,7 @@
         "type": "text",
         "align": "left",
         "dx": 8,
-        "fontSize": 30,
+        "fontSize": 12,
         "fontWeight": 600
       },
       "encoding": {

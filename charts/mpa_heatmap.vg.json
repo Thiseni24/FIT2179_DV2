@@ -3,17 +3,20 @@
 
   "title": {
     "text": "Inside Movie Certifications",
-    "subtitle": "Comparing popularity, audience ratings, and runtime across different certification levels",
+      "subtitle": [
+        "Comparing popularity, audience ratings, and runtimes",
+        "across different certification levels"
+      ],
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 13,
+    "fontSize": 92,
+    "subtitleFontSize": 45,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
     "subtitleFont": "Inter"
   },
 
-  "width": 700,
-  "height": 420,
+  "width": 1200,
+  "height": 1200,
   "padding": {"left": 5, "right": 100, "top": 5, "bottom": 5},
 
   "data": {
@@ -65,29 +68,46 @@
     {
       "mark": {
         "type": "rect",
-        "cornerRadius": 0,
+        "cornerRadius": 15,
         "stroke": "#f5f5f5",
-        "strokeWidth": 0.5
+        "strokeWidth": 2
       },
       "encoding": {
         "x": {
           "field": "Metric",
           "type": "nominal",
           "sort": ["Average Popularity", "Average IMDb Rating", "Average Runtime"],
-          "axis": {"title": null, "labelAngle": 0, "labelFontSize": 11}
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 40,
+            "labelLimit": 260,
+            "labelExpr": "datum.label == 'Average Popularity' ? ['Average', 'Popularity'] : datum.label == 'Average IMDb Rating' ? ['Average IMDb', 'Rating'] : ['Average', 'Runtime']"
+          }
         },
         "y": {
           "field": "mpaa",
           "type": "ordinal",
-          "axis": {"title": "Movie Certification", "labelFontSize": 11}
+          "axis": {
+            "title": "Movie Certification",
+            "labelFontSize": 40,
+            "titleFontSize": 40,
+            "titlePadding": 20
+          }
         },
         "color": {
           "field": "NormalisedValue",
           "type": "quantitative",
           "scale": {
-            "range": ["#F3EFE8", "#D6E3E0", "#A9C6C2", "#6F9D99", "#3F6F6B"]
+            "range": ["#eae0d5", "#c6ac8f", "#5e503f"]
           },
-          "legend": {"title": "Relative Average"}
+          "legend": {
+            "title": ["Relative", "Average"],
+            "titleFontSize": 40,
+            "labelFontSize": 35,
+            "gradientLength": 500,
+            "gradientThickness": 24
+          }
         },
         "tooltip": [
           {"field": "mpaa", "title": "Certification"},
@@ -100,7 +120,7 @@
     {
       "mark": {
         "type": "text",
-        "fontSize": 12,
+        "fontSize": 40,
         "fontWeight": "bold",
         "color": "black"
       },
@@ -112,60 +132,6 @@
         },
         "y": {"field": "mpaa", "type": "ordinal"},
         "text": {"field": "ValueLabel"}
-      }
-    },
-    {
-      "mark": {
-        "type": "rule",
-        "color": "#6b6258",
-        "strokeWidth": 1.2
-      },
-      "encoding": {
-        "x": {"value": 420},
-        "x2": {"value": 450},
-        "y": {"value": 200},
-        "y2": {"value": 270}
-      }
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#f4ede4",
-        "stroke": "#d8cfc1",
-        "strokeWidth": 1,
-        "cornerRadius": 6,
-        "opacity": 0.97
-      },
-      "encoding": {
-        "x": {"value": 450},
-        "x2": {"value": 625},
-        "y": {"value": 237},
-        "y2": {"value": 304}
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {
-            "label": "PG-13 is Hollywood's\ncommercial 'sweet spot': mature \nthemes, broad access and \nstrong box-office potential."
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "font": "Inter",
-        "fontSize": 10.5,
-        "fontWeight": "normal",
-        "color": "#6b6258",
-        "lineBreak": "\n",
-        "lineHeight": 14
-      },
-      "encoding": {
-        "x": {"value": 457},
-        "y": {"value": 250},
-        "text": {"field": "label"}
       }
     }
   ],
