@@ -5,10 +5,10 @@
     "subtitle": "Comparing studio output, revenue, and earning power",
     "anchor": "start",
     "fontSize": 30,
-    "subtitleFontSize": 13,
+    "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
   "width": 1000,
   "height": 430,
@@ -74,8 +74,8 @@
           "axis": {
             "grid": true,
             "gridColor": "#eadfce",
-            "labelFontSize": 11,
-            "titleFontSize": 12
+            "labelFontSize": 12,
+            "titleFontSize": 14
           }
         },
         "y": {
@@ -130,7 +130,7 @@
     {
       "data": {
         "values": [
-          {"x": 148, "x2": 208, "y": 29.0, "y2": 33.0}
+          {"x": 148, "x2": 200, "y": 28.7, "y2": 33.0}
         ]
       },
       "mark": {
@@ -163,7 +163,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 11,
+        "fontSize": 13,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n"
