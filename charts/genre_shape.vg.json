@@ -2,16 +2,19 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The Genre Fingerprints",
-    "subtitle": "Exploring how differentgenres differ in scale, reception, and commercial performance",
+    "subtitle": [
+      "Exploring how different genres differ in scale, reception, and",
+      "commercial performance"
+    ],
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 18,
+    "fontSize": 36,
+    "subtitleFontSize": 20,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
-  "width": 540,
-  "height": 540,
+  "width": 640,
+  "height": 640,
   "background": null,
   "params": [
     {
@@ -248,7 +251,7 @@
       "transform": [{"filter": "GenreChoice == 'Biography'"}],
       "data": {
         "values": [
-          {"x": 0.28, "x2": 1.38, "y": 0.42, "y2": 0.70}
+          {"x": 0.28, "x2": 1.38, "y": 0.39, "y2": 0.70}
         ]
       },
       "mark": {
@@ -273,7 +276,7 @@
           {
             "x": 0.33,
             "y": 0.63,
-            "label": "Biographical films often prioritise\nhistorical storytelling and award\nrecognition over mass-market appeal."
+            "label": "Biographical films often prioritise\nhistorical storytelling and award\nrecognition over mass-market \nappeal."
           }
         ]
       },
@@ -282,7 +285,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 13,
+        "fontSize": 15,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",

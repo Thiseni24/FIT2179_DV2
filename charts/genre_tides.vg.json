@@ -4,7 +4,7 @@
     "text": "Genre Tides in Global Cinema",
     "subtitle": "Tracking the changing popularity of cinema's biggest genres over five decades",
     "anchor": "start",
-    "fontSize": 30,
+    "fontSize": 27,
     "subtitleFontSize": 18,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
@@ -32,8 +32,8 @@
       "titleFont": "Inter",
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
-      "labelFontSize": 11,
-      "titleFontSize": 11,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
       "domain": false,
       "ticks": false,
       "grid": false
@@ -41,8 +41,8 @@
     "legend": {
       "labelFont": "Inter",
       "titleFont": "Inter",
-      "labelFontSize": 11,
-      "titleFontSize": 12
+      "labelFontSize": 12,
+      "titleFontSize": 12.5
     }
   },
   "data": {
@@ -127,7 +127,7 @@
     {
       "data": {
         "values": [
-          {"x": 1990, "x2": 2010, "y": 170, "y2": -50}
+          {"x": 1995, "x2": 2010, "y": 170, "y2": -50}
         ]
       },
       "mark": {
@@ -149,8 +149,8 @@
       "data": {
         "values": [
           {
-            "x": 1991,
-            "y": 138,
+            "x": 1995.6,
+            "y": 130,
             "label": "Thriller Films that blended suspense with \nsocial commentary helped thrillers appeal to \nwider audiences, driving the genre's \nresurgence during the 2010s."
           }
         ]
@@ -160,7 +160,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",
@@ -193,7 +193,7 @@
     {
       "data": {
         "values": [
-          {"x": 1985.4, "x2": 2003, "y": 1240, "y2": 1000}
+          {"x": 1989.5, "x2": 2003, "y": 1240, "y2": 1000}
         ]
       },
       "mark": {
@@ -215,8 +215,8 @@
       "data": {
         "values": [
           {
-            "x": 1986,
-            "y": 1200,
+            "x": 1990.2,
+            "y": 1190,
             "label": "Advances in visual effects and \nthe rise of blockbuster franchises \nhelped action movies attract audiences \nacross languages and cultures."
           }
         ]
@@ -226,7 +226,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",
