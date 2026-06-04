@@ -85,8 +85,8 @@
           "axis": {
             "grid": true,
             "gridColor": "#eadfce",
-            "labelFontSize": 11,
-            "titleFontSize": 12
+            "labelFontSize": 12,
+            "titleFontSize": 14
           }
         },
         "size": {
@@ -96,7 +96,11 @@
           "scale": {"range": [150, 3500]},
           "legend": {
             "orient": "right",
-            "title": "Revenue per Film"
+            "title": [
+              "Average Revenue",
+              "per Film"
+            ],
+            "titleFontSize": 13
           }
         },
         "tooltip": [

@@ -133,7 +133,7 @@
       },
       "mark": {
         "type": "rect",
-        "fill": "#dcd4c9",
+        "fill": "#eee7dc",
         "stroke": "#c0b7aa",
         "strokeWidth": 1,
         "cornerRadius": 6,
@@ -161,7 +161,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 10.5,
+        "fontSize": 11,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n",

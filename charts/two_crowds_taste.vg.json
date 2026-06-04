@@ -38,18 +38,38 @@
     },
     {
       "aggregate": [
-        { "op": "mean", "field": "imdb_rating", "as": "IMDb" },
-        { "op": "mean", "field": "vote_average", "as": "TMDB" },
-        { "op": "count", "as": "film_count" }
+        {
+          "op": "mean",
+          "field": "imdb_rating",
+          "as": "IMDb"
+        },
+        {
+          "op": "mean",
+          "field": "vote_average",
+          "as": "TMDB"
+        },
+        {
+          "op": "count",
+          "as": "film_count"
+        }
       ],
-      "groupby": ["decade", "decade_start"]
+      "groupby": [
+        "decade",
+        "decade_start"
+      ]
     },
     {
       "filter": "datum.film_count >= 5"
     },
     {
-      "fold": ["IMDb", "TMDB"],
-      "as": ["rating_source", "average_rating"]
+      "fold": [
+        "IMDb",
+        "TMDB"
+      ],
+      "as": [
+        "rating_source",
+        "average_rating"
+      ]
     }
   ],
   "layer": [
@@ -63,7 +83,10 @@
         "x": {
           "field": "rating_source",
           "type": "nominal",
-          "sort": ["IMDb", "TMDB"]
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ]
         }
       }
     },
@@ -77,10 +100,13 @@
         "x": {
           "field": "rating_source",
           "type": "nominal",
-          "sort": ["IMDb", "TMDB"],
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ],
           "axis": {
             "title": null,
-            "labelFontSize": 14,
+            "labelFontSize": 15,
             "labelFontWeight": "bold",
             "labelAngle": 0
           }
@@ -88,24 +114,49 @@
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": { "domain": [6.8, 8.0] },
+          "scale": {
+            "domain": [
+              6.8,
+              8.0
+            ]
+          },
           "axis": {
             "title": "Average Rating",
             "grid": true,
             "gridColor": "#ebe1d2",
-            "gridDash": [2, 3],
-            "labelFontSize": 14
+            "gridDash": [
+              2,
+              3
+            ],
+            "labelFontSize": 15,
+            "titleFontSize": 17
           }
         },
         "color": {
           "value": "#414833"
         },
-        "detail": { "field": "decade" },
+        "detail": {
+          "field": "decade"
+        },
         "tooltip": [
-          { "field": "decade", "title": "Decade" },
-          { "field": "rating_source", "title": "Rating Source" },
-          { "field": "average_rating", "title": "Average Rating", "format": ".2f" },
-          { "field": "film_count", "title": "Films Compared", "format": "," }
+          {
+            "field": "decade",
+            "title": "Decade"
+          },
+          {
+            "field": "rating_source",
+            "title": "Rating Source"
+          },
+          {
+            "field": "average_rating",
+            "title": "Average Rating",
+            "format": ".2f"
+          },
+          {
+            "field": "film_count",
+            "title": "Films Compared",
+            "format": ","
+          }
         ]
       }
     },
@@ -120,16 +171,30 @@
         "x": {
           "field": "rating_source",
           "type": "nominal",
-          "sort": ["IMDb", "TMDB"]
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ]
         },
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": { "domain": [6.8, 8.0] }
+          "scale": {
+            "domain": [
+              6.8,
+              8.0
+            ]
+          }
         },
         "color": {
           "value": "#414833"
-        }
+        },
+        "tooltip": [
+          { "field": "decade", "title": "Decade" },
+          { "field": "rating_source", "title": "Rating Source" },
+          { "field": "average_rating", "title": "Average Rating", "format": ".2f" },
+          { "field": "film_count", "title": "Films Compared", "format": "," }
+]
       }
     },
     {
@@ -142,7 +207,7 @@
         "type": "text",
         "align": "right",
         "dx": -10,
-        "fontSize": 13,
+        "fontSize": 15,
         "fontWeight": "bold",
         "font": "Inter",
         "color": "#6b6258"
@@ -151,12 +216,20 @@
         "x": {
           "field": "rating_source",
           "type": "nominal",
-          "sort": ["IMDb", "TMDB"]
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ]
         },
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": { "domain": [6.8, 8.0] }
+          "scale": {
+            "domain": [
+              6.8,
+              8.0
+            ]
+          }
         },
         "text": {
           "field": "decade"
@@ -182,12 +255,20 @@
         "x": {
           "field": "rating_source",
           "type": "nominal",
-          "sort": ["IMDb", "TMDB"]
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ]
         },
         "y": {
           "field": "average_rating",
           "type": "quantitative",
-          "scale": { "domain": [6.8, 8.0] }
+          "scale": {
+            "domain": [
+              6.8,
+              8.0
+            ]
+          }
         },
         "text": {
           "field": "decade"
@@ -197,7 +278,12 @@
     {
       "data": {
         "values": [
-          {"x1": "IMDb", "y1": 7.81, "x2": "TMDB", "y2": 7.88}
+          {
+            "x1": "IMDb",
+            "y1": 7.81,
+            "x2": "TMDB",
+            "y2": 7.88
+          }
         ]
       },
       "mark": {
@@ -206,10 +292,24 @@
         "strokeWidth": 1.2
       },
       "encoding": {
-        "x": {"field": "x1", "type": "nominal", "sort": ["IMDb", "TMDB"]},
-        "y": {"field": "y1", "type": "quantitative"},
-        "x2": {"field": "x2"},
-        "y2": {"field": "y2"}
+        "x": {
+          "field": "x1",
+          "type": "nominal",
+          "sort": [
+            "IMDb",
+            "TMDB"
+          ]
+        },
+        "y": {
+          "field": "y1",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y2": {
+          "field": "y2"
+        }
       }
     },
     {
@@ -222,10 +322,18 @@
         "opacity": 0.97
       },
       "encoding": {
-        "x": {"value": 315},
-        "x2": {"value": 526},
-        "y": {"value": 3},
-        "y2": {"value": 76.0}
+        "x": {
+          "value": 315
+        },
+        "x2": {
+          "value": 526
+        },
+        "y": {
+          "value": 3
+        },
+        "y2": {
+          "value": 76.0
+        }
       }
     },
     {
@@ -247,14 +355,22 @@
         "lineBreak": "\n"
       },
       "encoding": {
-        "x": {"value": 325},
-        "y": {"value": 9},
-        "text": {"field": "label"}
+        "x": {
+          "value": 325
+        },
+        "y": {
+          "value": 9
+        },
+        "text": {
+          "field": "label"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
+    "view": {
+      "stroke": null
+    },
     "font": "Inter",
     "axis": {
       "labelFont": "Inter",

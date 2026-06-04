@@ -21,8 +21,8 @@
       "titleFont": "Inter",
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
-      "labelFontSize": 11,
-      "titleFontSize": 12
+      "labelFontSize": 17,
+      "titleFontSize": 13
     }
   },
   "layer": [
@@ -105,8 +105,8 @@
           "legend": {
             "title": "Outcome",
             "orient": "right",
-            "titleFontSize": 11,
-            "labelFontSize": 11,
+            "titleFontSize": 15,
+            "labelFontSize": 14,
             "symbolSize": 120,
             "symbolOpacity": 0.7
           }
@@ -186,7 +186,7 @@
       "mark": {
         "type": "rect",
         "cornerRadius": 6,
-        "fill": "#f4ede4",
+        "fill": "#f7f1ea",
         "stroke": "#d8cfc1",
         "strokeWidth": 1
       },
@@ -202,7 +202,7 @@
       "data": {
         "values": [
           {
-            "x": 1800,
+            "x": 1700,
             "y": 4000000000,
             "label": "The rise of viral internet marketing \nallowed some films to reach global \naudiences without massive \npromotional budgets."
           }
@@ -213,7 +213,7 @@
         "align": "left",
         "baseline": "middle",
         "font": "Inter",
-        "fontSize": 13,
+        "fontSize": 13.6,
         "fontWeight": "normal",
         "color": "#6b6258",
         "lineBreak": "\n"

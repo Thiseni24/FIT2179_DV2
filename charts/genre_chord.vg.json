@@ -11,7 +11,8 @@
     "subtitleFontSize": 27,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"  },
+    "subtitleFont": "Inter"
+  },
   "width": 900,
   "height": 900,
   "background": null,
@@ -50,8 +51,8 @@
         "fill": null
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 900]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [900, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "ribbon_id", "type": "nominal"},
         "fill": {
@@ -70,40 +71,10 @@
             "type": "quantitative"
           },
           "value": 0
-        }
-      }
-    },
-    {
-      "description": "Invisible hover catcher for tooltips",
-      "data": {
-        "url": "data/chord_ribbons.csv",
-        "format": {
-          "type": "csv",
-          "parse": {"x": "number", "y": "number", "point_order": "number", "pair_count": "number", "ribbon_id": "number"}
-        }
-      },
-      "mark": {
-        "type": "line",
-        "interpolate": "linear-closed",
-        "strokeWidth": 8,
-        "stroke": "transparent",
-        "fill": null
-      },
-      "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
-        "order": {"field": "point_order", "type": "quantitative"},
-        "detail": {"field": "ribbon_id", "type": "nominal"},
-        "opacity": {
-          "condition": {
-            "test": "GenreFocus == 'All' || datum.from_genre == GenreFocus || datum.to_genre == GenreFocus",
-            "value": 1
-          },
-          "value": 0
         },
         "tooltip": [
-          {"field": "from_genre", "type": "nominal", "title": "From (primary)"},
-          {"field": "to_genre", "type": "nominal", "title": "To (secondary)"},
+          {"field": "from_genre", "type": "nominal", "title": "Primary Genre"},
+          {"field": "to_genre", "type": "nominal", "title": "Secondary Genre"},
           {"field": "pair_count", "type": "quantitative", "title": "Films", "format": ","}
         ]
       }
@@ -124,8 +95,8 @@
         "fill": null
       },
       "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 900]}, "axis": null},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [900, 0]}, "axis": null},
         "order": {"field": "point_order", "type": "quantitative"},
         "detail": {"field": "arc_id", "type": "nominal"},
         "fill": {
@@ -153,10 +124,10 @@
           "parse": {"label_x": "number", "label_y": "number"}
         }
       },
-      "mark": {"type": "text", "fontSize": 22, "fontWeight": 700},
+      "mark": {"type": "text", "fontSize": 23, "fontWeight": 700},
       "encoding": {
-        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
+        "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 900]}, "axis": null},
+        "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [900, 0]}, "axis": null},
         "text": {"field": "genre", "type": "nominal"},
         "color": {
           "field": "genre",

@@ -166,6 +166,16 @@
           "field": "primary_genre",
           "type": "nominal",
           "title": "Genre",
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 5,
+            "titleFontSize": 20,
+            "labelFontSize": 17,
+            "symbolType": "stroke",
+            "symbolSize": 200,
+            "symbolStrokeWidth": 10
+          },
           "scale": {
             "domain": [
               "Action",
@@ -225,6 +235,77 @@
           {"field": "primary_genre", "title": "Genre"},
           {"field": "axis", "title": "Axis"},
           {"field": "value", "title": "Normalised Score", "format": ".2f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "linear-closed",
+        "strokeWidth": 18,
+        "opacity": 0.0001
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {"domain": [-1.35, 1.35]},
+          "axis": null
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {"domain": [-1.35, 1.35]},
+          "axis": null
+        },
+        "order": {
+          "field": "axis_order"
+        },
+        "detail": {
+          "field": "primary_genre"
+        },
+        "tooltip": [
+          {
+            "field": "primary_genre",
+            "title": "Genre"
+          },
+          {
+            "field": "axis",
+            "title": "Metric"
+          },
+          {
+            "field": "value",
+            "title": "Metric Score",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 180,
+        "opacity": 0
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {"domain": [-1.35, 1.35]},
+          "axis": null
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {"domain": [-1.35, 1.35]},
+          "axis": null
+        },
+        "detail": {"field": "primary_genre"},
+        "tooltip": [
+          {"field": "primary_genre", "title": "Genre"},
+          {"field": "axis", "title": "Metric"},
+          {"field": "value", "title": "Metric Score", "format": ".2f"}
         ]
       }
     },

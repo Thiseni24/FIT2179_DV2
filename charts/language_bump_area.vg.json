@@ -23,7 +23,7 @@
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
       "labelFontSize": 35,
-      "titleFontSize": 35,
+      "titleFontSize": 42,
       "domain": false,
       "ticks": false,
       "grid": false
@@ -75,7 +75,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["English", "French", "Italian", "Japanese", "Spanish", "German", "Korean", "Hindi", "Chinese", "Russian"],
-            "range": ["#dda15e", "#355070", "#bb8588", "#727d71", "#6A3D2A", "#8A7862", "#b8bedd", "#e07a5f", "#c44536", "#22223b"]
+            "range": ["#dda15e", "#355070", "#bb8588", "#727d71", "#6A3D2A", "#8A7862", "#9a8c98", "#e07a5f", "#c44536", "#22223b"]
           },
           "legend": null
         },
@@ -96,7 +96,7 @@
         "type": "text",
         "align": "left",
         "dx": 8,
-        "fontSize": 38,
+        "fontSize": 39,
         "fontWeight": 600
       },
       "encoding": {

@@ -21,8 +21,8 @@
       "titleFont": "Inter",
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
-      "labelFontSize": 11,
-      "titleFontSize": 12
+      "labelFontSize": 14,
+      "titleFontSize": 15
     },
     "legend": {
       "labelFont": "Inter",
@@ -125,8 +125,8 @@
           "legend": {
             "title": "Revenue (USD)",
             "orient": "right",
-            "titleFontSize": 13,
-            "labelFontSize": 11,
+            "titleFontSize": 15,
+            "labelFontSize": 13,
             "format": "$,.0s"
           }
         },
@@ -165,8 +165,8 @@
           },
           "legend": {
             "orient": "right",
-            "titleFontSize": 13,
-            "labelFontSize": 11,
+            "titleFontSize": 15,
+            "labelFontSize": 13,
             "symbolType": "circle"
           }
         },

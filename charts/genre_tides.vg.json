@@ -33,7 +33,7 @@
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
       "labelFontSize": 12,
-      "titleFontSize": 12,
+      "titleFontSize": 14,
       "domain": false,
       "ticks": false,
       "grid": false
@@ -95,8 +95,8 @@
           },
           "legend": {
             "orient": "right",
-            "titleFontSize": 12,
-            "labelFontSize": 11
+            "titleFontSize": 13,
+            "labelFontSize": 12
           }
         },
         "tooltip": [

@@ -28,7 +28,7 @@
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
       "labelFontSize": 13,
-      "titleFontSize": 19,
+      "titleFontSize": 16,
       "domain": false,
       "ticks": false,
       "grid": false
@@ -137,7 +137,7 @@
     {
       "data": {
         "values": [
-          {"x": 1995, "x2": 2010, "y": 980, "y2": 1210}
+          {"x": 1989, "x2": 2010, "y": 970, "y2": 1230}
         ]
       },
       "mark": {
@@ -180,6 +180,29 @@
         "x": {"field": "x", "type": "quantitative"},
         "y": {"field": "y", "type": "quantitative"},
         "text": {"field": "label"}
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 200,
+        "opacity": 0
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [1970, 2024]}
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"aggregate": "count", "type": "quantitative", "title": "Number of Films"}
+        ]
       }
     }
   ]

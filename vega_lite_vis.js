@@ -17,7 +17,8 @@ const chartConfigs = [
 // Embed each chart with shared options
 chartConfigs.forEach(({ id, spec }) => {
   vegaEmbed("#" + id, spec, {
-    actions: false,       
-    renderer: "svg",       
+    actions: false,
+    renderer: "svg",
+    tooltip: { theme: "light" }
   }).catch(err => console.error(`Error rendering ${id}:`, err));
 });
