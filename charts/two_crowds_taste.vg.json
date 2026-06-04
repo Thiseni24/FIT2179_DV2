@@ -11,7 +11,7 @@
     "subtitleFont": "Helvetica"
   },
   "width": 600,
-  "height": 400,
+  "height": 500,
   "background": null,
   "data": {
     "url": "data/movies_joined.csv",
@@ -232,7 +232,7 @@
       "data": {
         "values": [
           {
-            "label": "Many classic films remain \nrelevant and highly rated \nthrough ongoing restoration \nand re-releases."
+            "label": "Many classic films remain \nrelevant and highly rated \nthrough ongoing restorations \nand re-releases."
           }
         ]
       },
