@@ -2,17 +2,18 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The Genre Web",
-    "subtitle": "Tracing which genres lead films and which more often play a supporting role",
+    "subtitle": [
+      "Tracing which genres lead films and which more often",
+      "play a supporting role"
+    ],
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 18,
+    "fontSize": 53,
+    "subtitleFontSize": 27,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter",
-    "subtitleFontStyle": "italic"
-  },
-  "width": 800,
-  "height": 800,
+    "subtitleFont": "Inter"  },
+  "width": 900,
+  "height": 900,
   "background": null,
   "config": {
     "view": {"stroke": null},
@@ -144,75 +145,6 @@
       }
     },
     {
-      "description": "Annotation connector — points at Romance's incoming arc",
-      "data": {
-        "values": [
-          {"x1": 280, "y1": 420, "x2": 195, "y2": 555}
-        ]
-      },
-      "mark": {
-        "type": "rule",
-        "color": "#6b6258",
-        "strokeWidth": 1.2
-      },
-      "encoding": {
-        "x": {"field": "x1", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "y1", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
-        "x2": {"field": "x2"},
-        "y2": {"field": "y2"}
-      }
-    },
-    {
-      "description": "Annotation box",
-      "data": {
-        "values": [
-          {"x": 280, "x2": 560, "y": 340, "y2": 420}
-        ]
-      },
-      "mark": {
-        "type": "rect",
-        "fill": "#f4ede4",
-        "stroke": "#d8cfc1",
-        "strokeWidth": 1,
-        "cornerRadius": 6,
-        "opacity": 0.97
-      },
-      "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "x2": {"field": "x2"},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
-        "y2": {"field": "y2"}
-      }
-    },
-    {
-      "description": "Annotation text",
-      "data": {
-        "values": [
-          {
-            "x": 290,
-            "y": 380,
-            "label": "Romance rarely leads. Most romantic\nfilms are primarily Drama or Comedy\nwith a romantic thread — its incoming\narc is over 3× larger than outgoing."
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "font": "Inter",
-        "fontSize": 11,
-        "fontWeight": "normal",
-        "color": "#6b6258",
-        "lineBreak": "\n",
-        "lineHeight": 14
-      },
-      "encoding": {
-        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
-        "text": {"field": "label"}
-      }
-    },
-    {
       "description": "Genre labels",
       "data": {
         "url": "data/chord_labels.csv",
@@ -221,11 +153,20 @@
           "parse": {"label_x": "number", "label_y": "number"}
         }
       },
-      "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#1a1a1a"},
+      "mark": {"type": "text", "fontSize": 22, "fontWeight": 700},
       "encoding": {
         "x": {"field": "label_x", "type": "quantitative", "scale": {"domain": [0, 800]}, "axis": null},
         "y": {"field": "label_y", "type": "quantitative", "scale": {"domain": [800, 0]}, "axis": null},
-        "text": {"field": "genre", "type": "nominal"}
+        "text": {"field": "genre", "type": "nominal"},
+        "color": {
+          "field": "genre",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Drama","Comedy","Thriller","Action","Romance","Crime","Adventure","Horror","Science Fiction","Family"],
+            "range": ["#7a2e3e","#d4a017","#3a4d6c","#d65a1f","#c98092","#2d6166","#b08652","#2c2c2c","#5a7fa5","#7a8c4f"]
+          },
+          "legend": null
+        }
       }
     }
   ]

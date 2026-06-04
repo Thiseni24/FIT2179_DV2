@@ -1,17 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Boom and Bust of Global Film Production",
-    "subtitle": "A timeline of cinema's rapid expansion and post-pandemic slowdown",
+    "text": [
+      "The Boom and Bust of Global Film",
+      "Production"
+    ],
+    "subtitle": [
+      "A timeline of cinema's rapid expansion and post-pandemic",
+      "slowdown"
+    ],
     "anchor": "start",
-    "fontSize": 30,
-    "subtitleFontSize": 18,
+    "fontSize": 33.5,
+    "subtitleFontSize": 20.5,
     "subtitleColor": "#6b6258",
     "font": "Playfair Display",
-    "subtitleFont": "Inter"
+    "subtitleFont": "Helvetica"
   },
-  "width": 1100,
-  "height": 400,
+  "width": 560,
+  "height": 390,
   "background": null,
   "config": {
     "view": {"stroke": null},
@@ -21,8 +27,8 @@
       "titleFont": "Inter",
       "labelColor": "#1a1a1a",
       "titleColor": "#6b6258",
-      "labelFontSize": 11,
-      "titleFontSize": 11,
+      "labelFontSize": 13,
+      "titleFontSize": 19,
       "domain": false,
       "ticks": false,
       "grid": false
