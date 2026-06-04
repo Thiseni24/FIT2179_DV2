@@ -100,9 +100,9 @@ p { margin-bottom: 16px; }
 
 /* ============ PAGE LAYOUT ============ */
 .page {
-  max-width: 1320px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding: 48px 32px 96px;
+  padding: 48px 32px 48px;
 }
 
 /* ============ HERO ============ */
@@ -207,14 +207,8 @@ p { margin-bottom: 16px; }
 .act-title { font-size: clamp(36px, 5vw, 56px); line-height: 1.1; margin-bottom: 18px; }
 .act-intro { color: var(--muted); font-size: 17px; max-width: 60ch; margin: 0 auto; line-height: 1.7; }
 
-/* ============ CHART CARD ============ */
+/* ============ ACT BODY (now the single card per Act) ============ */
 .act-body {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.chart-card {
   background: #ffffff;
   border: 1px solid var(--hairline);
   border-radius: 14px;
@@ -223,12 +217,19 @@ p { margin-bottom: 16px; }
   overflow: hidden;
 }
 
-/* Chart stage: full-width cards.
-   Stage and notes share max-width and are both centered,
-   so chart title (anchor:start) and description text both start at the same X. */
+/* ============ CHART BLOCK (one per chart inside the act card) ============ */
+.chart-block {
+  /* No background, no border — just a spacer */
+}
+
+.chart-block + .chart-block {
+  margin-top: var(--space-2xl);
+}
+
+/* Chart stage: centered in the card, max width = inner-max */
 .chart-stage {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   width: 100%;
   max-width: var(--inner-max);
@@ -242,10 +243,71 @@ p { margin-bottom: 16px; }
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
+  align-items: center !important;
 }
 
 .chart-stage .vega-embed > div { max-width: 100%; }
+
+/* ============ HOW TO READ NOTE ============ */
+.chart-how-to-read {
+  max-width: var(--inner-max);
+  margin: 22px auto 28px;
+  padding: 12px 18px;
+  background: rgba(212, 165, 72, 0.08);
+  border-left: 3px solid var(--film-gold);
+  border-radius: 0 6px 6px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.chart-how-to-read::before {
+  content: "How to read — ";
+  font-weight: 700;
+  color: var(--film-gold-dark);
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+/* ============ TERM GLOSSARY BOX ============ */
+.chart-glossary {
+  margin: 0 0 22px;
+  padding: 14px 18px;
+  background: rgba(212, 165, 72, 0.06);
+  border: 1px solid var(--hairline-soft);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.chart-glossary-title {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  color: var(--film-gold-dark);
+  margin-bottom: 8px;
+}
+
+.chart-glossary dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+}
+
+.chart-glossary dt {
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.chart-glossary dd {
+  margin: 0;
+}
 
 /* ============ CHART NOTES (2-col description) ============ */
 .chart-notes {
@@ -253,28 +315,25 @@ p { margin-bottom: 16px; }
   margin: 36px auto 0;
   column-count: 2;
   column-gap: 48px;
-  column-rule: 1px solid var(--hairline-soft);
+  column-rule: none;
 }
 
 .chart-note {
-  margin: 0;
+  margin: 0 0 14px;
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
   font-size: 16.5px;
   line-height: 1.75;
   color: var(--ink);
-  max-width: 52ch;
 }
+
+.chart-note:last-child { margin-bottom: 0; }
 
 /* ===== TEXT HIGHLIGHTS ===== */
-
-.hl {
-  font-weight: 700;
-}
-
-.keyword {
-  font-weight: 700;
-}
+.hl { font-weight: 700; }
+.keyword { font-weight: 700; }
 
 /* Countries */
 .usa { color: #bcbd8b; }
@@ -292,7 +351,7 @@ p { margin-bottom: 16px; }
 
 /* Genres */
 .drama { color: #7a2e3e; }
-.comedy { color: #c89400; } 
+.comedy { color: #c89400; }
 .thriller { color: #3a4d6c; }
 .action { color: #d65a1f; }
 .romance { color: #c98092; }
@@ -301,23 +360,22 @@ p { margin-bottom: 16px; }
 .horror { color: #2c2c2c; }
 .scifi { color: #5a7fa5; }
 .family { color: #7a8c4f; }
-.animation { color: #5a8a78; }       /* muted teal */
-.biography { color: #9C755F; }       /* warm brown */
-
+.animation { color: #5a8a78; }
+.biography { color: #9C755F; }
 
 /* Languages */
-.english { color: #dda15e; }
+.english { color: #b8782d; }
 .french-lang { color: #355070; }
 .italian-lang { color: #bb8588; }
-.japanese-lang { color: #c8a854; } 
+.japanese-lang { color: #c8a854; }
 .spanish-lang { color: #6A3D2A; }
 .german-lang { color: #8A7862; }
-.korean-lang { color: #b8bedd; }
+.korean-lang { color: #6e7da8; }
 .hindi-lang { color: #e07a5f; }
 .chinese-lang { color: #c44536; }
 .russian-lang { color: #22223b; }
 
-/* Profit/Loss (used in budget vs revenue description) */
+/* Profit/Loss */
 .profit { color: #5a7a3e; font-weight: 700; }
 .loss   { color: #780116; font-weight: 700; }
 
@@ -349,35 +407,30 @@ p { margin-bottom: 16px; }
 }
 
 /* ============ SIDE-BY-SIDE (50/50, aligns with card center) ============ */
-.chart-card.is-split,
-.chart-card.is-split-reverse {
+.chart-block.is-split,
+.chart-block.is-split-reverse {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
 }
 
-.chart-card.is-split-reverse .chart-stage { order: 2; }
-.chart-card.is-split-reverse .chart-notes { order: 1; }
+.chart-block.is-split-reverse .chart-stage { order: 2; }
+.chart-block.is-split-reverse .chart-notes { order: 1; }
 
-.chart-card.is-split .chart-stage,
-.chart-card.is-split-reverse .chart-stage {
+.chart-block.is-split .chart-stage,
+.chart-block.is-split-reverse .chart-stage {
   max-width: 100%;
   margin: 0;
   justify-content: center;
 }
 
-.chart-card.is-split .chart-notes,
-.chart-card.is-split-reverse .chart-notes {
+.chart-block.is-split .chart-notes,
+.chart-block.is-split-reverse .chart-notes {
   max-width: 100%;
   margin: 0;
   column-count: 1;
   column-rule: none;
-}
-
-.chart-card.is-split .chart-note,
-.chart-card.is-split-reverse .chart-note {
-  max-width: 52ch;
 }
 
 /* ============ ENDING ============ */
@@ -430,57 +483,4 @@ p { margin-bottom: 16px; }
 .vega-bindings {
   font-family: var(--font-body);
   font-size: 13px;
-  color: var(--ink);
-  margin-top: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.vega-bindings label {
-  font-weight: 500;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.vega-bindings select {
-  padding: 5px 12px;
-  border: 1px solid var(--hairline);
-  border-radius: 4px;
-  background: white;
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.vega-bindings select:hover, .vega-bindings select:focus {
-  border-color: var(--film-red);
-  outline: none;
-}
-
-/* ============ RESPONSIVE ============ */
-@media (max-width: 1024px) {
-  .chart-card.is-split, .chart-card.is-split-reverse {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .chart-card.is-split-reverse .chart-stage,
-  .chart-card.is-split-reverse .chart-notes { order: initial; }
-}
-
-@media (max-width: 768px) {
-  .topnav-inner { padding: 0 16px; gap: 12px; }
-  .topnav-brand { font-size: 14px; }
-  .topnav-links { gap: 14px; }
-  .topnav-links a { font-size: 10px; letter-spacing: 0.06em; }
-  .page { padding: 32px 16px 64px; }
-  .hero-card, .ending-card, .chart-card { padding: 28px; }
-  .chart-notes { column-count: 1; column-rule: none; }
-  .chart-note { max-width: none; }
-  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
 }
